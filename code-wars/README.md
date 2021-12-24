@@ -29,6 +29,7 @@
 | &#9745; | 12  | [Returning Strings](fundamentals/returning-strings.js)                                |
 | &#9745; | 13  | [Invert values](fundamentals/Invert-values.js)                                        |
 | &#9745; | 14  | [Basic Mathematical Operations](fundamentals/basic-mathematical-operations.js)        |
+| &#9745; | 15  | [Convert a Boolean to a String](fundamentals/convert-boolean-to-string.js)            |
 
 <!--
 ## Loops and Debugging
