@@ -1,0 +1,97 @@
+<header id="orb-banner" role="banner" aria-label="BBC"><div id="orb-header" class="orb-nav-pri orb-nav-pri-white orb-nav-dyn" dir="ltr"><div class="orb-nav-pri-container b-r b-g-p"><div class="orb-nav-section orb-nav-blocks"><a href="https://www.bbc.com" id="homepage-link">Homepage</a></div><section><div class="orb-skip-links"><h2>Accessibility links</h2><ul><li><a href="#orb-modules">Skip to content</a></li><li><a id="orb-accessibility-help" href="https://www.bbc.co.uk/accessibility/">Accessibility Help</a></li></ul></div></section><div id="mybbc-wrapper" class="orb-nav-section orb-nav-id orb-nav-focus orb-nav-id-default">  <div id="idcta-statusbar" class="orb-nav-section orb-nav-focus" data-bbc-container="id-cta" data-bbc-event-type="click" data-bbc-ignore-views="1" data-bbc-metadata="{&quot;id-cta-type&quot;: &quot;statusbar-orb&quot;}" data-bbc-source="responsive_web" data-bbc-title="id-cta-sign-in"><a id="idcta-link" href="https://session.bbc.com/session?ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;context=homepage&amp;userOrigin=HOMEPAGE_GNL"><span id="idcta-username">Sign in</span></a></div><script type="text/javascript">require(['idcta/statusbar'], function (statusbar) {new statusbar.Statusbar({id: 'idcta-statusbar', publiclyCacheable: true});});</script><!-- Because we are now loading the notification bell CSS asynchronously, we need this inline style hack to ensure that the notification div 
+		 is hidden by default, and shown only if and when the bell code is loaded from notification-ui --><a id="notification-link" class="js-notification-link animated three" href="#" style="display: none"><span class="hidden-span">Notifications</span><div class="notification-link--triangle"></div><div class="notification-link--triangle"></div><span id="not-num"></span></a>   </div><nav role="navigation" aria-label="BBC" class="orb-nav"><div class="orb-nav-section orb-nav-links orb-nav-focus" id="orb-nav-links"><ul><li class="orb-nav-homedotcom"><a href="https://www.bbc.com/">Home</a></li><li class="orb-nav-newsdotcom"><a href="https://www.bbc.com/news">News</a></li><li class="orb-nav-sport"><a href="https://www.bbc.com/sport">Sport</a></li><li class="orb-nav-reeldotcom"><a href="https://www.bbc.com/reel">Reel</a></li><li class="orb-nav-worklife"><a href="https://www.bbc.com/worklife">Worklife</a></li><li class="orb-nav-traveldotcom"><a href="https://www.bbc.com/travel">Travel</a></li><li class="orb-nav-future"><a href="https://www.bbc.com/future">Future</a></li><li class="orb-nav-culture"><a href="https://www.bbc.com/culture">Culture</a></li><li class="orb-nav-music orb-nav-hide"><a href="https://www.bbc.com/culture/music">Music</a></li><li class="orb-nav-tv orb-nav-hide"><a href="https://www.bbc.co.uk/schedules/p00fzl9m">TV</a></li><li class="orb-nav-weather orb-nav-hide"><a href="https://www.bbc.com/weather">Weather</a></li><li class="orb-nav-sounds orb-nav-hide"><a href="https://www.bbc.co.uk/sounds">Sounds</a></li><li id="orb-nav-more" style="width: 122px;" aria-controls="orb-panel-more" class=""><a href="#orb-footer" data-alt="More" class="istats-notrack">More<span class="orb-icon orb-icon-arrow"></span></a></li></ul></div></nav><div class="orb-nav-section orb-nav-search">  <a class="orb-search__button" href="https://search.bbc.co.uk/search?scope=all" title="Search the BBC">Search</a><form class="b-f" id="orb-search-form" role="search" method="get" action="https://search.bbc.co.uk/search" accept-charset="utf-8"><div><input type="hidden" name="scope" value="all"><label for="orb-search-q">Search the BBC</label><input id="orb-search-q" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="100" name="q" placeholder="Search"><button id="orb-search-button" class="orb-search__button">Search the BBC</button><input type="hidden" name="suggid" id="orb-search-suggid"></div></form><form id="orbit-search-form" role="search" method="get" action="https://search.bbc.co.uk/search" accept-charset="utf-8"><div><input type="hidden" name="scope" value="all"><button id="orbit-search-button"><svg class="search-button-icon" width="1.75rem" height="1.8125rem" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Search BBC</title><path d="M11,0 C17.0751322,0 22,4.92486775 22,11 C22,13.5277632 21.1473793,15.8563862 19.7140404,17.7139664 L28,26.0001 L25,29.0001 L16.518046,20.5179339 C14.8960209,21.4603385 13.0110328,22 11,22 C4.92486775,22 0,17.0751322 0,11 C0,4.92486775 4.92486775,0 11,0 Z M11,2.5001 C6.30557963,2.5001 2.5,6.30567963 2.5,11.0001 C2.5,15.6945204 6.30557963,19.5001 11,19.5001 C15.6944204,19.5001 19.5,15.6945204 19.5,11.0001 C19.5,6.30567963 15.6944204,2.5001 11,2.5001 Z" id="Shape"></path></svg><svg class="search-box-icon" width="1rem" height="1rem" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4.31263591,11.9770508 C3.26116255,10.925 2.68223368,9.52721354 2.68223368,8.04036458 C2.68223368,6.55351563 3.26116255,5.15572917 4.31325442,4.10491536 C5.36410928,3.05286458 6.76133182,2.47395833 8.24823886,2.47395833 C9.7351459,2.47395833 11.1336055,3.05348307 12.1850788,4.10491536 C14.3548251,6.27457682 14.3554436,9.80615234 12.1850788,11.9770508 C11.1336055,13.0278646 9.7351459,13.6067708 8.24823886,13.6067708 C6.76195034,13.6067708 5.36410928,13.0278646 4.31263591,11.9770508 L4.31263591,11.9770508 Z M20,17.6059245 L14.9195281,12.525651 C17.0268044,9.39980469 16.7002292,5.12171224 13.9348542,2.35520833 C12.3644478,0.785481771 10.3066526,0 8.24823886,0 C6.19106215,0 4.13264841,0.785481771 2.56347904,2.35520833 C-0.576715236,5.49589844 -0.576715236,10.5860677 2.56347904,13.7255208 C4.13326692,15.2964844 6.19106215,16.0807292 8.24823886,16.0807292 C9.81555269,16.0807292 11.3816295,15.6230469 12.733082,14.7120117 L17.8129354,19.7916667 L20,17.6059245 Z"></path></svg><span>Search BBC</span></button></div></form> </div></div><div id="orb-panels"><div id="orb-panel-more" class="orb-panel"><div class="orb-panel-content b-g-p b-r orb-nav-sec"><h2 id="orb-panel-more-title">More<span class="orb-icon orb-icon-arrow"></span></h2><ul><li class="orb-nav-homedotcom orb-panel-hide"><a href="https://www.bbc.com/">Home</a></li><li class="orb-nav-newsdotcom orb-panel-hide"><a href="https://www.bbc.com/news">News</a></li><li class="orb-nav-sport orb-panel-hide"><a href="https://www.bbc.com/sport">Sport</a></li><li class="orb-nav-reeldotcom orb-panel-hide"><a href="https://www.bbc.com/reel">Reel</a></li><li class="orb-nav-worklife orb-panel-hide"><a href="https://www.bbc.com/worklife">Worklife</a></li><li class="orb-nav-traveldotcom orb-panel-hide"><a href="https://www.bbc.com/travel">Travel</a></li><li class="orb-nav-future orb-panel-hide"><a href="https://www.bbc.com/future">Future</a></li><li class="orb-nav-culture orb-panel-hide"><a href="https://www.bbc.com/culture">Culture</a></li><li class="orb-nav-music orb-first-visible"><a href="https://www.bbc.com/culture/music">Music</a></li><li class="orb-nav-tv"><a href="https://www.bbc.co.uk/schedules/p00fzl9m">TV</a></li><li class="orb-nav-bbcselect orb-nav-hide"><a href="https://www.bbcselect.com">BBC Select</a></li><li class="orb-nav-weather"><a href="https://www.bbc.com/weather">Weather</a></li><li class="orb-nav-sounds"><a href="https://www.bbc.co.uk/sounds">Sounds</a></li></ul></div></div></div></div></header>
+
+<!-- code reference from BBC website -->
+
+<li class="media-list__item media-list__item--1">
+                <div class="media media--hero media--primary media--overlay block-link" data-bbc-container="hero" data-bbc-title="US warns of Russian 'false-flag' Ukraine operation" data-bbc-source="Europe" data-bbc-metadata="{&quot;CHD&quot;: &quot;card::1&quot; }">
+                    <div class="media__image">
+                        <div class="responsive-image">
+                            <img src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/1EF2/production/     _122722970_072708625-1.jpg" class="image-replace" alt="Ukrainian military exercises near Kyiv - December 2021" data-src="https://ichef.bbc.co.uk/wwhp/{width}/cpsprodpb/1EF2/production/_122722970_072708625-1.jpg">                
+                        </div>
+                    </div>    
+                    
+                    <div class="media__content">
+                        <h3 class="media__title">
+                            <a class="media__link" href="/news/world-europe-59998988" rev="hero1|headline">US warns of Russian 'false-flag' Ukraine operation                                
+                            </a>
+                            </h3>
+                            <p class="media__summary">Russia is plotting to stage acts of provocation to create a pretext to invade Ukraine, a US official says.                                
+                            </p>
+                            <a class="media__tag tag tag--news" href="/news/world/europe" rev="hero1|source">Europe</a>                       
+                    </div>
+    
+                    <a class="block-link__overlay-link" href="/news/world-europe-59998988" rev="hero1|overlay" tabindex="-1" aria-hidden="true">US warns of Russian 'false-flag' Ukraine operation</a>    
+                </div>              
+            </li>
+
+
+
+<!-- code reference from co worker -->
+
+<section>
+      <h1>Welcome to BBC.com</h1>
+      <h2>Thursday, 13 August</h2>
+      <article class="main_article">
+        <a href="#">
+        <h3>Israel and UAE strike historic peace deal</h3>
+        <p>Israel and the UAE agree to normalise relations, making the third Israel-Arab peace deal</p>
+        <span>Middle East</span>
+        </a>
+      </article>
+      <article class="">
+        <a href="#">
+        <h4>Americans, go home: Tension at Canada-US border</h4>
+        <span>Canada</span>
+        </a>
+      </article>
+      <article class="">
+        <a href="#">
+        <h4>How will the world vaccinate seven billion people?</h4>
+        <span>Health</span>
+        </a>
+      </article>
+      <article class="">
+        <a href="#">
+        <h4>The online 'productivity gyms'</h4>
+        <span>Worklife</span>
+        </a>
+      </article>
+      <article class="">
+        <a href="#">
+        <h4>The folk singer murdered for his music</h4>
+        <span>Culture</span>
+        </a>
+      </article>
+    </section>
+    <section>
+      <h1>News</h1>
+      <article class="">
+        <a href="#">
+        <h3>Biden and Harris say Trump has left US 'in tatters'</h3>
+        <p>Joe Biden and running mate Kamala Harris call President Donald Trump a "whinning" incompetent leader</p>
+        <span>US Election 2020</span>
+        </a>
+      </article>
+      <article class="">
+        <a href="#">
+        <h3>Women form 'solidarity chains' in Belarus protests</h3>
+        <p>Women take to the streets of Minsk dressed in white as they demand an end to police brutality</p>
+        <span>Europe</span>
+        </a>
+      </article>
+      <article class="">
+        <a href="#">
+        <h3>Trump says low-pressure shower heads won't wash</h3>
+        <p>The US calls for rules to be eased after Donald Trump complained of issues washing his hair</p>
+        <span>US & Canada</span>
+        </a>
+      </article>
+    </section>
+  </body>
+</html>
+
+
+
+
+
