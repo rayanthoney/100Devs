@@ -1,0 +1,112 @@
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset browsers default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+a {
+  float: left;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position: ;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+  float: left;
+  margin-right: 1px;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+}
+
+/* Set core body defaults */
+
+header {
+  display: block;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+}
+
+
+
+/************************* 
+BBC Navigation Styles
+*************************/
+
+.bbc--header { 
+  background: #000;
+  color: #fff;
+  border-color: #666;
+}
+
+.bbc-nav-section {
+  border-color: #646363;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.bbc--logo {
+  float: left;
+  width: auto;
+}
+
+.bbc--logo a {
+
+}
+
+.navigation {
+}
+
+
+
+
