@@ -30,6 +30,27 @@ p {
   font-weight: 400;
 }
 
+a {
+  float: left;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position: ;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+  float: left;
+  margin-right: 1px;
+}
+
 /* make images easier to work with */
 img,
 picutre {
@@ -38,12 +59,15 @@ picutre {
 }
 
 /* Set core body defaults */
+
+header {
+  display: block;
+}
+
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    background: #faf7e9;
-    color: #271101;
   }
 
   /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -59,8 +83,30 @@ body {
 BBC Navigation Styles
 *************************/
 
-.navigation {
-  display: block;
+.bbc--header { 
+  background: #000;
+  color: #fff;
+  border-color: #666;
 }
+
+.bbc-nav-section {
+  border-color: #646363;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.bbc--logo {
+  float: left;
+  width: auto;
+}
+
+.bbc--logo a {
+
+}
+
+.navigation {
+}
+
+
 
 
