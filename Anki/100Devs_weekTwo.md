@@ -20,3 +20,25 @@ Aaron Swartz on the syntax.
 
 You can add images to Anki by adding them to your markdown file:
 ![image](../path/to/image.png)
+
+
+
+
+## Float
+## block
+## inline
+## inline-block
+## static
+## absolute
+## relative
+
+## Centering using Flexbox
+.vertical-container {
+  height: 300px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
