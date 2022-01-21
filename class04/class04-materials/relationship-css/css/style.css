@@ -1,0 +1,21 @@
+h1 {
+    color: purple;
+}
+
+section > h2 {
+    color: blue;
+}
+
+article > h2 {
+    color: magenta !important;
+}
+
+section > article > h2 {
+    color: orange;
+}
+
+
+
+#zebra {
+    color: peru;
+}
