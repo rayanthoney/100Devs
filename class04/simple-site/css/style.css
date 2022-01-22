@@ -1,0 +1,85 @@
+
+
+:root {
+    /* CSS HEX */
+/* --ming: #517173ff;
+--emerald: #5ECD72ff;
+--beaver: #AE826Fff;
+--sky-blue: #87CEEBff;
+--beaver-2: #AE826Fff; */
+
+/* CSS HSL */
+--ming: hsla(184, 17%, 38%, 1);
+--emerald: hsla(131, 53%, 59%, 1);
+--beaver: hsla(18, 28%, 56%, 1);
+--sky-blue: hsla(197, 71%, 73%, 1);
+--beaver-2: hsla(18, 28%, 56%, 1);
+--egret: rgb(255, 255, 255, 1);
+}
+
+*, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--sky-blue);
+    color: var(--egret);
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;        
+    
+
+}
+
+section {
+    width: 60%;
+    margin: auto;
+    border: 5px solid var(--emerald); 
+}    
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;    
+}
+
+nav a {
+    color: var(--egret);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: var(--emerald);
+}
+
+p {    
+    /* width: 90%; */
+    font-size: 1.5em
+}
+
+img {
+    width: 35%;
+    margin: 25px;
+    float: right;
+}
+
+article {
+    margin: 60px ;
+}
+
+footer {
+    margin-bottom: 40px;
+}
