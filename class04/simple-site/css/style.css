@@ -103,7 +103,6 @@ nav li {
 }
 
 nav a {
-    color: var(--egret);
     text-decoration: none;
     text-transform: capitalize;
     font-size: 1.2rem;
@@ -111,6 +110,10 @@ nav a {
 
 nav a:hover {
     color: var(--emerald);
+}
+
+.active {
+  color: var(--egret);
 }
 
 p {    
@@ -130,4 +133,8 @@ article {
 
 footer {
     margin-bottom: 40px;
+}
+
+span {
+  color: blueviolet;
 }
