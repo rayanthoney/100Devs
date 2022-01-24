@@ -74,23 +74,26 @@ picture {
 
 /* Set core body defaults */
 body {
-  font-family: 'Josefin Slab', serif;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-weight: 700;
+
+  /* Research to see where these rules should be best placed? */
+  font-family: 'Josefin Slab', serif;
+  font-weight: 400;
+  background: var(--sky-blue);
   color: var(--egret);
-  background: var(--sky-blue);  
 }
 
-/*************************************
-/  Core Body Styles                   /
-**************************************/
-
 section {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     width: 70%;
-    padding: 50px;    
-    margin: 50px 15%;
+    height: 70%;
+    margin: auto;
     border: 5px solid var(--emerald); 
 }    
 
@@ -136,7 +139,8 @@ p {
 }
 
 img {
-  width: 30%;
+    width: 35%;
+    margin: 25px;
     float: right;
 }
 
@@ -149,5 +153,5 @@ footer {
 }
 
 span {
-  color: hsl(271, 88%, 29%);
+  color: blueviolet;
 }
