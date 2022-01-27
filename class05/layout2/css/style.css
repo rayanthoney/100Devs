@@ -1,0 +1,61 @@
+:root {
+
+/* CSS HSL */
+--ming: hsla(184, 17%, 38%, 1);
+--emerald: hsla(131, 53%, 59%, 1);
+--beaver: hsla(18, 28%, 56%, 1);
+--sky-blue: hsla(197, 71%, 73%, 1);
+--beaver-2: hsla(18, 28%, 56%, 1);
+--orchid:  hsla(288, 73%, 59%, 1);
+--egret: hsla(0, 0%, 100%, 1);
+--darkest: hsl(0, 0%, 0%, 1);
+}
+
+/* Set core body defaults */
+body {
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--orchid);
+  background: var(--darkest);  
+}
+
+header,
+footer {
+  height: 100px;
+  background: var(--beaver-2);
+  border: 2px solid var(--darkest);    
+  clear: both;
+}
+
+.section-one {
+  width: 100%;
+  background: var(--emerald);
+}
+
+.section-two {
+  width: 40%;
+  background: var(--sky-blue);
+}
+
+section {
+  height: 40vh;
+  width: 60%;
+  background: var(--egret);
+  border: 2px solid var(--darkest);
+  background: var(--ming);
+  float: left;
+}
+
+header:hover,
+section:hover,
+footer:hover {
+  background: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+
+
