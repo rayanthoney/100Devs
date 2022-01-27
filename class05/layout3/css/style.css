@@ -12,7 +12,9 @@
 --beaver: hsla(18, 28%, 56%, 1);
 --sky-blue: hsla(197, 71%, 73%, 1);
 --beaver-2: hsla(18, 28%, 56%, 1);
---egret: rgb(255, 255, 255, 1);
+--orchid:  hsla(288, 73%, 59%, 1);
+--egret: hsla(0, 0%, 100%, 1);
+--darkest: hsl(0, 0%, 0%, 1);
 }
 
 /* Box sizing rules */
@@ -72,50 +74,51 @@ picture {
 
 /* Set core body defaults */
 body {
+  text-align: center;
   font-family: 'Josefin Slab', serif;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-weight: 700;
   color: var(--egret);
-  background: var(--sky-blue);  
+  background: var(--darkest);  
 }
 
 header,
 footer {
-  height: 15vh;
-  background: lightsalmon;
+  height: 100px;
+  background: var(--orchid);
+  border: 2px solid var(--darkest);    
   clear: both;
 }
 
-.header {
-  border-bottom: 3px solid black;
+section {
+  height: 78.5vh;
+  border: 3px solid var(--darkest);
+  float: left;
 }
 
-section {
-  height: 70vh;
-  float: left;
-  border-bottom: 3px solid black;
+h1 {
+  text-align: center;
+  margin: auto;
 }
 
 .one,
 .three,
 .four {
   width: 20%;
-/*   width: 20vw; */
-  background: springgreen;
+  background: var(--emerald);
 }
 
 .two {
   width: 40%;
-/*   width: 40vw; */
-  background: steelblue;
-  border-left: 3px solid black;
+  background: var(--sky-blue);
+  border: 3px solid var(--darkest);
 }
 
 .three,
 .four {
-  border-left: 3px solid black;
+  border: 3px solid var(--darkest);
 }
 
 header:hover,
