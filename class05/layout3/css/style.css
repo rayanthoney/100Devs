@@ -15,13 +15,13 @@ header,
 footer {
   height: 100px;
   background: var(--orchid);
-  border: 2px solid var(--darkest);    
+  border: 2px solid var(--egret);    
   clear: both;
 }
 
 section {
   height: 78.5vh;
-  border: 3px solid var(--darkest);
+  border: 3px solid var(--egret);
   float: left;
 }
 
@@ -60,4 +60,9 @@ section:hover,
 footer:hover {
   background: transparent;
   transition: 0.5s ease-in-out;
+}
+
+.one {
+  background: url(/layout3/img/pluto.png);
+  /* background-repeat: no-repeat; */
 }
