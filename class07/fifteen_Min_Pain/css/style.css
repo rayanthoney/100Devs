@@ -1,0 +1,100 @@
+
+:root{
+  --ming: hsla(184, 17%, 38%, 1);
+  --beaver: hsla(18, 28%, 56%, 1);
+  --egret: hsla(0, 0%, 100%, 1);
+  --lemon: rgb(225, 228, 59);
+  --darkest: hsla(0, 0%, 0%, 1);
+  --plum: hsla(296, 78%, 67%, 1);
+}
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-image: linear-gradient(
+  94deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(57deg 100% 70%) 5%,
+  hsl(133deg 87% 47%) 50%,
+  hsl(219deg 60% 28%) 95%,
+  hsl(248deg 17% 9%) 100%
+);
+color: var(--egret);
+font-family: 'Rowdies', cursive;
+font-size: 700;
+text-transform: capitalize;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header,
+footer {
+  text-align: center;
+  height: 120px;
+  background: var(--plum);
+  border: 2px solid var(--egret);
+  clear: both;
+}
+
+section{
+  text-align: center;
+  height: 75.5vh;
+  width: 20%;
+  background: var(--lemon);
+  border: 2px solid var(--egret);
+  float: left;
+}
+
+.thiccum{
+  width: 40%;
+  background: var(--ming);
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+header:hover,
+section:hover,
+footer:hover {
+  background: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+/* Viewports between 320px and 480px wide */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .card {
+    background: #bada55;
+  }
+}
+
+@media (min-width: 451) and (max-width: 650px){
+  
+}

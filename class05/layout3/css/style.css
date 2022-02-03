@@ -40,12 +40,12 @@ h1 {
 .two {
   width: 40%;
   background: var(--sky-blue);
-  border: 3px solid var(--darkest);
+  border: 3px solid var(--egret);
 }
 
 .three,
 .four {
-  border: 3px solid var(--darkest);
+  border: 3px solid var(--egret);
 }
 
 header:hover,
@@ -60,9 +60,4 @@ section:hover,
 footer:hover {
   background: transparent;
   transition: 0.5s ease-in-out;
-}
-
-.one {
-  background: url(/layout3/img/pluto.png);
-  /* background-repeat: no-repeat; */
 }
