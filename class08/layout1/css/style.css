@@ -1,3 +1,11 @@
+:root{
+  --ming: hsla(184, 17%, 38%, 1);
+  --beaver: hsla(18, 28%, 56%, 1);
+  --egret: hsla(0, 0%, 100%, 1);
+  --lemon: rgb(225, 228, 59);
+  --darkest: hsla(0, 0%, 0%, 1);
+  --plum: hsla(296, 78%, 67%, 1);
+}
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -17,25 +25,54 @@
 	clear: both;
 }
 
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-
+  background: var(--egret);
+  color: var(--egret);
+  font-family: 'Rowdies', cursive;
+  font-size: 700;
+  text-transform: capitalize;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
-}
-
+header,
 footer {
-
+  text-align: center;
+  height: 120px;
+  /* background: var(--plum); */
+  border: 2px solid var(--darkest);
+  clear: both;
 }
+
+section{
+  text-align: center;
+  height: 75.5vh;
+  width: 20%;
+  border: 2px solid var(--darkest);
+  float: left;
+}
+
+.thiccum{
+  width: 40%;
+  
+}
+
+.thiccum__image{
+ background-size: 100%;
+ background-position: center;
+ }
 
 /******************************************
 /* ADDITIONAL STYLES
