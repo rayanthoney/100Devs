@@ -9,15 +9,18 @@
 		<title>BBC Layout & Responsive</title>
 
 		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/style.css">
 	</head>
+
 	<body>
-		<header>
-			<img src="https://static.files.bbci.co.uk/orbit/f8c74765b9c7c8f0b593f3b69dae77ca/img/blq-orbit-blocks_white.svg" alt="BBC lettered logo">
-			<a href="#sign">Sign In</a>
-			<nav>
-				<ul>
+		<main>
+			<header class="header">
+				<div class="container">
+					<img src="https://static.files.bbci.co.uk/orbit/f8c74765b9c7c8f0b593f3b69dae77ca/img/blq-orbit-blocks_white.svg" alt="BBC lettered logo">
+						<a href="#" class="header--signin">Sign in</a>
+					<nav>
+					<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">News</a></li>
 					<li><a href="#">Sports</a></li>
@@ -27,33 +30,50 @@
 					<li><a href="#">Future</a></li>
 					<li><a href="#">Culture</a></li>
 					<li><a href="#">More</a></li>
-				</ul>
+					</ul>
+						<a href="#" class="header--more">More</a>
+						<input type="search" placeholder="Search"/>
+					</nav>
+				</div>
+			</header>
 
-				<form class="" action="bbc.html" method="post">
-					<input type="search" name="Search" value="Search">
-				</form>
-			</nav>
-		</header>
+			<section class="heading container -clearfix">
+				<h1>Welcome to BBC.com</h1>
+				<div class="heading--date">Thursday, 13 August</div>
+			</section>
 
-		<section>
-			<h2>
-				<span>Welcome to BBC.com</span>
-				Thursday, 13 August
-			</h2>
-		</section>
-
-		<Section class="news">
-			<article class="news-article">
-				<img class="news-article-image" src="/bbc_layout/img/middle-east.jpg" alt="Middle East">
-					<div class="news-article-content">
-						<h2>Israel and UAE strike historic peace deal</h2>
-						<p>Israel and the UAE agree to normalise relations, marking the third Israel-Arab peace</p>
-						<div>Middle East</div>
+			<section class="news-featured container">
+				<article class="news-article--featured">
+					<div class="news-article--image">
+						<img src="/img/middle-east.jpg" alt="two dudes">
 					</div>
-			</article>
-		</Section>
+					<div>
+						<h2>
+							Israel and UAE strike historic peace deal
+						</h2>
+						<p>
+							Israel and the UAE agree to normalise relations, marking the third Israel-Arab peace deal. 
+						</p>
+						<a href="#" class="-textBorderLeft">Middle East</a>
+					</div>
+				</article>
+
+			</section>
+			
+<!-- 
+			<Section class="news">
+				<article class="news-article">
+					<img class="news-article-image" src="/img/middle-east.jpg" alt="Middle East">
+						<div class="news-article-content">
+							<h2>Israel and UAE strike historic peace deal</h2>
+							<p>Israel and the UAE agree to normalise relations, marking the third Israel-Arab peace</p>
+							<div>Middle East</div>
+						</div>
+				</article>
+			</Section> -->
+		</main>
 		
 
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="/js/main.js"></script>
 	</body>
 </html>

@@ -1,0 +1,356 @@
+<main>
+  <header class="header">
+    <div class="container">
+      <img src="https://static.files.bbci.co.uk/orbit/f8c74765b9c7c8f0b593f3b69dae77ca/img/blq-orbit-blocks_white.svg" alt="BBC Logo">
+      <a href="#" class="header__signIn">Sign in</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Sport</a></li>
+          <li><a href="#">Reel</a></li>
+          <li><a href="#">WorlLife</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Future</a></li>
+          <li><a href="#">Culture</a></li>        
+        </ul>
+      </nav>
+      <a href="#" class="header__more">More</a>
+      <input type="search" placeholder="Search" />
+    </div>
+  </header>
+  
+  <section class="heading container -clearfix">
+    <h1>Welcome to BBC.com</h1>
+    <div class="heading__date">Thursday, 13 August</div>
+  </section>
+  
+  <section class="news-featured container">
+    <article class="news-article --featured --main">
+      <div class="news-article__image">
+        <img src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/11AF/production/_123172540_mediaitem123172539.jpg" alt="Talking heads">
+      </div>
+        <div class="news-article__content">
+          <h2>Crucial days ahead in Ukraine crisis, says Macron</h2>
+          <p>Russia's Vladimir Putin indicates some progress was made during talks with the French leader.</p>
+          <a href="#" class="-textBorderLeft">EUROPE</a>
+        </div>
+      </article>
+      
+      <div class="news-sub-feature">
+        <article class="news-article --featured">
+          <div class="news-article__image">
+            <img src="https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/AE34/production/_123169544_truckers_getty.jpg" alt="Ottawa protesters">
+          </div>
+          <div class="news-article__content">
+            <h2>Ottawa judge tells truckets to stop honking horns</h2>
+            <p>Russia's Vladimir Putin indicates some progress was made during talks with the French leader.</p>
+            <a href="#" class="-textBorderLeft">US &amp; Canada</a>
+          </div>
+        </article>
+        <article class="news-article --featured">
+          <div class="news-article__image">
+            <img src="https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/7B8B/production/_123172613_gettyimages-1238277164.jpg" alt="Guy in a van">
+          </div>
+          <div class="news-article__content">
+            <h2>'There's been nothing but love, unity and peace'</h2>
+            <p>Russia's Vladimir Putin indicates some progress was made during talks with the French leader.</p>
+            <a href="#" class="-textBorderLeft">US &amp; Canada</a>
+          </div>
+        </article>
+        <article class="news-article --featured">
+          <div class="news-article__image">
+            <img src="https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/3C43/production/_123172451_gettyimages-1368508845.jpg" alt="Winter Olympics figure skater">
+          </div>
+          <div class="news-article__content">
+            <h2>Winter Olympics: Day four action as GB's Muir fifth in ski big air - watch & follow text</h2>
+            <p>Russia's Vladimir Putin indicates some progress was made during talks with the French leader.</p>
+            <a href="#" class="-textBorderLeft">Sports</a>
+          </div>
+        </article>
+        <article class="news-article --featured">
+          <div class="news-article__image">
+            <img src="https://ichef.bbc.co.uk/wwhp/304/ibroadcast/images/live/p0/bm/7w/p0bm7wqm.jpg" alt="Women facing glass cliff at work">
+          </div>
+          <div class="news-article__content">
+            <h2>Why Women Face a 'glass cliff' at work</h2>
+            <p>Russia's Vladimir Putin indicates some progress was made during talks with the French leader.</p>
+            <a href="#" class="-textBorderLeft">Future</a>
+          </div>
+        </article>
+    </div>
+  </section>
+  
+  <section class="news container">
+    <h3 class="-textBorderLeft">News</h3>
+    <div class="news__items -clearfix">
+      <article class="news-article">
+        <div class="news-article__image">
+          <img src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/E1E3/production/_123172875_mediaitem123172874.jpg" alt="Putin kind of thinking">
+        </div>
+        <div class="news-article__content">
+          <h4>EU leaders attempt to dodge Putin's divide and rule</h4>
+          <p>Western leaders fear the Kremlin is using tensions over Ukraine to exploit divisions. </p>
+          <a href="#" class="-textBorderLeft">Europe</a>
+        </div>
+      </article>
+      <article class="news-article">
+        <div class="news-article__image">
+          <img src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/13368/production/_123169687_p0bmsxnp.jpg" alt="Afghanistan young girl">
+        </div>
+        <div class="news-article__content">
+          <h4>Afghanistan: Watching the destruction of a nation? </h4>
+          <p>The BBC's John Simpson returns to Afghanistan and finds a country on the brink of famine.</p>
+          <a href="#" class="-textBorderLeft">Asia</a>
+        </div>
+      </article>
+      <article class="news-article">
+        <div class="news-article__image">
+          <img src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/4DCD/production/_123171991_gettyimages-ec0956-003.jpg" alt="Young girl reading a book">
+        </div>
+        <div class="news-article__content">
+          <h4>The battle over banning books in US schools </h4>
+          <p>As conservative parents compile lists of "radical and racist" texts, critics warn of censorship.</p>
+          <a href="#" class="-textBorderLeft">US &amp; Canada</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+========================================
+class
+========================================
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+}
+
+h1, h3 {
+  color: #4A4A4A;
+}
+
+h1 {
+  float: left;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 8px 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* UTILITIES */
+
+.-clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.-textBorderLeft {
+  border-left: 2px solid red;
+  padding-left: 8px;
+}
+
+/* HEADER */
+header {
+  background-color: black;
+}
+
+header img,
+header a,
+header input,
+header nav {
+  border-right: 1px #666 solid;
+  display: inline-block;
+}
+
+header img {
+  position: relative;
+  top: 7px;
+}
+
+header a {
+  color: white;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 20px;
+}
+
+.header__signIn {
+  border-left: 1px #666 solid;
+  margin-left: 10px;
+  width: 170px;
+}
+
+.header__more {
+  width: 135px;
+}
+
+.header input {
+  border: none;
+  margin-left: 15px;
+  padding: 5px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 12px 15px;
+}
+
+/* HEADING */
+.heading h1,
+.heading__date {
+  margin: 34px 0 18px;
+}
+
+.heading__date {
+  color: #8C8C8C;
+  float: right;
+  font-size: 22px;
+}
+
+/* FEATURED */
+.news-featured {
+  margin-bottom: 54px;
+}
+
+.news-article.--main {
+  display: inline-block;
+  width: 49%;
+}
+
+.news-sub-feature {
+  display: inline-block;
+  margin-left: 18px;
+  width: 49.5%;
+}
+
+.news-article.--featured {
+  float: left;
+  position: relative;
+}
+
+.news-article.--featured .news-article__image {
+  width: 100%;
+}
+
+.news-article.--featured .news-article__image::after {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.6432948179271709) 11%, rgba(0,0,0,0) 100%);
+  content: '';
+  display: inline-block;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.news-article.--featured .news-article__image img {
+  display: block;
+  width: 100%;
+}
+
+.news-article.--featured .news-article__content {
+  color: white;
+  bottom: 0;
+  padding: 16px;
+  position: absolute;
+  z-index: 2;
+}
+
+.news-article.--featured p,
+.news-article.--featured .news-article__content a {
+  color: white;
+  opacity: .7;
+}
+
+.news-article__content h2 {
+  font-size: 33px;
+  font-weight: 100;
+  margin: 0 0 18px;
+}
+
+.news-article__content p {
+  color: #515151;
+  font-size: 16px;
+  line-height: 1.5;
+  margin:0 0 16px;
+}
+
+.news-article__content a {
+  color: #747474; 
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.news-sub-feature h2 {
+  font-size: 18px;
+}
+
+.news-sub-feature p {
+  display: none;
+}
+
+.news-sub-feature .news-article {
+  max-height: 167.5px;
+  overflow: hidden;
+  width: 49.3%;
+}
+
+.news-sub-feature .news-article:nth-child(1),
+.news-sub-feature .news-article:nth-child(2) {
+  margin-bottom: 18px;
+}
+
+.news-sub-feature .news-article:nth-child(odd) {
+  margin-right: 8px;
+}
+
+
+/* NEWS */
+.news {
+  margin-bottom: 16px;
+}
+
+.news h3 {
+  border-width: 3px;
+  font-size: 22px;
+  line-height: 0.8;
+  margin-bottom: 18px;
+}
+
+.news__items article {
+  float: left;
+  margin-right: 16px;
+  width: 32.5%;
+}
+
+.news__items article:last-child {
+  margin: 0;
+}
+
+.news__items .news-article__image img {
+  object-fit: contain;
+  width: 100%;
+}
