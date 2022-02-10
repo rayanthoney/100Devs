@@ -18,61 +18,130 @@
 			<header class="header">
 				<div class="container">
 					<img src="https://static.files.bbci.co.uk/orbit/f8c74765b9c7c8f0b593f3b69dae77ca/img/blq-orbit-blocks_white.svg" alt="BBC lettered logo">
-						<a href="#" class="header--signin">Sign in</a>
-					<nav>
-					<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Sports</a></li>
-					<li><a href="#">Reel</a></li>
-					<li><a href="#">Worklife</a></li>
-					<li><a href="#">Travel</a></li>
-					<li><a href="#">Future</a></li>
-					<li><a href="#">Culture</a></li>
-					<li><a href="#">More</a></li>
-					</ul>
-						<a href="#" class="header--more">More</a>
-						<input type="search" placeholder="Search"/>
+						<a href="#" class="header-signin">Sign in</a>
+					<nav class="nav">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Reel</a></li>
+							<li><a href="#">Worklife</a></li>
+							<li><a href="#">Travel</a></li>
+							<li><a href="#">Future</a></li>
+							<li><a href="#">Culture</a></li>
+							<li><a href="#">More</a></li>
+						</ul>
 					</nav>
+						<a href="#" class="header-more">More</a>
+						<input type="search" placeholder="Search"/>					
 				</div>
 			</header>
 
 			<section class="heading container -clearfix">
 				<h1>Welcome to BBC.com</h1>
-				<div class="heading--date">Thursday, 13 August</div>
+				<div class="heading-date">Thursday, 13 August</div>
 			</section>
 
 			<section class="news-featured container">
-				<article class="news-article--featured">
-					<div class="news-article--image">
+				<article class="news-article --featured --main">
+					<div class="news-article-image">
 						<img src="/img/middle-east.jpg" alt="two dudes">
 					</div>
-					<div>
+					<div class="news-article-content">
 						<h2>
 							Israel and UAE strike historic peace deal
 						</h2>
 						<p>
 							Israel and the UAE agree to normalise relations, marking the third Israel-Arab peace deal. 
 						</p>
-						<a href="#" class="-textBorderLeft">Middle East</a>
+						<a href="#" class="border-left">Middle East</a>
 					</div>
 				</article>
 
+				<div class="news-sub-feature">
+					<article class="news-article --featured">
+						<div class="news-article-image">
+							<img src="/img/canada.jfif" alt="">
+						</div>
+						<div class="news-article-content">
+							<h2>Americans</h2>
+							<p></p>
+							<a href="#" class="border-left">Canada</a>
+						</div>
+					</article>
+
+					<article class="news-article --featured">
+						<div class="news-article-image">
+							<img src="/img/health.jfif" alt="">
+						</div>
+						<div class="news-article-content">
+							<h2>How will the world vaccinate seven billion people?</h2>
+							<p></p>
+							<a href="#" class="border-left">Health</a>
+						</div>
+					</article>
+
+					<article class="news-article --featured">
+						<div class="news-article-image">
+							<img src="/img/worklife.webp" alt="">
+						</div>
+						<div>
+							<h2>The online 'productivity gyms</h2>
+							<p></p>
+							<a href="#" class="border-left">Worklife</a>
+						</div>
+					</article>
+
+					<article class="news-article --featured">
+						<div class="news-article-image">
+							<img src="/img/culture.jfif" alt="">
+						</div>
+						<div>
+							<h2></h2>
+							<p></p>
+							<a href="#" class="border-left">Culture</a>
+						</div>
+					</article>
+				</div>
 			</section>
 			
-<!-- 
-			<Section class="news">
-				<article class="news-article">
-					<img class="news-article-image" src="/img/middle-east.jpg" alt="Middle East">
-						<div class="news-article-content">
-							<h2>Israel and UAE strike historic peace deal</h2>
-							<p>Israel and the UAE agree to normalise relations, marking the third Israel-Arab peace</p>
-							<div>Middle East</div>
+			<section class="news-container">
+				<h3 class="border-left"></h3>
+				<div class="news-items -clearfix">
+					<article class="news-article">
+						<div class="news-article-image">
+							<img src="/img/election.jfif" alt="">
 						</div>
-				</article>
-			</Section> -->
-		</main>
-		
+						<div class="news-article-content">
+							<h4>Biden and Harris say Trump has left US 'in tatters'</h4>
+							<p>Joe Biden and running mate Kamala Harris call President Donald Trump a "whinning incomplete leader.</p>
+							<a href="#" class="border-left">US Election 2020</a>
+						</div>
+					</article>
+
+					<article class="news-article">
+						<div class="news-article-image">
+							<img src="/img/Europe.jpg" alt="">
+						</div>
+						<div class="news-article-content">
+							<h4>Women form 'solidarity chains' in Belarus protests</h4>
+							<p>Women take to the streets of Minsk dressed in white as they demand an end to police brutality.</p>
+							<a href="#" class="border-left">Europe</a>
+						</div>
+					</article>
+					<article class="news-article">
+						<div class="news-article-image">
+							<img src="/img/USCanada.jpg" alt="">
+						</div>
+						<div class="news-article-content">
+							<h4>Trump says low-pressure shower heads won't wash</h4>
+							<p>The US calls for rules to be eased after Donald Trump complained of issues washing his hair.</p>
+							<a href="#" class="border-left">US & Canada</a>
+						</div>
+					</article>
+				</div>
+			</section>			
+		</main>		
 
 		<script type="text/javascript" src="/js/main.js"></script>
 	</body>
