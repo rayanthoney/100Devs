@@ -1,3 +1,7 @@
+:root{
+     --bbc-font: Arial, Helvetica, freesans, sans-serif
+}
+
 /* Box Model Hack */
 * {
      box-sizing: border-box;
@@ -22,20 +26,171 @@
 /*******************************************/
 
 body {
+     margin: 0;
+     padding: 0;
+     font-family: var(--bbc-font);
+     font-size: 14px;
+}
 
+.container{
+     position: relative;
+     max-width: 1280px;
+     margin: auto;
 }
 
 
 /******************************************
-/* LAYOUT
+/* HEADER STYLES
 /*******************************************/
-header {
+header{
+     background-color: black;
+}
+
+header img,
+header a,
+header input,
+header nav {
+  border-right: 1px #666 solid;
+  display: inline-block;
+}
+
+header img{
+     position: relative;
+     top: 7px;
+}
+
+header a{
+     color: white;
+     display: inline-block;     
+     padding: 12px 20px;
+     text-decoration: none;
+}
+
+header input{
+     border: none;
+     margin-left: 15px;
+     padding: 5px;
+}
+
+/******************************************
+/* NAVIGATION STYLES
+/*******************************************/
+
+nav ul{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+}
+
+nav ul li{
+     display: inline-block;
+}
+
+nav ul li a{
+     padding: 12px 15px;
+}
+
+/******************************************
+/* 
+/*******************************************/
+
+.heading h1,
+.heading--date{
+     margin: 34px 0 18px;
+     font-weight: bold;
+     float: left;
+}
+
+.heading--date{
+     float: right;
+}
+
+/******************************************
+/* LEFT LAYOUT
+/*******************************************/
+.main-news{
+     margin: 1rem;
+     overflow: auto;
+     width: 100%;
+     border: 1px solid black;
+     padding: 2rem;
+}
+
+.main-news--left{
+     width: 47%;
+     height: 50vh;
+     float: left;
+     margin: 0 0.5rem;
+}
+
+.main-news--left-article{
+     float: left;
+}
+
+.main-news--left-article img{
+     width: 100%;
+     height: 100%;
 
 }
 
-footer {
+.main-news--left-article .main-news--left-content{
 
 }
+
+.main-news--left-article .main-news--left-content{
+     color: white;
+     bottom: 0;
+     padding: 16px;
+     position: absolute;
+     z-index: 2;
+}
+
+.main-news--left-content a{
+     color: white;
+     opacity: .7;
+}
+
+.main-news--left-content h2 {
+     font-size: 33px;
+     font-weight: 100;
+     margin: 0 0 18px;
+}
+
+.main-news--left-content p{
+     color: #515151;
+     font-size: 16px;
+     line-height: 1.5;
+     margin: 0 0 16px;
+}
+
+
+/******************************************
+/* RIGHT LAYOUT
+/*******************************************/
+
+
+.main-news{}
+
+.main-news--right{
+     width: 47%;
+     height: 50vh;
+     float: left;
+     margin: 0 0.5rem;
+}
+
+.main-news--right-article{
+     height: 24vh;
+     width: 47%;
+     float: left;
+     margin: 0.5rem;
+}
+
+.main-news--right-article img{
+     width: 100%;
+     height: 100%;
+}
+
+.main-news--right-content{}
 
 /******************************************
 /* ADDITIONAL STYLES

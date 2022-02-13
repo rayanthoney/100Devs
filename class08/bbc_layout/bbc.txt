@@ -27,15 +27,15 @@
   
   <section class="news-featured container">
     <article class="news-article --featured --main">
-      <div class="news-article__image">
-        <img src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/11AF/production/_123172540_mediaitem123172539.jpg" alt="Talking heads">
-      </div>
+        <div class="news-article__image">
+          <img src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/11AF/production/_123172540_mediaitem123172539.jpg" alt="Talking heads">
+        </div>
         <div class="news-article__content">
           <h2>Crucial days ahead in Ukraine crisis, says Macron</h2>
           <p>Russia's Vladimir Putin indicates some progress was made during talks with the French leader.</p>
           <a href="#" class="-textBorderLeft">EUROPE</a>
         </div>
-     </article>
+    </article>
       
       <div class="news-sub-feature">
         <article class="news-article --featured">
