@@ -21,6 +21,11 @@
 	clear: both;
 }
 
+.border-left{
+     border-left: 2px solid red;
+     padding-left: 8px;
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -112,22 +117,25 @@ nav ul li a{
      margin: 1rem;
      overflow: auto;
      width: 100%;
-     border: 1px solid black;
+     /* border: 1px solid black; */
      padding: 2rem;
 }
 
 .main-news--left{
      width: 47%;
-     height: 50vh;
+     height: 100vh;
      float: left;
      margin: 0 0.5rem;
 }
 
 .main-news--left-article{
+     position: relative;
+     width: 100%;
      float: left;
 }
 
 .main-news--left-article img{
+     display: block;
      width: 100%;
      height: 100%;
 
@@ -138,10 +146,12 @@ nav ul li a{
 }
 
 .main-news--left-article .main-news--left-content{
-     color: white;
-     bottom: 0;
-     padding: 16px;
      position: absolute;
+     width: 100%;
+     color: white;
+     background-color: rgba(0, 0, 0, 0.5);
+     bottom: 0;
+     padding: 1rem 1rem;
      z-index: 2;
 }
 
@@ -169,7 +179,12 @@ nav ul li a{
 /*******************************************/
 
 
-.main-news{}
+.main-news{
+     margin: 1rem;
+     overflow: auto;
+     width: 100%;
+     /* border: 1px solid black; */
+     padding: 2rem;}
 
 .main-news--right{
      width: 47%;
@@ -178,19 +193,32 @@ nav ul li a{
      margin: 0 0.5rem;
 }
 
-.main-news--right-article{
-     height: 24vh;
-     width: 47%;
-     float: left;
-     margin: 0.5rem;
+.main-news--right-article {
+  height: 33vh;
+  width: 47%;
+  float: left;
+  margin: 0.5rem;
 }
 
 .main-news--right-article img{
+     display: block;
      width: 100%;
      height: 100%;
 }
 
-.main-news--right-content{}
+.main-news--right-article .main-news--right-content{
+     position: absolute;
+     width: 100%;
+     color: white;
+     background-color: rgba(0, 0, 0, 0.5);
+     bottom: 0;
+     padding: 1rem 1rem;
+     z-index: 2;
+}
+
+.main-news--right-content{
+     
+}
 
 /******************************************
 /* ADDITIONAL STYLES
