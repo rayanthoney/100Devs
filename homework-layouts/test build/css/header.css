@@ -1,0 +1,106 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: var(--bbc-font)
+}
+
+html, body{
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1280px;
+  margin: auto;  
+}
+
+/******************************************
+/* HEADER STYLES
+/*******************************************/
+
+header{
+  background-color: black;
+}
+
+header img, header a, header input, header nav{
+  display: inline-block;
+  border-right 1px #666 solid;
+}
+
+header img{
+  position: relative;
+  top: 7px;
+}
+
+header a{
+  color: #fff;
+  display: inline-block;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+/* Styles the input box and centers the Search tag inside */
+header input{
+  border: none;
+  margin-left: 15px;
+  padding: 5px;
+}
+
+/******************************************
+/* NAVIGATION STYLES
+/*******************************************/
+
+nav ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Styles the navigation links horizontal within the width of the container */
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a{
+  padding: 12px 15px;
+}
+
+/******************************************
+/* HEADING STYLES
+/*******************************************/
+
+.heading--title h1,
+.heading--date{
+  margin: 34px 0 18px;
+  /* font-weight: bold;
+  float: left; */
+}
+
+.heading--date{
+  float: right;
+  font-size: 22px;
+}

@@ -70,7 +70,7 @@ header a{
      padding: 12px 20px;
      text-decoration: none;
 }
-
+/* Styles the input box and centers the Search tag inside */
 header input{
      border: none;
      margin-left: 15px;
