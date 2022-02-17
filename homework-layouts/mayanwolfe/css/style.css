@@ -1,0 +1,85 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* adjust typography defaults */
+body{
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+html, body{
+  height: 100%;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  border: 2px solid grey;
+}
+
+.hero{
+  height: 50%; /* percentage of the parent ie: (body) */
+  width: 100%;
+  border: 2px solid black;
+}
+
+.hero-content{
+  height: 100%; /* percentage of the parent ie: (body/hero) */
+  width: 50%;
+  border: 2px solid blue;
+  float: left;
+}
+
+.gallery{
+  height: 50%;
+  width: 50%;
+  border: 2px solid green;
+  float: left;
+}
+
+.left{
+  height: 100%;
+  width: 33.33%;
+  border: 2px solid purple;
+  float: left;
+}
+
+.other-content{
+  height: 50%; /* percentage of the parent ie: (body) */
+  width: 100%;
+  border: 2px solid red;
+}
+
+.middle{
+  height: 100%;
+  width: 33.33%;
+  border: 2px solid purple;
+  float: left;
+}
+
+.right{
+  height: 100%;
+  width: 33.33%;
+  border: 2px solid teal;
+  float: right;
+}
+
+.gallery-small{
+  height: 33.33%;
+  width: 100%;
+  border: 2px solid orange;
+}
+
+.gallery-large{
+  height: 66.66%;
+  width: 100%;
+  border: 2px solid red;
+
+}
