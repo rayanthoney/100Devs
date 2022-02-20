@@ -18,17 +18,46 @@ html, body{
   height: 100%;
 }
 
+/* ==================================================================================== */
+/* Parent Content */
 header {
-  height: 10%;
+  height: 10vh; /* percentage of the parent ie: (body) vh on parent is inherited */
   width: 100%;
   border: 2px solid grey;
 }
-
+/* Parent Content */
 .hero{
-  height: 50%; /* percentage of the parent ie: (body) */
+  height: 80vh; /* percentage of the parent ie: (body) vh on parent is inherited */
   width: 100%;
   border: 2px solid black;
 }
+/* Parent Content */
+.other-content{
+  height: 80vh; /* percentage of the parent ie: (body) vh on parent is inherited */
+  width: 100%;
+  border: 2px solid red;
+}
+/* ==================================================================================== */
+.header-l{
+  height: 100%;
+  width: 20%;
+  border: 2px solid red;
+  float: left;
+}
+.header-m{
+  height: 100%;
+  width: 60%;
+  border: 2px solid red;
+  padding: 15px;
+  float: left;
+}
+.header-r{
+  height: 100%;
+  width: 20%;
+  border: 2px solid red;
+  float: right;
+}
+/* ==================================================================================== */
 
 .hero-content{
   height: 100%; /* percentage of the parent ie: (body/hero) */
@@ -49,12 +78,6 @@ header {
   width: 33.33%;
   border: 2px solid purple;
   float: left;
-}
-
-.other-content{
-  height: 50%; /* percentage of the parent ie: (body) */
-  width: 100%;
-  border: 2px solid red;
 }
 
 .middle{
