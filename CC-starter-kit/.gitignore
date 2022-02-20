@@ -1,0 +1,6 @@
+# Avoid pushing this file to remote
+node_modules/
+
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
+
