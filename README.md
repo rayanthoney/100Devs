@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="" rel="noopener">
- <img width=135px height=190px src="/HC_Tutorials.png" alt="Project logo"></a>
+ <img width=135px height=190px src="/leonLogo.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">HC - Tutorials</h3>
