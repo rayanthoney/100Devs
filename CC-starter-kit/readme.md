@@ -1,25 +1,34 @@
-1. Iniatialixe Node JS
+1. Iniatialize Node JS
    
-    `npm init`
+          npm init
 
-2. Install Gulp globally and locally
+2. Install Gulp globally and globally
 
-    `npm install -g gulp`
+         npm install -g gulp
+
+3. Install Gulp globally and locally         
     
-    `npm install --save-dev gulp`
+          npm install --save-dev gulp
 
-3. Install plugins
-    (coding in public demo uses)
+4. Install plugins
+ 
+      (Coding in Public demo uses)
+
     *SCSS convert, min, and autoprefixer*
-    `npm install --save-dev gulp-sass gulp-autoprefixer gulp-clean-css`
+    
+         npm install --save-dev sass gulp-sass gulp-autoprefixer gulp-clean-css
 
     *js min*
-    `npm install --save-dev gulp-terser`
+    
+         npm install --save-dev gulp-terser
     
     *img min and webp*
-    `npm install --save-dev gulp-imagemin gulp-webp`
+    
+          npm install --save-dev gulp-imagemin gulp-webp
 
 
-    (coder coder demo uses)
+      (Coder Coder demo uses)
+    
     *SCSS convert, postprocessor, postcss-plugin, js min, browserSync*
-    `npm install --save-dev gulp-sass gulp-postcss cssnano gulp-terser browser-sync`
+    
+          npm install --save-dev sass gulp-sass gulp-postcss cssnano gulp-terser browser-sync
