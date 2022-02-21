@@ -5,7 +5,7 @@
  <img width=135px height=190px src="/logo.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">HC - Tutorials</h3>
+<h3 align="center">100Devs-Cohort #2</h3>
 
 
 
