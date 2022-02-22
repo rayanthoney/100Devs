@@ -1,0 +1,69 @@
+:root{
+    --bgcolor:#243441; 
+}
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bgcolor);
+}
+
+.color-picker{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(18, 62%, 82%, .7);
+    margin: 50px 50px;
+    padding: 50px 50px;
+    border-radius: 25px;
+
+}
+.picktxt{
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+    padding: 0px 10px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+.picker{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.inputcolor{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.color-code{
+    width: 100px;
+    padding: 10px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center-flower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flower{
+    height: 500px;
+    width: 500px;
+}

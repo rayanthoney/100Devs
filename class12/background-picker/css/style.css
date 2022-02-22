@@ -35,6 +35,7 @@ li{
 /* ADDITIONAL STYLES
 /*******************************************/
 #purple{
+  padding: 15px;
   background: rgba(241,63,247,1);
 }
 #green{
@@ -49,3 +50,5 @@ li{
 #yellow{
   background: rgba(255, 255, 0);
 }
+
+
