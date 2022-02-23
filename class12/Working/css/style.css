@@ -1,0 +1,32 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* adjust typography defaults */
+body{
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+html, body{
+  height: 100%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container{
+  border: 3px solid firebrick;
+  height: 100vh;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

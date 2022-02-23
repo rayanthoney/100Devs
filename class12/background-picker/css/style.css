@@ -29,6 +29,7 @@ ul{
 li{
   width: 94px;
   height: 65px;
+  cursor: pointer;
 }
 
 /******************************************
@@ -39,16 +40,20 @@ li{
   background: rgba(241,63,247,1);
 }
 #green{
+  padding: 15px;
   background: rgba(0,253,81,1);
 }
 #blue{
+  padding: 15px;
   background: rgba(0,254,255);
 }
 #red{
+  padding: 15px;
   background: rgba(178, 34, 34);
 }
 #yellow{
-  background: rgba(255, 255, 0);
+  padding: 15px;
+  background: rgba(212, 175, 53);
 }
 
 
