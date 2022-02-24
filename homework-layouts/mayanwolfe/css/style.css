@@ -1,108 +1,118 @@
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
-html{
-  box-sizing: border-box;
-  font-size: 16px;
+html {
+	box-sizing: border-box;
+	font-size: 16px;
 }
 
 /* adjust typography defaults */
-body{
-  margin: 1rem;
-  font-family: sans-serif;
-  line-height: 1.5;
+body {
+	margin: 1rem;
+	font-family: sans-serif;
+	line-height: 1.5;
 }
 
-html, body{
-  height: 100%;
+html,
+body {
+	height: 100%;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	/* Object-fit keeps the aspect ratio of an img but must have height and width set */
+	object-fit: cover;
 }
 
 /* ==================================================================================== */
 /* Parent Content */
 header {
-  height: 10vh; /* percentage of the parent ie: (body) vh on parent is inherited */
-  width: 100%;
-  border: 2px solid grey;
+	height: 10vh; /* percentage of the parent ie: (body) vh on parent is inherited */
+	width: 100%;
+	border: 2px solid grey;
 }
 /* Parent Content */
-.hero{
-  height: 80vh; /* percentage of the parent ie: (body) vh on parent is inherited */
-  width: 100%;
-  border: 2px solid black;
+.hero {
+	height: 80vh; /* percentage of the parent ie: (body) vh on parent is inherited */
+	width: 100%;
+	border: 2px solid black;
 }
 /* Parent Content */
-.other-content{
-  height: 80vh; /* percentage of the parent ie: (body) vh on parent is inherited */
-  width: 100%;
-  border: 2px solid red;
+.other-content {
+	height: 80vh; /* percentage of the parent ie: (body) vh on parent is inherited */
+	width: 100%;
+	border: 2px solid red;
 }
 /* ==================================================================================== */
-.header-l{
-  height: 100%;
-  width: 20%;
-  border: 2px solid red;
-  float: left;
+.header-l {
+	height: 100%;
+	width: 20%;
+	border: 2px solid red;
+	float: left;
 }
-.header-m{
-  height: 100%;
-  width: 60%;
-  border: 2px solid red;
-  padding: 15px;
-  float: left;
+.header-m {
+	height: 100%;
+	width: 60%;
+	border: 2px solid red;
+	padding: 15px;
+	float: left;
 }
-.header-r{
-  height: 100%;
-  width: 20%;
-  border: 2px solid red;
-  float: right;
+.header-r {
+	height: 100%;
+	width: 20%;
+	border: 2px solid red;
+	float: right;
 }
 /* ==================================================================================== */
 
-.hero-content{
-  height: 100%; /* percentage of the parent ie: (body/hero) */
-  width: 50%;
-  border: 2px solid blue;
-  float: left;
+.hero-content {
+	height: 100%; /* percentage of the parent ie: (body/hero) */
+	width: 50%;
+	border: 2px solid blue;
+	float: left;
 }
 
-.gallery{
-  height: 50%;
-  width: 50%;
-  border: 2px solid green;
-  float: left;
+.gallery {
+	height: 50%;
+	width: 50%;
+	border: 2px solid green;
+	float: left;
 }
 
-.left{
-  height: 100%;
-  width: 33.33%;
-  border: 2px solid purple;
-  float: left;
+.left {
+	height: 100%;
+	width: 33.33%;
+	border: 2px solid purple;
+	float: left;
 }
 
-.middle{
-  height: 100%;
-  width: 33.33%;
-  border: 2px solid purple;
-  float: left;
+.middle {
+	height: 100%;
+	width: 33.33%;
+	border: 2px solid purple;
+	float: left;
 }
 
-.right{
-  height: 100%;
-  width: 33.33%;
-  border: 2px solid teal;
-  float: right;
+.right {
+	height: 100%;
+	width: 33.33%;
+	border: 2px solid teal;
+	float: right;
 }
 
-.gallery-small{
-  height: 33.33%;
-  width: 100%;
-  border: 2px solid orange;
+.gallery-small {
+	height: 33.33%;
+	width: 100%;
+	border: 2px solid orange;
 }
 
-.gallery-large{
-  height: 66.66%;
-  width: 100%;
-  border: 2px solid red;
-
+.gallery-large {
+	height: 66.66%;
+	width: 100%;
+	border: 2px solid red;
+	/* overflow-y: hidden; */
 }
