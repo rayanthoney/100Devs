@@ -1,6 +1,9 @@
+// EventListener is a smurf
 document.querySelector('#yell').addEventListener('click', run)
 
+
 function run() {
+  // Stored Variables
   const fName = document.querySelector('#firstName').value
   const fMidName = document.querySelector('#firstMiddle').value
   const lMidName = document.querySelector('#lastMiddle').value
