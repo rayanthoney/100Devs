@@ -2,10 +2,10 @@
 
 # 🔥 Temperature Converter 🔥
 
-    ## Farenheit to Celsius
+## Farenheit to Celsius
 
-psuedo code
+- psuedo code
 
-`// Give buttons the ability to convert and clear inputs`
-`// create Variables`
-`// Convert the Value`
+  - create Variables
+  - Convert the Value
+  - Give buttons the ability to convert and clear inputs
