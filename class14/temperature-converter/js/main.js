@@ -5,11 +5,13 @@
     document.getElementById('convert').onclick = tempConvert;
     document.getElementById('clear').onclick = clearForm;
 
+
+
 function tempConvert() {
-    
+// create Variables    
     var fahrenheit = document.getElementById("fahrenheit").value;
     var celsius = document.getElementById("celsius").value;
-  
+// Convert the Value  
   if (fahrenheit != '') {
         celsius = (parseFloat(fahrenheit) - 32) / 1.8;
     } else {
