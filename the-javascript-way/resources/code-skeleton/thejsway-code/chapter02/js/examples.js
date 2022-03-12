@@ -7,7 +7,6 @@ b += 1;
 b++;
 console.log(b);
 
-// new way
 const country = "America";
 console.log(`I live in ${country}`);
 const x = 3;
@@ -40,3 +39,7 @@ const radius = 5.5;
 const pi = 3.14;
 const perimeter = 2 * pi * radius;
 console.log(perimeter);
+
+const firstName = "Ray";
+const lastName = "Maxey";
+console.log(`Hello!, ${(firstName, lastName)} `);
