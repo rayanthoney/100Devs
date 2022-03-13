@@ -1,0 +1,10 @@
+:root {
+	--darkGreen: #1b201c;
+	--lime: #c5fb4c;
+	--white: #fff;
+}
+
+body {
+	background-color: #1b201c;
+	color: #c5fb4c;
+}

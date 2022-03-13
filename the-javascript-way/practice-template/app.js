@@ -33,3 +33,11 @@ console.log(s.toLowerCase());
 
 // Method to return Variable in substring
 console.log(s.substring(0, 5).toUpperCase());
+
+// Arays -Variables that hold multiple values
+const numbers = new Array(1, 2, 3, 4, 5);
+console.log(numbers);
+
+const fruits = ["apples", "oranges", "pears"];
+fruits[3] = "mangos";
+console.log(fruits);
