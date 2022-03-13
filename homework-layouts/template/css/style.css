@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+/******************************************
+/* CSS
+/*******************************************/
+:root {
+	--darkGreen: #1b201c;
+	--lime: #c5fb4c;
+	--white: #fff;
+}
+
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+	background: var(--darkGreen);
+	color: var(--lime);
+	font-family: "Manrope", sans-serif;
+}
+
+h2 {
+	color: var(--white);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
