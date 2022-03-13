@@ -8,3 +8,7 @@ body {
 	background-color: #1b201c;
 	color: #c5fb4c;
 }
+
+h2 {
+	color: var(--white);
+}
