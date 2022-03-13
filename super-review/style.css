@@ -1,0 +1,28 @@
+:root {
+	--darkGreen: #1b201c;
+	--lime: #c5fb4c;
+	--white: #fff;
+}
+body {
+	background: var(--darkGreen);
+	color: var(--lime);
+	font-family: "Manrope", sans-serif;
+}
+h1 {
+	color: var(--white);
+}
+
+img {
+	height: 300px;
+	width: 350px;
+}
+
+.btn {
+	margin: 15px;
+	padding: 10px;
+	background-color: var(--white);
+	color: var(--darkGreen);
+	text-transform: capitalize;
+	cursor: pointer;
+	border-radius: 10%;
+}
