@@ -23,7 +23,6 @@ tutorials I am working on to learn code basics.
 * KevinPowell_SpaceTravel
 * OnlineMentor-Portfoilo
 * Spotify-Landing-Page-Redesign
-
 ---
 
 ## ✍️ Authors <a name = "authors"></a>
