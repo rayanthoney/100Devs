@@ -25,6 +25,8 @@ console.log(firstName);
 
 console.log(54);
 
+// Minimalistic calculator
+
 console.log(6 + 3);
 console.log(6 - 3);
 console.log(6 * 3);

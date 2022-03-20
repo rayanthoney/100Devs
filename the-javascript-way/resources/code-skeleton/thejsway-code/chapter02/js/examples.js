@@ -1,5 +1,10 @@
 // JavaScript code goes here
 
+// Variable
+// Constant
+// Assignment Operator
+//
+
 // console.log("Let's get into some JavaScript");
 
 // let b = 0;
