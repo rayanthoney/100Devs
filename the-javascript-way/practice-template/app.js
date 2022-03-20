@@ -74,3 +74,21 @@ console.log("Hello, This is my World!");
 
 // // create an array from: arr and [3,4], then add values 5 and 6
 // alert( arr.concat([3, 4], 5, 6) ); // 1,2,3,4,5,6
+
+// Office Hours 03-20-2022
+
+// Example:
+let months = ["January", "February", "march"];
+
+let lowerCaseMonths = months.map((m) => m.toLowerCase());
+
+console.log(lowerCaseMonths);
+
+// let nums = [10, 20, 30];
+// let robotNewArr = nums.map((taco) => (taco += 10));
+
+// taco => 10 += 10 // 20
+// taco => 20 += 10 // 30
+// taco => 30 += 10 // 40
+
+// robotNewArr = [22,30,40]

@@ -33,11 +33,11 @@
 // d = d + 1; // d now contains the value 4
 // console.log(d); // Show 4
 
-const country = "America";
-console.log(`I live in ${country}`);
-const x = 3;
-const y = 7;
-console.log(`${x} + ${y} = ${x + y}`);
+// const country = "America";
+// console.log(`I live in ${country}`);
+// const x = 3;
+// const y = 7;
+// console.log(`${x} + ${y} = ${x + y}`);
 
 // const f = 100;
 // console.log("Variable f contains the value " + f);
@@ -68,21 +68,23 @@ console.log(`${x} + ${y} = ${x + y}`);
 
 // const firstName = "Ray";
 // const lastName = "Maxey";
-
 // console.log("Hello my name is ", firstName, lastName);
 
+// Improved Hello:
 // const fullName = prompt("Enter your first and last name:");
 // alert(`Hello, ${fullName}`);
 
-// // Ask the user for the price.
-// let rawPrice = prompt("How much was that?");
-// // Calculate the VAT.
-// let priceVat = (Number(rawPrice) / 100) * 20.6;
-// // Calculate the price + VAT
-// let totalCost = Number(rawPrice) + priceVat;
-// // Let the user know the price + VAT
-// alert(`The total cost will be ${totalCost}`);
+//VAT Calculations
+// Ask the user for the price.
+let rawPrice = prompt("How much was that?");
+// Calculate the VAT.
+let priceVat = (Number(rawPrice) / 100) * 20.6;
+// Calculate the price + VAT
+let totalCost = Number(rawPrice) + priceVat;
+// Let the user know the price + VAT
+alert(`The total cost will be ${totalCost}`);
 
+// From Celsius to Fahrenheit degrees
 // Ask the user for the Celsius teperature
 // let celsius = prompt("Hello what is the temp in Celsius");
 // celsius = Number(celsius);
