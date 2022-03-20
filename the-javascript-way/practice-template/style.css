@@ -5,8 +5,8 @@
 }
 
 body {
-	background-color: #1b201c;
-	color: #c5fb4c;
+	background-color: var(--darkGreen);
+	color: var(--lime);
 }
 
 h2 {

@@ -3,7 +3,12 @@
 // Variable
 // Constant
 // Assignment Operator
-//
+// Variable Scope
+// Expressions
+// Evaluation
+// Backticks
+// Template literal
+// Type Conversions
 
 // console.log("Let's get into some JavaScript");
 
@@ -12,11 +17,27 @@
 // b++;
 // console.log(b);
 
-// const country = "America";
-// console.log(`I live in ${country}`);
-// const x = 3;
-// const y = 7;
-// console.log(`${x} + ${y} = ${x + y}`);
+// let num1 = 0;
+// {
+// 	num1 = 1;
+// 	const num2 = 0;
+// }
+// console.log(num1);
+// console.log(num2);
+
+// // 3 is an expression whose value is 3
+// const c = 3;
+// // c is an expression whose value is the value of c (3 here)
+// let d = c;
+// // (d + 1) is an expression whose value is d's + 1 (4 here)
+// d = d + 1; // d now contains the value 4
+// console.log(d); // Show 4
+
+const country = "America";
+console.log(`I live in ${country}`);
+const x = 3;
+const y = 7;
+console.log(`${x} + ${y} = ${x + y}`);
 
 // const f = 100;
 // console.log("Variable f contains the value " + f);
@@ -69,12 +90,12 @@
 // fahrenheit = fahrenheit.toFixed(1);
 // alert(celsius + " degrees celsius is " + fahrenheit + " degrees Fahrenheit.");
 
-let number1 = 5;
-let number2 = 3;
+// let number1 = 5;
+// let number2 = 3;
 
-// TODO: type your code here (and nowhere else!)
-number1 = 5 - 2;
-number2 = 3 + 2;
+// // TODO: type your code here (and nowhere else!)
+// number1 = 5 - 2;
+// number2 = 3 + 2;
 
-console.log(number1); // Should show 3
-console.log(number2); // Should show 5
+// console.log(number1); // Should show 3
+// console.log(number2); // Should show 5
