@@ -8,11 +8,11 @@
 
 body {
 	background-color: var(--darkGreen);
-	color: var(--lime);
 }
 
 h1 {
 	text-align: center;
+	color: var(--lime);
 }
 #game-board {
 	display: flex;
