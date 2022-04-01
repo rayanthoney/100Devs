@@ -76,8 +76,8 @@
 
 //VAT Calculations
 // Ask the user for the price.
-let rawPrice = prompt("How much was that?");
-// Calculate the VAT.
+// let rawPrice = prompt("How much was that?");
+// // Calculate the VAT.
 let priceVat = (Number(rawPrice) / 100) * 20.6;
 // Calculate the price + VAT
 let totalCost = Number(rawPrice) + priceVat;
@@ -101,3 +101,25 @@ alert(`The total cost will be ${totalCost}`);
 
 // console.log(number1); // Should show 3
 // console.log(number2); // Should show 5
+
+// Various Arithmetic Operations:
+// function calculate_num(ch) {
+//     var a = parseInt(document.getElementById("firstNo").value);
+//     var b = parseInt(document.getElementById("secondNo").value);
+//     switch(ch){
+//         case 'sum': document.getElementById("result").value = a+b;
+//         break;
+//         case 'subtract': document.getElementById("result").value = a-b;
+//         break;
+//         case 'product': document.getElementById("result").value = a*b;
+//         break;
+//         case 'quotient': document.getElementById("result").value = a/b;
+//         break;
+//         case 'remainder': document.getElementById("result").value = a%b;
+//         break;
+//         }  }
+// function clear_numbers() {
+//     document.getElementById("firstNo").value="";
+//     document.getElementById("secondNo").value="";
+//     document.getElementById("result").value="";
+// }
