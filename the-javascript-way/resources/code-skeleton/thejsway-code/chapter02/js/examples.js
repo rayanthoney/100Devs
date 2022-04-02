@@ -76,8 +76,8 @@
 
 //VAT Calculations
 // Ask the user for the price.
-// let rawPrice = prompt("How much was that?");
-// // Calculate the VAT.
+let rawPrice = prompt("How much was that?");
+// Calculate the VAT.
 let priceVat = (Number(rawPrice) / 100) * 20.6;
 // Calculate the price + VAT
 let totalCost = Number(rawPrice) + priceVat;
