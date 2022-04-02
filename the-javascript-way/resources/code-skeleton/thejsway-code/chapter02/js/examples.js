@@ -70,21 +70,27 @@
 // const lastName = "Maxey";
 // console.log("Hello my name is ", firstName, lastName);
 
-// Improved Hello:
+////////////////////////////////////////
+// Improved Hello:                   //
+///////////////////////////////////////
 // const fullName = prompt("Enter your first and last name:");
 // alert(`Hello, ${fullName}`);
 
-//VAT Calculations
-// Ask the user for the price.
-let rawPrice = prompt("How much was that?");
-// Calculate the VAT.
-let priceVat = (Number(rawPrice) / 100) * 20.6;
-// Calculate the price + VAT
-let totalCost = Number(rawPrice) + priceVat;
-// Let the user know the price + VAT
-alert(`The total cost will be ${totalCost}`);
+///////////////////////////////////////
+//      VAT Calculations             //
+///////////////////////////////////////
+// // Ask the user for the price.
+// let rawPrice = prompt("How much was that?");
+// // Calculate the VAT.
+// let priceVat = (Number(rawPrice) / 100) * 20.6;
+// // Calculate the price + VAT
+// let totalCost = Number(rawPrice) + priceVat;
+// // Let the user know the price + VAT
+// alert(`The total cost will be ${totalCost}`);
 
-// From Celsius to Fahrenheit degrees
+////////////////////////////////////////
+// From Celsius to Fahrenheit degrees //
+////////////////////////////////////////
 // Ask the user for the Celsius teperature
 // let celsius = prompt("Hello what is the temp in Celsius");
 // celsius = Number(celsius);
@@ -92,17 +98,20 @@ alert(`The total cost will be ${totalCost}`);
 // fahrenheit = fahrenheit.toFixed(1);
 // alert(celsius + " degrees celsius is " + fahrenheit + " degrees Fahrenheit.");
 
+////////////////////////////////////////
+//                                    //
+////////////////////////////////////////
 // let number1 = 5;
 // let number2 = 3;
-
 // // TODO: type your code here (and nowhere else!)
 // number1 = 5 - 2;
 // number2 = 3 + 2;
-
 // console.log(number1); // Should show 3
 // console.log(number2); // Should show 5
 
-// Various Arithmetic Operations:
+///////////////////////////////////////
+//   Various Arithmetic Operations   //
+///////////////////////////////////////
 // function calculate_num(ch) {
 //     var a = parseInt(document.getElementById("firstNo").value);
 //     var b = parseInt(document.getElementById("secondNo").value);

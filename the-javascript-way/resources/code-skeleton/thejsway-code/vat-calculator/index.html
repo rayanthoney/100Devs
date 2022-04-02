@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>VAT Calculator Full</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="vat-calc">
+			<h2>Tax (VAT) Calc</h2>
+
+			<div class="wrapper">
+				<form action="">
+					<div>
+						<label for="net-price">Net Price</label>
+						<input type="text" id="net-price" placeholder="0.00">
+					</div>
+					<div>
+						<label for="net-price">VAT Rate (%)</label>
+						<input type="text" id="vat-rate" placeholder="0.00">
+					</div>
+					<div>
+						<label for="inc-amount">VAT Inclusive Price</label>
+						<input type="text" id="inc-amount" placeholder="0.00" disabled="true">
+					</div>
+				</form>
+			</div>
+			<button type="button" class="main-btn" id="calc-btn">Calculate</button>
+			<button type="button" class="main-btn" id="reset-btn">Reset</button>
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

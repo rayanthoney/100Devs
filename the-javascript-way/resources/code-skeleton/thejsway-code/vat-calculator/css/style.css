@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family: 'Lato', sans-serif;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.vat-calc {
+     background: #1a1f1b;
+     color: limegreen;
+     padding: 3rem 1rem;
+     border-radius: 10px;
+     box-shadow: 0px 1px 5px 0px rgba(28, 184, 227, 1);
+}
+
+h2 {
+     text-align: center;
+     font-size: 1.3rem;
+     text-transform: uppercase;
+     padding: 1.2rem 0;
+     color: white;
+}
+
+.main-wrapper{
+     padding: 1rem;
+     height: 160px;
+     border-radius: 5px;
+}
+
+.main-btn {
+     padding: 0.6rem 0;
+     font-size: 1rem;
+     display: block;
+     border-radius: 25px;
+     border: none;
+     width: 120px;
+     color: #212121;
+     background: white;
+     margin: 1rem auto 0 auto;
+     font-family: 'Lato', sans-serif;
+     transition: all 0.5s ease;
+}
+
+.main-btn:hover {
+     background-color: #252525;
+     color: white;
+}
+
+form {
+     line-height: 1.8;
+}
+
+form label {
+     font-weight: bold;
+     padding-right: 0.5rem;
+     color: limegreen;
+}
+
+form input {
+     font-size: 1rem;
+     padding: 0.3rem;
+     outline: none;
+     text-align: right;
+     border-radius: 5px;
+     border: none;
+}
+
+form input {
+     border: 1px solid white;
+}
+
+form div {
+     display: flex;
+     justify-content: space-between;
+     padding: 0.3rem 0;
+}
+@media(max-width: 500px) {
+     .main-wrapper{
+          height: 230px;
+     }
+
+     form div {
+          flex-direction: column;
+     }
+}
+
+
+
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
