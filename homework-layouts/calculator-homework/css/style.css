@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
 /* Box Model Hack */
 :root {
 --bg-dark: #1a1f1b;
@@ -25,13 +27,21 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+.container {
+  min-height: 100%;
+  /* position: relative; */
+}
 body {
+
+}
+
+.hero {
 
 }
 
@@ -82,11 +92,19 @@ button {
   flex: 1 0 17%;
 }
 
+button:hover {
+  background: rgba(255, 255, 255, 0.5); /* Black color with 50% alpha/opacity */
+  color: var(--bg-light);
+  transition: 0.7s;
+}
+
 .all-clear {
   background-color: var(--bg-red);
   color: white;
   font-size: 3rem;
 }
+
+
 
 /******************************************
 /* LAYOUT
@@ -95,9 +113,18 @@ header {
 
 }
 
-footer {
+.footer {
+  /* position:absolute;  */
+  bottom:0;
+  width:100%;
+  height:60px;
 
-}
+  display: block;
+  box-sizing: border-box;
+  height: 500px;
+  background-color: #dddc07;
+  clip-path: ellipse(132% 100% at 13.92% 100%);
+  }
 
 /******************************************
 /* ADDITIONAL STYLES
