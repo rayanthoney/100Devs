@@ -1,6 +1,8 @@
 /* Box Model Hack */
 :root {
---bg-color: #1a1f1b;
+--bg-dark: #1a1f1b;
+--bg-light: #ffffff;
+--bg-red: #ff0000;
 }
 
 * {
@@ -41,8 +43,8 @@ body {
   width: 400px;
   padding: 40px;
   padding-top: 75px;
-  background-color: var(--bg-color);
-  border: 2px solid red;
+  background-color: var(--bg-dark);
+  /* border: 2px solid red; */
   border-radius: 25px;
 }
 
@@ -51,11 +53,11 @@ body {
   font-size: 5rem;
   height: 80px;
   border: none;
-  background-color: white;
+  background-color: var(--bg-light);
   color: black;
   text-align: right;
   padding-right: 10px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .calculator-buttons{
@@ -64,12 +66,12 @@ body {
   flex-wrap: wrap;
   padding: 15px;
   padding-bottom: 5px;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 button {
   height: 60px;
-  background-color: white;
+  background-color: var(--bg-light);
   border: none;
   border-radius: 30px;
   font-size: 4rem;
@@ -77,8 +79,14 @@ button {
   color: black;
   margin: 7px;
   padding: 5px;
+  flex: 1 0 17%;
 }
 
+.all-clear {
+  background-color: var(--bg-red);
+  color: white;
+  font-size: 3rem;
+}
 
 /******************************************
 /* LAYOUT
