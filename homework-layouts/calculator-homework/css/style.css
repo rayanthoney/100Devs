@@ -33,16 +33,24 @@ html {
 /******************************************
 /* BASE STYLES
 /*******************************************/
-.container {
-  min-height: 100%;
-  /* position: relative; */
-}
 body {
+  position: relative;
+  height: 100vh;
+
+/* Created with https://www.css-gradient.com */
+background: #CFD00E;
+background: -webkit-radial-gradient(center, #CFD00E, #034F26);
+background: -moz-radial-gradient(center, #CFD00E, #034F26);
+background: radial-gradient(ellipse at center, #CFD00E, #034F26);
 
 }
 
-.hero {
+.container {
+  position: relative;
+  min-height: 100%;
+}
 
+.main {
 }
 
 .calculator {
@@ -54,7 +62,6 @@ body {
   padding: 40px;
   padding-top: 75px;
   background-color: var(--bg-dark);
-  /* border: 2px solid red; */
   border-radius: 25px;
 }
 
@@ -67,7 +74,6 @@ body {
   color: black;
   text-align: right;
   padding-right: 10px;
-  /* border: 2px solid green; */
 }
 
 .calculator-buttons{
@@ -76,7 +82,6 @@ body {
   flex-wrap: wrap;
   padding: 15px;
   padding-bottom: 5px;
-  /* border: 2px solid yellow; */
 }
 
 button {
@@ -104,27 +109,38 @@ button:hover {
   font-size: 3rem;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  text-align: center;
+  font-size: 2rem;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    height: 100px;
+    text-align: center;
+    font-size: 2rem;
+    }
+
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
-}
 
-.footer {
-  /* position:absolute;  */
-  bottom:0;
-  width:100%;
-  height:60px;
 
-  display: block;
-  box-sizing: border-box;
-  height: 500px;
-  background-color: #dddc07;
-  clip-path: ellipse(132% 100% at 13.92% 100%);
-  }
 
 /******************************************
 /* ADDITIONAL STYLES
