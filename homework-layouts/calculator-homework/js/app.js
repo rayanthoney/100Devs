@@ -1,5 +1,19 @@
 // JavaScrippt goes here
 
+// Required abilities of the calculator - done
+// accept user inputs of number, operator, and another number - done
+// should accept decimal numbers - done
+// store inputs - done
+// recongnize inputs and perform calculations - done
+// return a result - done
+
+// optional features - done
+// should accept longer arithmetic operations
+// display all input as it is being entered
+// store previous total as start of next operation
+// clear button should clear all entries
+// should prevent invalid inputs (operators next to each other, two decimal)
+// decimal feature needs to be looked at !important
 const keys = document.querySelector(".calculator-buttons");
 keys.addEventListener("click", (event) => {
 	const { target } = event;
@@ -20,20 +34,20 @@ const calculator = {
 		// have any of the "special buttons" been clicked?
 		switch (value) {
 			case "=":
-				// calculate the answer
+				this.calcAnswer(this.displayText);
 				break;
 			case "AC":
-				// clear screen and stored values
+				this.clearAll()
 				break;
 			case ".":
 				if (this.displayText == 0) {
-					addText(value);
+					this.addText("0.");
 				} else {
-					// add value to text string
+					this.addText(value);
 				}
 				break;
 			default:
-				// add value to text string
+				this.addText(value);
 				break;
 		}
 	},
@@ -51,6 +65,19 @@ const calculator = {
 			}
 		}
 		this.displayText += value;
-		// output display text to screen
+		this.outputText(this.displayText);
 	},
+	outputText(text) {
+		document.querySelector(".calculator-screen").value = text;
+	},
+	calcAnswer(equation) {
+		let result = Function("return " + equation)();
+		this.outputText(result);
+	},
+
+    clearAll() {
+        this.displayText = '0',
+        this.prevTotal = null,
+        this.outputText(this.displayText)
+    }
 };
