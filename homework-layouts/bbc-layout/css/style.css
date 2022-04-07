@@ -146,8 +146,10 @@ nav ul li a {
 /* RIGHT LAYOUT
 /*******************************************/
 .main-news--right {
+     position: relative;
      width: 50%;
      float: left;
+     border: 2px solid yellow;
 }
 
 .main-news--right-article {
@@ -160,6 +162,7 @@ nav ul li a {
 .main-news--right-article img{
      display: inline-block;
      width: 100%;
+     border: 2px solid red;
 }
 
 .main-news--right-article .main-news--right-content{
