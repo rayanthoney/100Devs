@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<link rel="icon" type="image/png" sizes="48x48" href="logo48x48.png">
+
+		<title>BBC Layout Floats</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<main>
+			<header>
+				<div class="container">
+					<img src="https://static.files.bbci.co.uk/orbit/f8c74765b9c7c8f0b593f3b69dae77ca/img/blq-orbit-blocks_white.svg" alt="">
+					<a href="#">SignIn</a>
+					<nav>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Reel</a></li>
+							<li><a href="#">Work life</a></li>
+							<li><a href="#">Travel</a></li>
+							<li><a href="#">Future</a></li>
+							<li><a href="#">Culture</a></li>
+							<!-- <li><a href="#">More</a></li> -->
+						</ul>
+					</nav>
+					<a href="#">More</a>
+					<input type="search" placeholder="search">
+				</div>
+			</header>
+			<!-- Welcome to BBC h1 section -->
+			<section class="heading">
+				<h1>Welcome to BBC.com</h1>
+				<div class="heading--date">Thursday, 13 August</div>
+			</section>
+
+			<section class="main-news">
+				<section class="main-news--left">
+					<article class="main-news--left-article">
+							<img src="/img/middle-east.jpg" alt="Middle East img">
+						<div class="main-news--left-content">
+							<h2>Israel and UAE strike historic peace deal</h2>
+							<p>Israel and the UAE agree to normalise relations, marking the third Israel-Arab peace deal.</p>
+							<a href="#" class="border-left">Middle East</a>
+						</div>
+					</article>
+				</section>
+
+				<section class="main-news--right">
+					<article class="main-news--right-article">
+						<img src="/img/canada.jfif" alt="">
+						<div class="main-news--right-content">
+							<h2>Americans, go home: Tension at Canada-US border</h2>
+							<p></p>
+							<a href="#" class="border-left">Canada</a>
+						</div>
+					</article>
+
+					<article class="main-news--right-article">
+						<img src="/img/health.jfif" alt="">
+						<div news-article--image></div>
+						<div class="main-news--right-content">
+							<h2>How will the world vaccinate seven billion people?</h2>
+							<p></p>
+							<a href="#" class="border-left">Health</a>
+						</div>
+					</article>
+
+					<article class="main-news--right-article">
+						<img src="/img/worklife.webp" alt="">
+						<div news-article--image></div>
+						<div class="main-news--right-content">
+							<h2>The online 'productivity gyms'</h2>
+							<p></p>
+							<a href="#" class="border-left">Worklife</a>
+						</div>
+					</article>
+
+					<article class="main-news--right-article">
+						<img src="/img/culture.jfif" alt="">
+						<div news-article--image></div>
+						<div class="main-news--right-content">
+							<h2>The folk singer murdered for his music</h2>
+							<p></p>
+							<a href="#" class="border-left">Culture</a>
+						</div>
+					</article>
+				</section>
+			</section>
+		</main>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

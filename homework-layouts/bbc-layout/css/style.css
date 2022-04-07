@@ -1,5 +1,5 @@
-:root{
-     --bbc-font: Arial, Helvetica, freesans, sans-serif
+:root {
+     --bbc-font: Arial, Helvetica, 'free sans', sans-serif
 }
 
 /* Box Model Hack */
@@ -21,11 +21,6 @@
 	clear: both;
 }
 
-.border-left{
-     border-left: 2px solid red;
-     padding-left: 8px;
-}
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -40,11 +35,11 @@ body {
 /******************************************
 /* HEADER STYLES
 /*******************************************/
-header{
+header {
      background-color: black;
      border: 2px solid red;
 }
-.container{
+.container {
      position: relative;
      max-width: 1280px;
      margin: auto;
@@ -58,19 +53,19 @@ header nav {
   display: inline-block;
 }
 
-header img{
+header img {
      position: relative;
      top: 7px;
 }
 
-header a{
+header a {
      color: white;
      display: inline-block;
      padding: 12px 20px;
      text-decoration: none;
 }
 /* Styles the input box and centers the Search tag inside */
-header input{
+header input {
      border: none;
      margin-left: 15px;
      padding: 5px;
@@ -79,151 +74,99 @@ header input{
 /******************************************
 /* NAVIGATION STYLES
 /*******************************************/
-
-nav ul{
+nav ul {
      padding: 0;
      margin: 0;
      list-style: none;
 }
 
-nav ul li{
+nav ul li {
      display: inline-block;
 }
 
-nav ul li a{
+nav ul li a {
      padding: 12px 15px;
 }
 
 /******************************************
 /*   HEADING STYLES
 /*******************************************/
+.content  {
+}
 .heading {
-     height: 60px;
-     width: 100vw;
-     border: 2px solid blue;
+     position: relative;
+     max-width: 1280px;
+     margin: auto;
+}
+
+.heading .title span {
      float: left;
 }
-.heading h1,{
 
-}
-/* .heading--date{
-     margin: 34px 0 18px;
-     font-weight: bold;
-     float: left;
-} */
-
-.heading--date{
-     float: right;
+.title {
+     text-align: right;
 }
 
 /******************************************
 /*   MAIN NEWS
 /*******************************************/
-.main-news{
-     margin: 1rem;
-     overflow: auto;
-     width: 100%;
-     padding: 2rem;
+.main-news {
+     position: relative;
+     max-width: 1280px;
+     margin: auto;
+     overflow: hidden;
      border: 2px solid green;
 }
-
 /******************************************
 /*   MAIN NEWS LEFT LAYOUT
 /*******************************************/
-
-.main-news--left{
-     width: 47%;
-     height: 50vh;
+.main-news--left {
+     width: 50%;
      float: left;
-     margin: 0 0.5rem;
-     border: 2px solid yellow;
 }
 
 .main-news--left-article{
-     position: relative;
-     width: 100%;
-     float: left;
 }
 
-.main-news--left-article img{
+.main-news--left-article img {
      display: block;
      width: 100%;
      height: 100%;
-
 }
 
-.main-news--left-article .main-news--left-content{
-
-}
-
-.main-news--left-article .main-news--left-content{
+.main-news--left-article .main-news--left-content {
      position: absolute;
-     width: 100%;
+     width: 50%;
+     bottom: 0;
      color: white;
      background-color: rgba(0, 0, 0, 0.5);
-     bottom: 0;
-     padding: 1rem 1rem;
      z-index: 2;
 }
-
-.main-news--left-content a{
-     color: white;
-     opacity: .7;
-}
-
-.main-news--left-content h2 {
-     font-size: 33px;
-     font-weight: 100;
-     margin: 0 0 18px;
-}
-
-.main-news--left-content p{
-     color: #515151;
-     font-size: 16px;
-     line-height: 1.5;
-     margin: 0 0 16px;
-}
-
-
 /******************************************
 /* RIGHT LAYOUT
 /*******************************************/
-
-.main-news--right{
-     width: 47%;
-     height: 50vh;
+.main-news--right {
+     width: 50%;
      float: left;
-     margin: 0 0.5rem;
-     border: 2px solid blue;
 }
 
 .main-news--right-article {
-  height: 33vh;
-  width: 47%;
-  float: left;
-  margin: 0.5rem;
-}
+     width: 50%;
+     padding-left: 8px;
+     padding-right: 8px;
+     float: left;
+   }
 
 .main-news--right-article img{
-     display: block;
+     display: inline-block;
      width: 100%;
-     height: 100%;
 }
 
 .main-news--right-article .main-news--right-content{
-     position: absolute;
-     width: 100%;
      color: white;
      background-color: rgba(0, 0, 0, 0.5);
-     bottom: 0;
-     padding: 1rem 1rem;
      z-index: 2;
 }
-
-.main-news--right-content{
-
-}
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
