@@ -37,18 +37,17 @@ body {
      font-size: 14px;
 }
 
-.container{
-     position: relative;
-     max-width: 1280px;
-     margin: auto;
-}
-
-
 /******************************************
 /* HEADER STYLES
 /*******************************************/
 header{
      background-color: black;
+     border: 2px solid red;
+}
+.container{
+     position: relative;
+     max-width: 1280px;
+     margin: auto;
 }
 
 header img,
@@ -66,7 +65,7 @@ header img{
 
 header a{
      color: white;
-     display: inline-block;     
+     display: inline-block;
      padding: 12px 20px;
      text-decoration: none;
 }
@@ -96,36 +95,48 @@ nav ul li a{
 }
 
 /******************************************
-/* 
+/*   HEADING STYLES
 /*******************************************/
+.heading {
+     height: 60px;
+     width: 100vw;
+     border: 2px solid blue;
+     float: left;
+}
+.heading h1,{
 
-.heading h1,
-.heading--date{
+}
+/* .heading--date{
      margin: 34px 0 18px;
      font-weight: bold;
      float: left;
-}
+} */
 
 .heading--date{
      float: right;
 }
 
 /******************************************
-/* LEFT LAYOUT
+/*   MAIN NEWS
 /*******************************************/
 .main-news{
      margin: 1rem;
      overflow: auto;
      width: 100%;
-     /* border: 1px solid black; */
      padding: 2rem;
+     border: 2px solid green;
 }
+
+/******************************************
+/*   MAIN NEWS LEFT LAYOUT
+/*******************************************/
 
 .main-news--left{
      width: 47%;
-     height: 100vh;
+     height: 50vh;
      float: left;
      margin: 0 0.5rem;
+     border: 2px solid yellow;
 }
 
 .main-news--left-article{
@@ -178,19 +189,12 @@ nav ul li a{
 /* RIGHT LAYOUT
 /*******************************************/
 
-
-.main-news{
-     margin: 1rem;
-     overflow: auto;
-     width: 100%;
-     /* border: 1px solid black; */
-     padding: 2rem;}
-
 .main-news--right{
      width: 47%;
      height: 50vh;
      float: left;
      margin: 0 0.5rem;
+     border: 2px solid blue;
 }
 
 .main-news--right-article {
@@ -217,7 +221,7 @@ nav ul li a{
 }
 
 .main-news--right-content{
-     
+
 }
 
 /******************************************
