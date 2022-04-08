@@ -183,20 +183,21 @@ nav ul li a {
      max-width: 1280px;
      margin: auto;
      overflow: hidden;
-     /* float: left; */
      border: 2px solid red;
 }
 
-.news-block--heading .title {
-     position: relative;
-     max-width: 1280px;
-     margin: auto;
+.news-block--heading {
      float: left;
      border: 2px solid yellow;
 }
 
-.news-block--article img {
-     margin: 8px;
-     width: 33.3333%;
-     float: left;
+.news-block--article {
 }
+
+.news-block--article img {
+     width: 33.3333%;
+}
+
+
+
+
