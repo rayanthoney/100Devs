@@ -116,7 +116,7 @@ nav ul li a {
      max-width: 1280px;
      margin: auto;
      overflow: hidden;
-     border: 2px solid green;
+     /* border: 2px solid green; */
 }
 /******************************************
 /*   MAIN NEWS LEFT LAYOUT
@@ -183,19 +183,26 @@ nav ul li a {
      max-width: 1280px;
      margin: auto;
      overflow: hidden;
-     border: 2px solid red;
+     /* border: 2px solid red; */
 }
 
-.news-block--heading {
+.news-block--heading .title {
      float: left;
-     border: 2px solid yellow;
+     /* border: 2px solid yellow; */
 }
 
 .news-block--article {
+     width: 33.3333%;
+     margin-bottom: 5px;
+     border: 2px solid blue;
 }
 
 .news-block--article img {
-     width: 33.3333%;
+     width: 100%;
+}
+
+.border-left {
+     border-left: 2px solid red;
 }
 
 
