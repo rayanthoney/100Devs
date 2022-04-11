@@ -1,0 +1,74 @@
+/******************************************
+/* CSS
+/*******************************************/
+:root {
+	--darkGreen: rgb(27, 32, 28);
+	--lime: rgb(197, 251, 76);
+	--white: #fff;
+	--red: #ea0056;
+	--darkBG: #1e1e1e;
+}
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background-color: var(--darkGreen);
+  color: var(--lime);
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 150vh;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+input {
+  width: 200px;
+}
+
+button {
+  margin: 20px auto;
+  display: block;
+}
+
+img{
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+#ingredient-table {
+  margin: 20px auto;
+  font-family: arial, sans-serif;
+	 border-collapse: collapse;
+	background-color: #c5fb4c;
+	color:#1b201c;
+}
+
+#ingredient-table {
+}
+
+#ingredient-table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#ingredient-table tr:hover {
+  background-color: #ffff99;
+}
+
+#ingredient-table, tr > th{
+  background: #c5fb4c;
+	 color: #1b201c;
+}
+
