@@ -14,11 +14,11 @@ function getFetch() {
 
 	fetch(url)
 		.then((res) => res.json()) // parse response as JSON
-		.then((data) => {
+		.then((data) => {  // use json data
 			console.log(data);
 			if (data.status === 1) {
 			const item = new ProductInfo(data.product)
-			item.testCall()
+			item.showInfo()
 			} else if (data.status === 0) {
 				alert(`Product ${inputVal} not found. Please try another.`);
 			}
@@ -35,7 +35,8 @@ class ProductInfo {
 		this.image = productData.image_url
 	}
 
-	testCall() {
-		console.log(this.ingredients)
+	showInfo() {
+		document.getElementById('product-img').src = this.image
+		document.getElementById('product-name').innerText = this.name
 	}
 }
