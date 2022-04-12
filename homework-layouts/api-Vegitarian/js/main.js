@@ -19,6 +19,7 @@ function getFetch() {
 			if (data.status === 1) {
 			const item = new ProductInfo(data.product)
 			item.showInfo()
+			item.listIngedients()
 			} else if (data.status === 0) {
 				alert(`Product ${inputVal} not found. Please try another.`);
 			}
@@ -38,5 +39,20 @@ class ProductInfo {
 	showInfo() {
 		document.getElementById('product-img').src = this.image
 		document.getElementById('product-name').innerText = this.name
+	}
+
+	listIngedients () {
+		let tableRef = document.getElementById('ingredient-table')
+
+		for (let key in this.ingredients) {
+			let newRow = tableRef.insertRow(-1)
+			let newICell = newRow.insertCell(0)
+			let newVCell = newRow.insertCell(1)
+			let newIText = document.createTextNode(this.ingredients[key].text)
+			let vegStatus = this.ingredients[key].vegetarian
+			let newVText = document.createTextNode(vegStatus)
+			newICell.appendChild(newIText)
+			newVCell.appendChild(newVText)
+		}
 	}
 }
