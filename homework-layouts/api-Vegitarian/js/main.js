@@ -43,6 +43,9 @@ class ProductInfo {
 
 	listIngedients () {
 		let tableRef = document.getElementById('ingredient-table')
+		for (let i = 1; i < tableRef.rows.length;) {
+			tableRef.deleteRow(i);
+		}
 
 		for (let key in this.ingredients) {
 			let newRow = tableRef.insertRow(-1)
@@ -56,3 +59,4 @@ class ProductInfo {
 		}
 	}
 }
+// 4:18:58 restsart stream 04-12-2022
