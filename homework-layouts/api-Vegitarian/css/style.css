@@ -4,9 +4,9 @@
 :root {
 	--darkGreen: rgb(27, 32, 28);
 	--lime: rgb(197, 251, 76);
-	--white: #fff;
-	--red: #ea0056;
-	--darkBG: #1e1e1e;
+	--white: rgb(255, 255, 255);
+	--red: rgb(234, 0, 86);
+	--darkBG: rgb(30, 30, 30);
 }
 
 /* Box Model Hack */

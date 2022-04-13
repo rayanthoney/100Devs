@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/new.css">
+</head>
+<body>
+    <header>
+        <img src="/img/vegan-g4cf5ddf61_1920.png" alt="">
+
+    </header>
+    <article>
+        <label for="barcode">Enter a UPC barcode number (12 digits)</label>
+
+		<input type="number" id="barcode" name="barcode">
+
+		<button type="button"onclick="getFetch();">Get Value</button>
+
+		<img id="product-img" src="#" alt="">
+		<h2 id="product-name"></h2>
+		<table id="ingredient-table">
+			<tr>
+			  <th>Ingredient</th>
+			  <th>Vegetarian?</th>
+			</tr>
+		</table>
+
+    </article>
+    <footer>
+        <p><small>&copy; 2022 Vegetarian Checker by RayAnthoney</small></p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#c5fb4c" fill-opacity="1" d="M0,128L24,122.7C48,117,96,107,144,117.3C192,128,240,160,288,165.3C336,171,384,149,432,133.3C480,117,528,107,576,117.3C624,128,672,160,720,154.7C768,149,816,107,864,117.3C912,128,960,192,1008,213.3C1056,235,1104,213,1152,192C1200,171,1248,149,1296,122.7C1344,96,1392,64,1416,48L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

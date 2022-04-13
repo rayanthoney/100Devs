@@ -1,0 +1,105 @@
+/******************************************
+/* CSS
+/*******************************************/
+:root {
+	--darkGreen: rgb(27, 32, 28);
+	--lime: rgb(197, 251, 76);
+	--white: rgb(255, 255, 255);
+	--red: rgb(234, 0, 86);
+	--darkBG: rgb(30, 30, 30);
+}
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+    background-color: var(--darkGreen);
+    color: var(--lime);
+    text-align: center;
+    font-size: 1.3rem;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkGreen);
+}
+
+header, img {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    color: var(--lime);
+}
+
+#product-img {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+  display: block;
+}
+
+input {
+    width: 200px;
+}
+
+  button {
+    margin: 20px auto;
+    display: block;
+}
+h2 {
+  margin-bottom: 0;
+}
+
+ul {
+  text-align: left;
+}
+
+table {
+  margin: 20px auto;
+}
+
+table, th, td {
+  border: 1px solid var(--lime);
+  background-color: white
+}
+
+#ingredient-table {
+    margin: auto;
+    color: var(--darkGreen);
+}
+
+.non-veg-item {
+    background-color: var(--red);
+  }
+
+  .unkown-maybe-item {
+    background-color: var(--lime)
+  }
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+footer {
+    margin-top: auto;
+}
+small {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--darkGreen);
+
+}
