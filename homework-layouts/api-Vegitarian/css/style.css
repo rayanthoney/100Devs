@@ -48,6 +48,24 @@ h2 {
   margin-bottom: 0;
 }
 
+ul {
+  text-align: left;
+}
+
+table {
+  margin: 20px auto;
+}
+
+table, th, td {
+  border: 1px solid;
+  background-color: white
+}
+
+#ingredient-table {
+  color: var(--darkBG);
+}
+
+/*
 #ingredient-table {
   margin: 20px auto;
   font-family: arial, sans-serif;
@@ -70,5 +88,13 @@ h2 {
 #ingredient-table, tr > th{
   background: #c5fb4c;
 	 color: #1b201c;
+} */
+
+.non-veg-item {
+  background-color: var(--red);
+}
+
+.unkown-maybe-item {
+  background-color: var(--lime)
 }
 

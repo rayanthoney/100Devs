@@ -40,23 +40,30 @@ class ProductInfo {
 		document.getElementById('product-img').src = this.image
 		document.getElementById('product-name').innerText = this.name
 	}
-
+	// inserts the data into a table and deletes rows whith new input
 	listIngedients () {
 		let tableRef = document.getElementById('ingredient-table')
 		for (let i = 1; i < tableRef.rows.length;) {
 			tableRef.deleteRow(i);
 		}
-
-		for (let key in this.ingredients) {
-			let newRow = tableRef.insertRow(-1)
-			let newICell = newRow.insertCell(0)
-			let newVCell = newRow.insertCell(1)
-			let newIText = document.createTextNode(this.ingredients[key].text)
-			let vegStatus = this.ingredients[key].vegetarian
-			let newVText = document.createTextNode(vegStatus)
-			newICell.appendChild(newIText)
-			newVCell.appendChild(newVText)
-		}
+		if (!(this.ingredients == null)) {
+			for (let key in this.ingredients) {
+				let newRow = tableRef.insertRow(-1)
+				let newICell = newRow.insertCell(0)
+				let newVCell = newRow.insertCell(1)
+				let newIText = document.createTextNode(this.ingredients[key].text)
+				// check to see if this item has no value (undefined,) then label as unknown.
+				let vegStatus = !(this.ingredients[key].vegetarian) ? 'unknown' : this.ingredients[key].vegetarian
+				let newVText = document.createTextNode(vegStatus)
+				newICell.appendChild(newIText)
+				newVCell.appendChild(newVText)
+				if (vegStatus === 'no') {
+					newVCell.classList.add('non-veg-item')
+				} else if (vegStatus === 'unknown' || vegStatus === 'maybe') {
+					newVCell.classList.add('unkown-maybe-item')
+				}
+			}
+	  	}
 	}
 }
-// 4:18:58 restsart stream 04-12-2022
+
