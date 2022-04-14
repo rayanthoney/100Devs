@@ -33,7 +33,7 @@ function initBoard() {
 			box.className = 'clue-box'
 			box.textContent = '$' + boxValue
 			// box.appendChild( document.createTextNode(boxValue) ) //backwards compatible
-			box.addEventListener('click',getClue, false)
+			box.addEventListener('click',getClue,false)
 			row.appendChild(box)
 		}
 		board.appendChild(row)
@@ -85,9 +85,15 @@ function setCategories (catArray) {
 	}
 }
 
-
-function getClue() {
-	console.log('Have a nice Day')
+function getClue (event) {
+	let child = event.currentTarget
+	child.classList.add('clicked-box')
+	let boxValue = child.innerHTML.slice(1)
+	let parent = child.parentNode
+	let index = Array.prototype.findIndex.call(parent.children, (c) => c === child)
+	let clueList = catArray[1].clues
+	let clue = clueList.find(obj => {
+		return obj.value == boxValue
+	})
+	console.log(clue)
 }
-
-
