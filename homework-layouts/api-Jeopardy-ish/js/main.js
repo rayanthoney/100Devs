@@ -1,23 +1,39 @@
-//Example fetch using pokemonapi.co
-document.querySelector("button").addEventListener("click", getFetch);
-function getFetch() {
-	const choice = document.querySelector("input").value.toLowercase;
+// initialize the game board on load
+initCatRow()
+initBoard()
 
-	const url = `https://api.nasa.gov/planetary/apod?api_key=Ij6thfZc2bTSEgMS8VFTCipCqUwsjBWiJnspLNUO&date=${choice}`
+function initCatRow() {
+	let catRow = document.getElementById('category-row')
 
-	fetch(url)
-		.then((res) => res.json()) // parse response as JSON
-		.then((data) => {
-			console.log(data)
-      if( data.media_type === 'image' ) {
-        document.querySelector("img").src = data.hdurl;
-      } else if(data.media_type === 'video') {
-        document.querySelector("iframe").src = data.url;
-      }
+	for (let i=0; i<6; i++){
+		let box = document.createElement('div')
+		box.className = 'clue-box category-box'
+		catRow.appendChild(box)
+}
+}
 
-			document.querySelector("h3").innerText = data.explanation;
-		})
-		.catch((err) => {
-			console.log(`error ${err}`);
-		});
+function initBoard() {
+	let board = document.getElementById('clue-board')
+
+	// Generate 5 rows, then place 6 boxes in each row
+
+	for (let i = 0; i < 5; i++) {
+		let row = document.createElement('div')
+		let boxValue = 200 * (i + 1)
+		row.className = 'clue-row'
+
+		for (let j=0; j<6; j++){
+			let box = document.createElement('div')
+			box.className = 'clue-box'
+			box.textContent = '$' + boxValue
+			//box.appendChild( document.createTextNode(boxValue) ) //backwards compatible
+			box.addEventListener('click',getClue, false)
+			row.appendChild(box)
+		}
+		board.appendChild(row)
+	}
+}
+
+function getClue() {
+	console.log('Have a nice Day')
 }
