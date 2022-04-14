@@ -2,11 +2,11 @@
 /* CSS
 /*******************************************/
 :root {
-	--darkGreen: rgb(27, 32, 28);
-	--lime: rgb(197, 251, 76);
+	--darkGreen: #1b201c;
+	--lime: #c5fb4c;
 	--white: rgb(255, 255, 255);
 	--red: rgb(234, 0, 86);
-	--darkBG: rgb(30, 30, 30);
+	--darkBG: #020302;
 }
 
 /* Box Model Hack */
@@ -45,33 +45,44 @@ span {
 	flex-direction: column;
 	width: 75vw;
 	margin: 10px auto;
-	border: 2px solid red;
 }
 
 #category-row {
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
-	border: 2px solid orange;
 }
 
 #clue-board {
 	flex-direction: column;
-	border: 2px solid blue;
 }
 
 .clue-row {
 	display: flex;
-	border: 2px solid orange;
 }
 
 .clue-box {
 	display: flex;
+	align-items: center; /*vertical align*/
+	justify-content: center; /*hotizontal align*/
 	border: 2px solid green;
+	background-color: var(--darkBG);
 	border-radius: 5px;
 	margin: 5px;
+	font-size: 2rem;
+	font-weight: bold;
 	height: 100px;
 	flex: 1;
+	text-transform: uppercase;
+}
+
+.category-box {
+	font-size: .8rem;
+	line-height: 25px;
+}
+
+.clicker-box {
+	font-size: 1rem;
 }
 
 img{
