@@ -1,6 +1,6 @@
 ## Hello 100Devs it's "JavaScript Snake Game Time"
 
-![Game Screen](/images/snake_browser.png)
+![Game Screen](/img/snake_browser.png)
 <br>
 <br>
 
