@@ -61,5 +61,12 @@ let snakeLength = 200
 
 // START MOVING SNAKE, WRAP AROUND TO OTHER SIDE OF SCREEN IF NEEDED
 const moveSnake = () => {
-    switch
+    switch (snakeCurrentDirection) {
+        case LEFT_DIR:
+            --currentHeadPosition
+            const isHeadAtLeft = currentHeadPosition % LINE_PIXEL_COUNT == LINE_PIXEL_COUNT - 1 || currentHeadPosition < 0
+            if (isHeadAtLeft) {
+                currentHeadPosition + LINE_PIXEL_COUNT
+            }
+    }
 }
