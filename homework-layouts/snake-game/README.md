@@ -1,4 +1,9 @@
+# Snake Game _Created with MayanWolfe_
+
 ## Hello 100Devs it's "JavaScript Snake Game Time"
+
+<br>
+<br>
 
 ![Game Screen](/img/snake_browser.png)
 <br>
@@ -10,12 +15,12 @@
 
 <br>
 
- ***HTML***
+**_HTML_**
 
- ***CSS***
+**_CSS_**
 
- ***JavaSript***
- <br>
+**_JavaSript_**
+<br>
 
 [![HTML5 Badge](https://img.shields.io/badge/-HTML-E44D26?style=plastic&for-the-badge&labelColor=black&logo=html5&logoColor=E44D26)](#)&nbsp;
 [![CSS3 Badge](https://img.shields.io/badge/-CSS-1572B6?&style=plastic&for-the-badge&labelColor=black&logo=css3&logoColor=1572B6)](#)&nbsp;&nbsp;
