@@ -46,6 +46,20 @@ const changeDirection = newDirectionCode => {
       } else if(newDirectionCode == UP_DIR && snakeCurrentDirection
         !== DOWN_DIR) {
             snakeCurrentDirection = newDirectionCode
+        } else if (newDirectionCode == RIGHT_DIR && snakeCurrentDirection != LEFT_DIR) {
+            snakeCurrentDirection = newDirectionCode
+        } else if (newDirectionCode == DOWN_DIR && snakeCurrentDirection != UP_DIR) {
+            snakeCurrentDirection = newDirectionCode
         }
 }
 
+// SET STARTING POINT FOR SNAKE ON LOAD
+let currentHeadPosition = TOTAL_PIXEL_COUNT/2
+
+// SET INITIAL LENGTH
+let snakeLength = 200
+
+// START MOVING SNAKE, WRAP AROUND TO OTHER SIDE OF SCREEN IF NEEDED
+const moveSnake = () => {
+    switch
+}
