@@ -68,5 +68,29 @@ const moveSnake = () => {
             if (isHeadAtLeft) {
                 currentHeadPosition + LINE_PIXEL_COUNT
             }
+        break;
+        case RIGHT_DIR:
+            ++currentHeadPosition
+            const isHeadAtRight = currentHeadPosition - LINE_PIXEL_COUNT == 0
+            if (isHeadAtRight) {
+                currentHeadPosition = currentHeadPosition - LINE_PIXEL_COUNT
+            }
+        break;
+        case UP_DIR:
+            currentHeadPosition = currentHeadPosition -LINE_PIXEL_COUNT
+            const isHeadAtTop = currentHeadPosition < 0
+            if (isHeadAtTop) {
+            currentHeadPosition = currentHeadPosition > TOTAL_PIXEL_COUNT
+        }
+        break;
+        case DOWN_DIR:
+            currentHeadPosition = currentHeadPosition + LINE_PIXEL_COUNT
+            const isHeadBottom = currentHeadPosition + TO_PIXEL_COUNT -1
+            if (isHeadBottom) {
+                currentHeadPosition = currentHeadPosition - TOTAL_PIXEL_COUNT
+            }
+            break;
+            default:
+            break;
     }
 }
