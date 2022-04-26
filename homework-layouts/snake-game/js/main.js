@@ -21,10 +21,31 @@ const gameBoardPixels = document.getElementsByClassName('game-board__pixel')
 
 let currentFoodPosition = 0
 
-//create the randomly generated food items in the game board
+// CREATE THE RANDOMLY GENERATED FOOD ITEMS IN THE GAME BOARD
 const createFood = () => {
     gameBoardPixels[currentFoodPosition].classList.remove("food")
 currentFoodPosition = Math.floor(Math.random()*TOTAL_PIXEL_COUNT)
 gameBoardPixels[currentFoodPosition].classList.add('food')
+}
+
+// START SETTING UP SNAKE BEHAVIOR
+
+const LEFT_DIR = 37
+const UP_DIR = 38
+const RIGHT_DIR = 39
+const DOWN_DIR = 40
+
+let snakeCurrentDirection = RIGHT_DIR
+
+// MAKE SURE THE USER INPUT IS VALID AND CHANGE SNAKE DIRECTION VARIABLE
+const changeDirection = newDirectionCode => {
+    if(newDirectionCode == snakeCurrentDirection) return;
+
+    if(newDirectionCode == LEFT_DIR && snakeCurrentDirection !== RIGHT_DIR) {
+        snakeCurrentDirection = newDirectionCode
+      } else if(newDirectionCode == UP_DIR && snakeCurrentDirection
+        !== DOWN_DIR) {
+            snakeCurrentDirection = newDirectionCode
+        }
 }
 
