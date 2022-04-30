@@ -93,4 +93,16 @@ const moveSnake = () => {
             default:
             break;
     }
+
+    // ACCESSED THE CORRECT PIXEL WITHIN THE HTML COLLECTION
+    let nextSnakeHeadPixel = gameBoardPixels[currentHeadPosition]
+
+    // CHECK IF SNAKE HEAD IS ABOUT TO INTERSECT WITH IT'S OWN BODY
+    if (nextSnakeHeadPixel.classList.contains("snakeBodyPixels")) {
+        alert(`You have eaten ${totalFoodEaten} food and traveled ${totalDistanceTraveled} blocks.`)
+        window.location.reload()
+    }
+
+    // ASSUMING AN EMPTY PIXEL, ADD SNAKE BODY STYLING
+    nextSnakeHeadPixel.classList.add('snakeBodyPixels')
 }
