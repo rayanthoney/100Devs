@@ -1,6 +1,6 @@
 //Declare global variables to track game board size
-const LINE_PIXEL_COUNT = 40
-const TOTAL_PIXEL_COUNT = LINE_PIXEL_COUNT**2
+const LINE_PIXEL_COUNT = 38
+const TOTAL_PIXEL_COUNT = LINE_PIXEL_COUNT ** 2
 
 //Track scores to display to user
 let totalFoodEaten = 0
@@ -30,10 +30,10 @@ gameBoardPixels[currentFoodPosition].classList.add('food')
 
 //Start setting up snake behavior
 
-const LEFT_DIR = 37
-const UP_DIR = 38
-const RIGHT_DIR = 39
-const DOWN_DIR = 40
+const LEFT_DIR = 37 // D = 37
+const UP_DIR = 38 // W = 87
+const RIGHT_DIR = 39 // A = 65
+const DOWN_DIR = 40 // S = 83
 
 let snakeCurrentDirection = RIGHT_DIR
 
@@ -93,51 +93,55 @@ const moveSnake = () => {
       break;
     }
 
-  //Accessed the correct pixel within the HTML collection
-  let nextSnakeHeadPixel = gameBoardPixels[currentHeadPosition]
+    //Accessed the correct pixel within the HTML collection
+    let nextSnakeHeadPixel = gameBoardPixels[currentHeadPosition]
 
-  //Check if snake head is about to intersect with its own body
-  if (nextSnakeHeadPixel.classList.contains("snakeBodyPixel")) {
-    clearInterval(moveSnakeInterval)
-    alert(`You have eaten ${totalFoodEaten} food and traveled ${totalDistanceTraveled} blocks.`)
-    window.location.reload()
-  }
+    //Check if snake head is about to intersect with its own body
+    if (nextSnakeHeadPixel.classList.contains("snakeBodyPixel")) {
+      clearInterval(moveSnakeInterval)
+      alert(`You have eaten ${totalFoodEaten} food and traveled ${totalDistanceTraveled} blocks.`)
+      window.location.reload()
+    }
 
-  //Assuming an empty pixel, add snake body styling
-  nextSnakeHeadPixel.classList.add("snakeBodyPixel")
+    //Assuming an empty pixel, add snake body styling
+    nextSnakeHeadPixel.classList.add("snakeBodyPixel")
 
-    // REMOVE SNAKE STYLING TO KEEP SNAKE APPROPRIATE LENGTH
+    //Remove snake styling to keep snake appropriate length
     setTimeout(() => {
-        nextSnakeHeadPixel.classList.remove('snakeBodyPixel')
+      nextSnakeHeadPixel.classList.remove("snakeBodyPixel")
     }, snakeLength)
 
-    //DESCRIBE WHAT TO DO IF THE SNAKE ENCOUNTERS A FOOD PIXEL
-    if (nextSnakeHeadPixel == currentFoodPosition) {
-        consolelog('eat food')
-        totalFoodEaten++
-        document.getElementById('pointsEarned').innerText = totalFoodEaten
-        snakeLength = snakeLength + 100
-        createFood()
+    //Describe what to do if the snake encounters a food pixel
+    if (currentHeadPosition == currentFoodPosition) {
+      console.log('eat food')
+      totalFoodEaten++
+      document.getElementById("pointsEarned").innerText = totalFoodEaten
+      snakeLength = snakeLength + 100
+      createFood()
     }
+
+    //Added distance traveled count
+    totalDistanceTraveled++
+    document.getElementById("blocksTraveled").innerText = totalDistanceTraveled
 }
 
-// CALL INITIAL FUNCTIONSTO CREATE BOARD AND START GAME
+//Call initial functions to create board and start game
 createGameBoardPixels();
 
 createFood();
 
-// SET ANIMATION SPEED
+//Set animation speed
 let moveSnakeInterval = setInterval(moveSnake, 100)
 
-addEventListener('keydown', e => changeDirection(e.keycode))
+addEventListener("keydown", e => changeDirection(e.keyCode))
 
-// ADDING VARIABLES FOR ON-SCREEN BUTTONS
-const leftButton = document.getElementById('leftButton')
-const rightButton = document.getElementById('rightButton')
-const upButton = document.getElementById('upButton')
-const downButton = document.getElementById('downButton')
+//Adding variables for on-screen buttons
+const leftButton  = document.getElementById('leftButton')
+const rightButton  = document.getElementById('rightButton')
+const upButton  = document.getElementById('upButton')
+const downButton  = document.getElementById('downButton')
 
-// ADD LISTENERS FOR ON-SCREEN BUTTONS
+//Add listeners for on-screen buttons
 leftButton.onclick = () => changeDirection(LEFT_DIR)
 rightButton.onclick = () => changeDirection(RIGHT_DIR)
 upButton.onclick = () => changeDirection(UP_DIR)

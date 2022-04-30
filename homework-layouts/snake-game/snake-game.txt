@@ -1,4 +1,24 @@
+<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
 
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	    <link rel="manifest" href="/site.webmanifest">
+
+		<title>MayanWolfe | Snake Game</title>
+
+		<!-- Custom CSS Google Font Sheets -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+		<!-- external CSS link -->
+		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+		<!-- <link rel="stylesheet" href="css/piccalilli.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
 
 #game-container  {
 	height: 40vw;
