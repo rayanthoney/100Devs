@@ -6,6 +6,7 @@
 <br>
 
 ![Game Screen](/img/snake_browser.png)
+
 <br>
 <br>
 
