@@ -98,7 +98,7 @@ const moveSnake = () => {
 
   //Check if snake head is about to intersect with its own body
   if (nextSnakeHeadPixel.classList.contains("snakeBodyPixel")) {
-    // clearInterval(moveSnakeInterval)
+    clearInterval(moveSnakeInterval)
     alert(`You have eaten ${totalFoodEaten} food and traveled ${totalDistanceTraveled} blocks.`)
     window.location.reload()
   }
@@ -107,12 +107,38 @@ const moveSnake = () => {
   nextSnakeHeadPixel.classList.add("snakeBodyPixel")
 
     // REMOVE SNAKE STYLING TO KEEP SNAKE APPROPRIATE LENGTH
-    // setTimeout(() =>)
+    setTimeout(() => {
+        nextSnakeHeadPixel.classList.remove('snakeBodyPixel')
+    }, snakeLength)
 
-
+    //DESCRIBE WHAT TO DO IF THE SNAKE ENCOUNTERS A FOOD PIXEL
+    if (nextSnakeHeadPixel == currentFoodPosition) {
+        consolelog('eat food')
+        totalFoodEaten++
+        document.getElementById('pointsEarned').innerText = totalFoodEaten
+        snakeLength = snakeLength + 100
+        createFood()
+    }
 }
+
+// CALL INITIAL FUNCTIONSTO CREATE BOARD AND START GAME
 createGameBoardPixels();
 
 createFood();
 
+// SET ANIMATION SPEED
 let moveSnakeInterval = setInterval(moveSnake, 100)
+
+addEventListener('keydown', e => changeDirection(e.keycode))
+
+// ADDING VARIABLES FOR ON-SCREEN BUTTONS
+const leftButton = document.getElementById('leftButton')
+const rightButton = document.getElementById('rightButton')
+const upButton = document.getElementById('upButton')
+const downButton = document.getElementById('downButton')
+
+// ADD LISTENERS FOR ON-SCREEN BUTTONS
+leftButton.onclick = () => changeDirection(LEFT_DIR)
+rightButton.onclick = () => changeDirection(RIGHT_DIR)
+upButton.onclick = () => changeDirection(UP_DIR)
+downButton.onclick = () => changeDirection(DOWN_DIR)
