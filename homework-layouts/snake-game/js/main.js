@@ -1,34 +1,34 @@
-// DECLARE GLOBAL VARIABLES TO TRACK GAME BOARD SIZE
+//Declare global variables to track game board size
 const LINE_PIXEL_COUNT = 40
 const TOTAL_PIXEL_COUNT = LINE_PIXEL_COUNT**2
 
-// TRACK SCORES TO DISPLAY TO USER
+//Track scores to display to user
 let totalFoodEaten = 0
 let totalDistanceTraveled = 0
 
-// SHORTEN REFERENCE TO GAME BOARD
-const gameContainer = document.getElementById('game-container')
+//Shorten reference to game board
+const gameContainer = document.getElementById('gameContainer')
 
-// GENERATE THE GAME BOARD
+//Generate the game board
 const createGameBoardPixels = () => {
-    for (let i = 1; i<=TOTAL_PIXEL_COUNT; i++) {
-        gameContainer.innerHTML = `${gameContainer.innerHTML} <div class="game-board__pixel" id = "pixel${i}"></div>`
-    }
+  for (let i = 1; i<= TOTAL_PIXEL_COUNT; i++) {
+    gameContainer.innerHTML = `${gameContainer.innerHTML} <div class="gameBoardPixel" id = "pixel${i}"></div>`;
+  }
 }
 
-// SHORTEN OUR REFERENCE TO GAME PIXELS
-const gameBoardPixels = document.getElementsByClassName('game-board__pixel')
+//Shorten references to game pixels
+const gameBoardPixels = document.getElementsByClassName("gameBoardPixel")
 
 let currentFoodPosition = 0
 
-// CREATE THE RANDOMLY GENERATED FOOD ITEMS IN THE GAME BOARD
+//create the randomly generated food items in the game board
 const createFood = () => {
-    gameBoardPixels[currentFoodPosition].classList.remove("food")
+  gameBoardPixels[currentFoodPosition].classList.remove("food")
 currentFoodPosition = Math.floor(Math.random()*TOTAL_PIXEL_COUNT)
 gameBoardPixels[currentFoodPosition].classList.add('food')
 }
 
-// START SETTING UP SNAKE BEHAVIOR
+//Start setting up snake behavior
 
 const LEFT_DIR = 37
 const UP_DIR = 38
@@ -37,72 +37,82 @@ const DOWN_DIR = 40
 
 let snakeCurrentDirection = RIGHT_DIR
 
-// MAKE SURE THE USER INPUT IS VALID AND CHANGE SNAKE DIRECTION VARIABLE
+//Make sure that the user input is valid and change snake direction variable
 const changeDirection = newDirectionCode => {
-    if(newDirectionCode == snakeCurrentDirection) return;
+  if(newDirectionCode == snakeCurrentDirection) return;
 
-    if(newDirectionCode == LEFT_DIR && snakeCurrentDirection !== RIGHT_DIR) {
-        snakeCurrentDirection = newDirectionCode
-      } else if(newDirectionCode == UP_DIR && snakeCurrentDirection
-        !== DOWN_DIR) {
-            snakeCurrentDirection = newDirectionCode
-        } else if (newDirectionCode == RIGHT_DIR && snakeCurrentDirection != LEFT_DIR) {
-            snakeCurrentDirection = newDirectionCode
-        } else if (newDirectionCode == DOWN_DIR && snakeCurrentDirection != UP_DIR) {
-            snakeCurrentDirection = newDirectionCode
-        }
+  if (newDirectionCode == LEFT_DIR && snakeCurrentDirection !== RIGHT_DIR) {
+    snakeCurrentDirection = newDirectionCode
+  } else if(newDirectionCode == UP_DIR && snakeCurrentDirection !== DOWN_DIR) {
+    snakeCurrentDirection = newDirectionCode
+  }else if (newDirectionCode == RIGHT_DIR && snakeCurrentDirection !== LEFT_DIR) {
+    snakeCurrentDirection = newDirectionCode
+  } else if (newDirectionCode == DOWN_DIR && snakeCurrentDirection !== UP_DIR) {
+    snakeCurrentDirection = newDirectionCode
+  }
 }
 
-// SET STARTING POINT FOR SNAKE ON LOAD
+//set starting point for snake on load
 let currentHeadPosition = TOTAL_PIXEL_COUNT/2
 
-// SET INITIAL LENGTH
+//Set initial length
 let snakeLength = 200
 
-// START MOVING SNAKE, WRAP AROUND TO OTHER SIDE OF SCREEN IF NEEDED
+//Start moving snake, wrap around to other side of screen if needed
 const moveSnake = () => {
-    switch (snakeCurrentDirection) {
-        case LEFT_DIR:
-            --currentHeadPosition
-            const isHeadAtLeft = currentHeadPosition % LINE_PIXEL_COUNT == LINE_PIXEL_COUNT - 1 || currentHeadPosition < 0
-            if (isHeadAtLeft) {
-                currentHeadPosition + LINE_PIXEL_COUNT
-            }
-        break;
-        case RIGHT_DIR:
-            ++currentHeadPosition
-            const isHeadAtRight = currentHeadPosition - LINE_PIXEL_COUNT == 0
-            if (isHeadAtRight) {
-                currentHeadPosition = currentHeadPosition - LINE_PIXEL_COUNT
-            }
-        break;
-        case UP_DIR:
-            currentHeadPosition = currentHeadPosition -LINE_PIXEL_COUNT
-            const isHeadAtTop = currentHeadPosition < 0
-            if (isHeadAtTop) {
-            currentHeadPosition = currentHeadPosition > TOTAL_PIXEL_COUNT
-        }
-        break;
-        case DOWN_DIR:
-            currentHeadPosition = currentHeadPosition + LINE_PIXEL_COUNT
-            const isHeadBottom = currentHeadPosition + TO_PIXEL_COUNT -1
-            if (isHeadBottom) {
-                currentHeadPosition = currentHeadPosition - TOTAL_PIXEL_COUNT
-            }
-            break;
-            default:
-            break;
+  switch (snakeCurrentDirection) {
+    case LEFT_DIR:
+      --currentHeadPosition
+      const isHeadAtLeft = currentHeadPosition % LINE_PIXEL_COUNT == LINE_PIXEL_COUNT - 1 || currentHeadPosition < 0
+      if (isHeadAtLeft) {
+        currentHeadPosition = currentHeadPosition + LINE_PIXEL_COUNT
+      }
+    break;
+    case RIGHT_DIR:
+      ++currentHeadPosition
+      const isHeadAtRight = currentHeadPosition % LINE_PIXEL_COUNT == 0
+      if (isHeadAtRight) {
+        currentHeadPosition = currentHeadPosition - LINE_PIXEL_COUNT
+      }
+      break;
+    case UP_DIR :
+      currentHeadPosition = currentHeadPosition - LINE_PIXEL_COUNT
+      const isHeadAtTop = currentHeadPosition < 0
+      if (isHeadAtTop) {
+        currentHeadPosition = currentHeadPosition + TOTAL_PIXEL_COUNT
+      }
+      break;
+    case DOWN_DIR:
+      currentHeadPosition = currentHeadPosition + LINE_PIXEL_COUNT
+      const isHeadAtBottom = currentHeadPosition > TOTAL_PIXEL_COUNT -1
+      if (isHeadAtBottom) {
+        currentHeadPosition = currentHeadPosition - TOTAL_PIXEL_COUNT
+      }
+      break;
+      default:
+      break;
     }
 
-    // ACCESSED THE CORRECT PIXEL WITHIN THE HTML COLLECTION
-    let nextSnakeHeadPixel = gameBoardPixels[currentHeadPosition]
+  //Accessed the correct pixel within the HTML collection
+  let nextSnakeHeadPixel = gameBoardPixels[currentHeadPosition]
 
-    // CHECK IF SNAKE HEAD IS ABOUT TO INTERSECT WITH IT'S OWN BODY
-    if (nextSnakeHeadPixel.classList.contains("snakeBodyPixels")) {
-        alert(`You have eaten ${totalFoodEaten} food and traveled ${totalDistanceTraveled} blocks.`)
-        window.location.reload()
-    }
+  //Check if snake head is about to intersect with its own body
+  if (nextSnakeHeadPixel.classList.contains("snakeBodyPixel")) {
+    // clearInterval(moveSnakeInterval)
+    alert(`You have eaten ${totalFoodEaten} food and traveled ${totalDistanceTraveled} blocks.`)
+    window.location.reload()
+  }
 
-    // ASSUMING AN EMPTY PIXEL, ADD SNAKE BODY STYLING
-    nextSnakeHeadPixel.classList.add('snakeBodyPixels')
+  //Assuming an empty pixel, add snake body styling
+  nextSnakeHeadPixel.classList.add("snakeBodyPixel")
+
+    // REMOVE SNAKE STYLING TO KEEP SNAKE APPROPRIATE LENGTH
+    // setTimeout(() =>)
+
+
 }
+createGameBoardPixels();
+
+createFood();
+
+let moveSnakeInterval = setInterval(moveSnake, 100)
