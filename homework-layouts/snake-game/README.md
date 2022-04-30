@@ -5,7 +5,7 @@
 <br>
 <br>
 
-![Game Screen](/images/snake_browser.png)
+![Game Screen](/images/retro-snakegame.png)
 
 <br>
 <br>
