@@ -1,4 +1,4 @@
-![Code Wars](CodeWars.png)
+<!-- ![Code Wars](CodeWars.png) -->
 
 <p align="center">
     <a href="https://github.com/rayanthoney" target="_blank" >
