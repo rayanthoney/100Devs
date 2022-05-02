@@ -1,17 +1,24 @@
+<p align="center">
+    <a href="https://github.com/rayanthoney" target="_blank" >
+    <img height="35px" src="https://img.shields.io/badge/-C%20O%20D%20E-bb100c?style=plastic&for-the-badge&labelColor=black&logo=Apache&logoColor=b39700  " alt="">&nbsp;&nbsp;
+    <img height="35px" src="https://img.shields.io/badge/-W%20A%20R%20S-074a2e?style=plastic&for-the-badge&labelColor=black&logo=ApacheKylin&logoColor=b39700  " alt="">
+    </a>
+</p>
+
 # Learning Javascript
 
 > Code Wars 8kyu
 
 ## Fundamentals
 
-|         |     |                                                 |
-| ------- | --- | ----------------------------------------------- |
-| &#9745; | 1   | [Greeting - sample](./functions/1-greeting.js)  |
-| &#9745; | 2   | [Hello World](./fundamentals/hello-world.js)    |
+|         |     |                                                |
+| ------- | --- | ---------------------------------------------- |
+| &#9745; | 1   | [Greeting - sample](./functions/1-greeting.js) |
+| &#9745; | 2   | [Hello World](./fundamentals/hello-world.js)   |
 | &#9745; | 3   | ["Even or Odd"](./fundamentals/even-or-odd.js) |
-| &#9744; | 4   | [""](./functions/4-last-character.js)           |
-| &#9744; | 5   | [""](./functions/5-max-of-three.js)             |
-| &#9744; | 6   | [""](./functions/6-every-which-way.js)          |
+| &#9744; | 4   | [""](./functions/4-last-character.js)          |
+| &#9744; | 5   | [""](./functions/5-max-of-three.js)            |
+| &#9744; | 6   | [""](./functions/6-every-which-way.js)         |
 
 <!--
 ## Loops and Debugging
@@ -61,7 +68,6 @@
 | &#9744; | 36 |[""](./objects/36-frequency-analysis.js) |
 | &#9744; | 37 |[""](./objects/37-dog-breeder.js) |
 | &#9744; | 38 |[""](./objects/38-attendance-check.js) | -->
-
 
 <p align="center">
     <a href="https://github.com/rayanthoney" target="_blank" >
