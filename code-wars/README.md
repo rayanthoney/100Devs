@@ -1,3 +1,5 @@
+![Code Wars](CodeWars.png)
+
 <p align="center">
     <a href="https://github.com/rayanthoney" target="_blank" >
     <img height="35px" src="https://img.shields.io/badge/-C%20O%20D%20E-bb100c?style=plastic&for-the-badge&labelColor=black&logo=Apache&logoColor=b39700  " alt="">&nbsp;&nbsp;
