@@ -87,6 +87,7 @@ body::after {
   padding-top: 75px;
   background-color: var(--bg-dark);
   border-radius: 25px;
+  z-index: 1;
 }
 
 .calculator-screen {
