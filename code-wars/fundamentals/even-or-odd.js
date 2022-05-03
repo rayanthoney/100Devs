@@ -5,3 +5,4 @@ function even_or_odd(number) {
   }
 
 
+// EVEN NUMBERS ARE ALWAYS DIVISIBLE BY 2 

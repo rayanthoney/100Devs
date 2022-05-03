@@ -42,5 +42,11 @@ console.log("Hello World!");
 // const another = new Circle(1);
 
 // CONSTRUCTOR PROPERTY
-let x = {};
-
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
+    }
+}
+Circle.
+const another = new Circle(1)

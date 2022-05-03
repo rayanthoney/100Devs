@@ -8,6 +8,8 @@
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -36,13 +38,35 @@ html {
 body {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 
 /* Created with https://www.css-gradient.com */
-background: #CFD00E;
+background: #cfd00e;
 background: -webkit-radial-gradient(center, #CFD00E, #034F26);
 background: -moz-radial-gradient(center, #CFD00E, #034F26);
 background: radial-gradient(ellipse at center, #CFD00E, #034F26);
+}
 
+body::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(207,208,14,1) 100%);
+  clip-path: circle(40% at left 70%);
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(207,208,14,1) 0%, rgba(165,81,173,1) 100%);
+  clip-path: circle(30% at right 10%);
 }
 
 .container {
@@ -100,7 +124,7 @@ button {
 button:hover {
   background: rgba(255, 255, 255, 0.5); /* Black color with 50% alpha/opacity */
   color: var(--bg-light);
-  transition: 0.7s;
+  transition: 0.4s;
 }
 
 .all-clear {
