@@ -2,9 +2,44 @@
 /* CSS
 /*******************************************/
 :root {
-	--bgdarkGreen: #1b201c;
+	--bg-ltgreen:	#252d20;
+	--bg-darkGreen: #1b201c;
 	--lime: #c5fb4c;
 	--white: #fff;
+/* Jh3yy Root */
+    --on: 0;
+    --nav-open: 0;
+    --sz-0: 0.25rem;
+    --sz-1: 0.5rem;
+    --sz-2: 0.75rem;
+    --sz-3: 0.875rem;
+    --sz-4: 1rem;
+    --sz-5: 1.25rem;
+    --sz-6: 1.5rem;
+    --sz-7: 2rem;
+    --sz-8: 3rem;
+    --sz-9: 4rem;
+    --sz-10: 6rem;
+    --sz-11: 8rem;
+    --sz-13: 16rem;
+    --sz-17: 48rem;
+    --tn-zp: 0.1s;
+    --tn-qu: 0.2s;
+    --max-width: var(--sz-17);
+    --heading-size: 2;
+    --heading-line-height: 0.9;
+    --min-control-size: 48px;
+    --nav-height: 80px;
+    --nav-width: var(--sz-13);
+    --bg: hsl(calc(200 - var(--on)*160),calc((20 + var(--on)*50)*1%),calc((10 + var(--on)*80)*1%));
+    --bg-2: hsl(calc(200 - var(--on)*160),calc((20 + var(--on)*50)*1%),calc(var(--on)*100*1%));
+    --bg-3: hsl(calc(200 - var(--on)*160),calc((20 + var(--on)*50)*1%),calc((3 + var(--on)*94)*1%));
+    --color: hsl(0,0%,calc((96 - var(--on)*80)*1%));
+    --color-2: hsl(0,0%,calc((70 - var(--on)*35)*1%));
+    --border: hsla(0,0%,calc((100 - var(--on)*90)*1%),0.5);
+    --accent: #dd3c3c;
+    --accent-2: rgba(221,60,60,0.5);
+
 }
 
 /* Box Model Hack */
@@ -16,7 +51,7 @@
 /* LAYOUT
 /*******************************************/
 body {
-	background: var(--bgdarkGreen);
+	background: var(--bg-3);
 	color: var(--lime);
 	/* font-family: "Manrope", sans-serif; */
 	font-family: 'Source Sans Pro', sans-serif;
