@@ -20,3 +20,6 @@ console.log(os.homedir());
 
 // SYSTEM UPTIME
 console.log(os.uptime());
+
+// OPERATING SYSTEM VERSION
+console.log(os.version());
