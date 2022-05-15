@@ -21,11 +21,11 @@ console.log(myUrl.pathname);
 console.log(myUrl.search);
 
 // PARAMETERS OBJECT
-console.log(myUrl.searchParams)
+console.log(myUrl.searchParams);
 
 // ADD PARAMETERS
-myUrl.searchParams.append('abc', '123');
-console.log(myUrl.searchParams)
+myUrl.searchParams.append("abc", "123");
+console.log(myUrl.searchParams);
 
 // LOOP THROUGH PARAMETERS
-myUrl.searchParams.forEach((value, name) => console.log(`${name}: ${value}`))
+myUrl.searchParams.forEach((value, name) => console.log(`${name}: ${value}`));
