@@ -1,1 +1,42 @@
-//Write your pseduo code first! 
+//Write your pseduo code first!
+
+// celsius to fahrenheit
+// document.querySelector('h1').addEventListener('click', cToF)
+// function cToF(){
+// // need the value of celsius
+// let temp = Number(document.querySelector('input').value)
+// // convert celsius to Fahrenheit
+// temp = * 1.8 + 32
+// // Show the value
+// document.querySelector('h2').innerText = temp
+// }
+
+// Fahrenheit to Celsius
+// Give buttons the ability to convert and clear inputs
+document.getElementById('convert').onclick = tempConvert;
+document.getElementById('clear').onclick = clearForm;
+
+
+
+function tempConvert() {
+// create Variables
+var fahrenheit = document.getElementById("fahrenheit").value;
+var celsius = document.getElementById("celsius").value;
+// Convert the Value
+if (fahrenheit != '') {
+    celsius = (parseFloat(fahrenheit) - 32) / 1.8;
+} else {
+    fahrenheit = (parseFloat(celsius) * 1.8) + 32;
+}
+
+
+
+document.getElementById('fahrenheit').value = parseFloat(fahrenheit).toFixed(1);
+document.getElementById('celsius').value = parseFloat(celsius).toFixed(1);
+}
+
+
+function clearForm() {
+document.getElementById('fahrenheit').value = '';
+document.getElementById('celsius').value = '';
+}

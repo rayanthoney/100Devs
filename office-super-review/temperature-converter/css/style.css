@@ -2,17 +2,54 @@
 /* CSS
 /*******************************************/
 
+:root {
+	--darkBG: hsl(0, 0%, 9%);
+	--grayBG: hsl(0, 0%, 20%);
+	--hoverBG: hsl(0, 0%, 27%);
+	--lightFont: hsl(0, 0%, 93%);
+}
+
 /* Box Model Hack */
-*{
-  box-sizing: border-box;
+
+* {
+	box-sizing: border-box;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+body {
+	background: var(--darkBG);
+	color: var(--lightFont);
+}
 
+#convert {
+	background-color: rgb(120, 177, 120);
+}
 
+#convert:hover {
+	background-color: rgb(103, 177, 103);
+}
+
+input {
+	display: inline-block;
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 2em;
+	background-color: var(--grayBG);
+	color: var(--lightFont);
+}
+
+input:hover {
+	background-color: var(--hoverBG);
+}
+
+button {
+	padding: 10px;
+	font-size: 1.2em;
+	color: #545454;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
