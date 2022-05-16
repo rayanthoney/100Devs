@@ -6,8 +6,6 @@
 	--bg-darkGreen: #1b201c;
 	--lime: #c5fb4c;
 	--white: #fff;
-    --handle-size: 3rem;
-	--img-gap: .25rem;
 /* Jh3yy Root */
     --on: 0;
     --nav-open: 0;
@@ -110,7 +108,7 @@ body {
 	--slider-index: 0;
 	display: flex;
 	flex-grow: 1;
-	margin: 0 var(--img-gap);
+	margin: 0 var(--sz-0);
 	transform: translate(calc(var(--slider-index) * -100%));
 	transition: transform 250ms ease-in-out;
     border: 2px solid red;
@@ -120,20 +118,20 @@ body {
 	flex: 0 0 calc(100% / var(--items-per-screen));
 	max-width: calc(100% / var(--items-per-screen));
 	aspect-ratio: 16 / 9;
-	padding: var(--img-gap);
-	border-radius: 1rem;
+	padding: var(--sz-0);
+	border-radius: var(--sz-4);
 	object-fit: cover;
 }
 
 .handle {
 	border: none;
-	border-radius: 1rem;
+	border-radius: var(--sz-4);
 	flex-grow: 0;
 	flex-shrink: 0;
 	background-color: rgba(255, 255, 255, .25);
 	z-index: 10;
-	margin: var(--img-gap) 0;
-	width: var(--handle-size);
+	margin: var(--sz-0) 0;
+	width: var(--sz-8);
 	cursor: pointer;
 	font-size: 5rem;
 	display: flex;
@@ -165,26 +163,26 @@ body {
 .header {
 	display: flex;
 	justify-content: space-between;
-	padding: .5rem calc(var(--img-gap) * 2 + var(--handle-size));
+	padding: var(--sz-1) calc(var(--sz-0) * 2 + var(--sz-8));
 	align-items: center;
     margin: 30px;
     border: 2px solid blue;
 }
 
 .title {
-	font-size: 2rem;
+	font-size: var(--sz-7);
 	margin: 0;
 }
 
 .progress-bar {
 	display: flex;
-	gap: .25rem;
+	gap: var(--sz-0);
 }
 
 .progress-item {
-	flex: 0 0 1.5rem;
-	min-width: 1.5rem;
-	height: .5rem;
+	flex: 0 0 var(--sz-6);
+	min-width: var(--sz-6);
+	height: var(--sz-1);
 	background-color: rgba(255, 255, 255, .5);
 }
 
