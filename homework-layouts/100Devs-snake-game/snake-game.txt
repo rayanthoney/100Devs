@@ -1,0 +1,73 @@
+<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	    <link rel="manifest" href="/site.webmanifest">
+
+		<title>MayanWolfe | Snake Game</title>
+
+		<!-- Custom CSS Google Font Sheets -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+		<!-- external CSS link -->
+		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+		<!-- <link rel="stylesheet" href="css/piccalilli.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+#game-container  {
+	height: 40vw;
+	width: 40vw;
+	margin: 1vw auto;
+	background-color: black;
+	border: 10px solid rgb(1, 121, 241);
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px 3px black;
+}
+
+.game-board__pixel {
+	width: 1vw;
+	height: 1vw;
+	border-radius: 10px;
+	float: left;
+	outline: 1px solid red;
+}
+
+.food {
+	background-color: #f80505;
+	box-shadow: 0 0 10px #fa8080;
+}
+
+.snake-body__pixel {
+	background-color: #049a2c;
+	box-shadow: 0 0 5px #07d50b;
+}
+
+#score-container {
+	width: 40vw;
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.score-board {
+	font-family: "Manrope", sans-serif;
+	font-weight: 900;
+	border-radius: 10px;
+	border: 5px solid rgb(1, 121, 241);
+	color: var(--lime);
+	background-color: #1b201c;
+	display: inline-block;
+	padding: 5px;
+	width: 40%;
+	box-shadow: 0px 0px 20px 3px black;
+}
+
+#onScreen-controllers {
+	display: none;
+}
