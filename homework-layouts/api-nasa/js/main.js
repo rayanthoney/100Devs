@@ -1,13 +1,15 @@
+console.log("Hello 100Devs, Lets do some JavaScript");
+
 //Example fetch using pokemonapi.co
-document.querySelector("button").addEventListener("click", getFetch);
+document.querySelector('a').addEventListener('click', getFetch)
 
 function getFetch(){
-	const choice = document.querySelector('input').value
-	console.log(choice)
+  const choice = document.querySelector('input').value
+  console.log(choice)
 
-	const url = `https://api.nasa.gov/planetary/apod?api_key=Ij6thfZc2bTSEgMS8VFTCipCqUwsjBWiJnspLNUO&date=${choice}`
+  const url = `https://api.nasa.gov/planetary/apod?api_key=zU71SV2z8UAS2tpSRxtx9Ii4giGUAk6QIufK4bCn&date=${choice}`
 
-	fetch(url)
+  fetch(url)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
@@ -23,4 +25,3 @@ function getFetch(){
           console.log(`error ${err}`)
       });
 }
-
