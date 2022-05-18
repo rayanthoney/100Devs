@@ -15,12 +15,12 @@
 
 |         |     |                                                |
 | ------- | --- | ---------------------------------------------- |
-| &#9745; | 1   | [Greeting - sample](./functions/1-greeting.js) |
-| &#9745; | 2   | [Hello World](./fundamentals/hello-world.js)   |
-| &#9745; | 3   | [Even or Odd](./fundamentals/even-or-odd.js)               |
-| &#9744; | 4   | [Number to String](./functions/convert-number-to-string.js)|
-| &#9744; | 5   | [""](./functions/5-max-of-three.js)            |
-| &#9744; | 6   | [""](./functions/6-every-which-way.js)         |
+| &#9745; | 1   | [Greeting - sample](functions/1-greeting.js) |
+| &#9745; | 2   | [Hello World](fundamentals/hello-world.js)   |
+| &#9745; | 3   | [Even or Odd](fundamentals/even-or-odd.js)               |
+| &#9745; | 4   | [Number to String](fundamentals/convert-number-to-string.js)|
+| &#9745; | 5   | [Square(n) Sum](fundamentals/square-n-sum.js)   |
+| &#9744; | 6   | [""](./)         |
 
 <!--
 ## Loops and Debugging
