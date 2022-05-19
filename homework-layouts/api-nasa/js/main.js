@@ -14,7 +14,7 @@ function getFetch(){
       .then(data => {
         console.log(data)
         if( data.media_type === 'image' ){
-          document.querySelector('img').src = data.hdurl
+          document.querySelector('.nasa__image').src = data.hdurl
         }else if(data.media_type === 'video'){
           document.querySelector('iframe').src = data.url
         }
