@@ -1,8 +1,8 @@
 // CSS SPACESHIP
 // https://codepen.io/rezen/pen/nQddPp
 
-$(function () {
-	var $ship = $("#ship");
+(function () {
+	var ship = ("#ship");
 	var SHIP = {
 		vx: 0,
 		vy: 0,
@@ -16,18 +16,18 @@ $(function () {
 	};
 
 	var fire = null;
-	$("body").on("click", function () {
+	("body").on("click", function () {
 		clearTimeout(fire);
-		$ship.addClass("fire");
+		ship.addClass("fire");
 		fire = setTimeout(function () {
-			$ship.removeClass("fire");
+			ship.removeClass("fire");
 		}, 800);
 	});
 
-	$("#scene").on("click", function (e) {
+	("#scene").on("click", function (e) {
 		var old_pos = SHIP.pos;
 		console.log(old_pos);
-		$ship.css({
+		ship.css({
 			top: e.clientY,
 			left: e.clientX,
 		});
