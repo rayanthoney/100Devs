@@ -4,7 +4,7 @@
 // const baseUrl = 'https://api.nasa.gov/planetary/apod?api_key='
 // const apiKey = 'nXE5hbcxBAXe6Vah9ZeKPFb954Smre04esf1MNEL'
 
-function nasarequested() {
+function nasaRequested() {
 	const baseUrl = "https://api.nasa.gov/planetary/apod?api_key=";
 	const apiKey = "nXE5hbcxBAXe6Vah9ZeKPFb954Smre04esf1MNEL";
 	const dateInput = document.querySelector("#datepicker");
@@ -30,7 +30,7 @@ function nasarequested() {
 			fetch(baseUrl + apiKey + newDate)
 				.then((response) => response.json())
 				.then((json) => {
-					console.log(json);
+					// console.log(json);
 					diplaydata(json);
 				});
 		} catch (error) {
@@ -65,10 +65,11 @@ function nasarequested() {
 }
 
 
-const dateInput = document.querySelector("#datepicker");
-dateInput.addEventListener("change", (e) => {
+const datePicker = document.querySelector("#datepicker");
+datePicker.addEventListener("change", (e) => {
 	e.preventDefault();
-	nasarequested();
+	nasaRequested();
 });
-nasarequested().onload;
+
+nasaRequested().onload;
 

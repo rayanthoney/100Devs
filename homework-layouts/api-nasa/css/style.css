@@ -10,13 +10,8 @@
 /* ****************** */
 /*      BODY          */
 /* ****************** */
-
-html,
 body {
 	height: 100vh;
-	/* overflow: hidden; */
-}
-body {
 	padding: 0;
 	margin: 0;
 	background: #181828;
@@ -24,6 +19,7 @@ body {
 	font-size: 14px;
 	line-height: 1;
     font-family: 'Montserrat', sans-serif;
+	overflow: auto;
 }
 input,
 select,
@@ -49,12 +45,13 @@ a {
 	color: #fff;
 }
 .wrapper {
+	text-align: center;
     /* border: 2px solid yellow; */
     height: 100vh;
 }
 .top-header {
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
     padding: 1rem;
     /* border: 2px solid red; */
 }
@@ -81,6 +78,10 @@ a {
     border-radius: 0.5rem;
     color: #181828;
     margin: 0 20px;
+}
+#title {
+	font-size: 25px;
+	margin: 15px;
 }
 .image-div {
 	width: 50%;
@@ -1040,7 +1041,7 @@ button {
 	}
 }
 
-@-webkit-keyframes "beam" {
+@keyframes beam {
 	0% {
 		top: -220px;
 		filter: alpha(opacity=100);
@@ -1053,7 +1054,7 @@ button {
 	}
 }
 
-@-webkit-keyframes flame {
+@keyframes flame {
 	0% {
 		bottom: -20px;
 		left: 10%;
@@ -1070,7 +1071,7 @@ button {
 		opacity: 0.9;
 	}
 }
-@-webkit-keyframes flamebig {
+@keyframes flamebig {
 	0% {
 		bottom: -30px;
 		left: 10%;
