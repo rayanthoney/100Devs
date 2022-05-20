@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* Box Model Hack */
 * {
 	box-sizing: border-box;
@@ -15,10 +15,10 @@ body {
 	padding: 0;
 	margin: 0;
 	background: #181828;
-    color: white;
+	color: white;
 	font-size: 14px;
 	line-height: 1;
-    font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	overflow: auto;
 }
 input,
@@ -28,13 +28,13 @@ label,
 textarea {
 	margin: 0;
 	font-size: 100%;
-    cursor: pointer;
-    font-size: 15px;
+	cursor: pointer;
+	font-size: 15px;
 }
 h1 {
-    font-size: 50px;
-    color: white;
-    margin: 20px;
+	font-size: 50px;
+	color: white;
+	margin: 20px;
 }
 a {
 	margin: 0;
@@ -46,14 +46,14 @@ a {
 }
 .wrapper {
 	text-align: center;
-    /* border: 2px solid yellow; */
-    height: 100vh;
+	/* border: 2px solid yellow; */
+	height: 100vh;
 }
 .top-header {
-    margin: auto;
-    /* text-align: center; */
-    padding: 1rem;
-    /* border: 2px solid red; */
+	margin: auto;
+	/* text-align: center; */
+	padding: 1rem;
+	/* border: 2px solid red; */
 }
 .top-header:before {
 	background-image: url(/img/header-footer-gradient-bg.png);
@@ -70,14 +70,14 @@ a {
 	left: 0;
 	opacity: 0.5;
 }
-#datepicker{
-    box-sizing: border-box;
-    border: 1px solid white;
-    width: 9rem;
-    padding: 0.2rem;
-    border-radius: 0.5rem;
-    color: #181828;
-    margin: 0 20px;
+#datepicker {
+	box-sizing: border-box;
+	border: 1px solid white;
+	width: 9rem;
+	padding: 0.2rem;
+	border-radius: 0.5rem;
+	color: #181828;
+	margin: 0 20px;
 }
 #title {
 	font-size: 25px;
@@ -96,19 +96,18 @@ a {
 }
 #videoLink {
 	width: 100%;
-	height: 70vh
+	height: 70vh;
 }
 .description-div {
 	width: 80%;
-	margin:0.1rem auto 1rem;
+	margin: 0.1rem auto 1rem;
 	border: solid 1px white;
 	padding: 0.5rem;
 	border-radius: 00.5rem;
 }
 #description {
-	line-height:1.82;
+	line-height: 1.82;
 }
-
 
 /* ****************** */
 /*      STARFIELD     */
@@ -326,8 +325,6 @@ button {
 /* ****************** */
 /*      END BODY      */
 /* ****************** */
-
-
 
 /*************************************/
 /*          SPACE SHIP               */
@@ -911,8 +908,7 @@ button {
   -ms-transform:scale(0.8);
   -moz-transform:scale(0.8);
   -webkit-transform:scale(0.8);
-  -o-transform:scale(0.8);
-  */
+  -o-transform:scale(0.8); */
 }
 #ship:hover .cannon {
 	height: 0px;
@@ -1006,14 +1002,14 @@ button {
 	animation-delay: 0ms;
 }
 .laser {
-	background: #a1f94a;
+	background:	rgb(161, 249, 74);
 	opacity: 0;
 	height: 200px;
 	width: 4px;
 	position: absolute;
 	top: -220px;
 	border-radius: 50%;
-	box-shadow: 0 0 6px #a1f94a;
+	box-shadow: 0 0 6px rgb(161, 249, 74);
 	/* -webkit-filter: blur(1px); */
 }
 

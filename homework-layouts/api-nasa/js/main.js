@@ -15,13 +15,17 @@ function nasaRequested() {
 
 	const currentDate = new Date().toISOString().slice(0, 10);
 
-	const imageSection = `<a id="hdimg" href="" target="-blank">
-    <div class="image-div">
-    <img id="image_of_the_day" src="" alt="image-by-nasa">
-    </div>
-   </a>`;
+	const imageSection = `
+	<a id="hdimg" href="" target="-blank">
+		<div class="image-div">
+			<img id="image_of_the_day" src="" alt="image-by-nasa">
+		</div>
+	</a>`;
 
-	const videoSection = `<div class="video-div"> <iframe id="videoLink" src="" frameborder="0"></iframe></div>`;
+	const videoSection = `
+	<div class="video-div">
+		 <iframe id="videoLink" src="" frameborder="0"></iframe>
+	</div>`;
 
 	let newDate = "&date=" + dateInput.value + "&";
 
@@ -65,8 +69,8 @@ function nasaRequested() {
 }
 
 
-const datePicker = document.querySelector("#datepicker");
-datePicker.addEventListener("change", (e) => {
+const dateInput = document.querySelector("#datepicker");
+dateInput.addEventListener("change", (e) => {
 	e.preventDefault();
 	nasaRequested();
 });
