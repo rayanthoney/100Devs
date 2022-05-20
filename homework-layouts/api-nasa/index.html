@@ -1,69 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="wrapper">
+         <!-- header -->
+    <header class="top-header">
+        <h1>NASA's Picture of the Day</h1>
+        <form action="">
+            <label for="datepicker">Pick a date:
+                <input id="datepicker" type="date">
+            </label>
+        </form>
+    </header>
+<!-- title & copywrite start -->
+    <section class="title-section">
+        <h2 id="title"></h2>
+        <p id="date"></p>
+        <small style="display: block;" id="copyright" ></small>
+    </section>
+    <!-- title & copywrite end -->
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
+    <!-- floating ship start -->
+    <div id="scene">
+        <div id="ship">
+            <div id="hull">
+                <div class="cover cover-hull">
+                    <div class="grill"></div>
+                </div>
+                <div id="cockpit">
+                    <div class="inside"></div>
+                    <div id="canopy"></div>
+                    <div class="glass"></div>
+                </div>
+                <div id="rear-rocket">
+                    <div class="flame"></div>
+                </div>
+                <div class="side-rocket side-left">
+                    <div class="burner">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="connector"></div>
+                    <div class="winglet"></div>
+                    <div class="intake">
+                        <div class="cannon">
+                            <div class="laser"></div>
+                        </div>
+                    </div>
+                    <div class="cover">
+                        <div class="grill"></div>
+                    </div>
+                </div>
+                <div class="side-rocket side-right">
+                    <div class="burner">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="connector"></div>
+                    <div class="winglet"></div>
+                    <div class="intake">
+                        <div class="cannon">
+                            <div class="laser"></div>
+                        </div>
+                    </div>
+                    <div class="cover">
+                        <div class="grill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- floating ship end -->
 
-		<title>NASA Project | API</title>
+        <section id="media-section">
+        </section>
 
-		<!-- Custom CSS Google Font Sheets -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-	</head>
-
-	<body>
-			<header class="top-header">
-		  </header>
-
-		  <!--dust particle-->
-		  <div>
-			<div class="starsec"></div>
-			<div class="starthird"></div>
-			<div class="starfourth"></div>
-			<div class="starfifth"></div>
-		  </div>
-		  <!--Dust particle end--->
-
-
-		  <!-- <div class="lamp__wrap">
-			<div class="lamp">
-			  <div class="cable"></div>
-			  <div class="cover"></div>
-			  <div class="in-cover">
-				<div class="bulb"></div>
-			  </div>
-			  <div class="light"></div>
-			</div>
-		  </div> -->
-		  <!-- END Lamp -->
-
-		  <!-- <section class="error"> -->
-			<!-- Content -->
-			<!-- <div class="error__content">
-			  <div class="error__message message">
-				<h1 class="message__title">NASA Project</h1>
-				<div class="nasa__image">
-					<img src="/img/chandra.webp" alt="">
-				</div>
-				<p class="message__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima veritatis fuga saepe tempore ad vitae reiciendis molestiae aut illo dicta asperiores, officia enim error exercitationem eveniet rem sit et. Incidunt optio provident deleniti facere harum laboriosam excepturi quaerat, labore architecto numquam distinctio ex nam praesentium. Minima sit eveniet reprehenderit blanditiis!</p>
-			  </div>
-			  <div class="error__nav e-nav">
-				<input class="e-nav__link" type="date" name="" value="">
-				<a href="" target="_blank" class="e-nav__link"></a>
-			  </div>
-			</div> -->
-			<!-- END Content -->
-		  <!-- </section> -->
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+    <!-- description start -->
+       <div class="description-div">
+        <p id="description"></p>
+       </div>
+    <!-- description end -->
+    
+    <!--dust particle-->
+    <div>
+        <div class="starsec"></div>
+        <div class="starthird"></div>
+        <div class="starfourth"></div>
+        <div class="starfifth"></div>
+    </div>
+    <!--Dust particle end--->
+    </main>
+   <script text="text/html" src="js/main.js"></script>
+   <script text="text/html" src="js/spaceship.js"></script>
+</body>
 </html>
