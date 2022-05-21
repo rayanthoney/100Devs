@@ -6,7 +6,6 @@
 	padding: 0;
 	-webkit-text-size-adjust: none;
 }
-
 /* ****************** */
 /*      BODY          */
 /* ****************** */
@@ -1049,7 +1048,6 @@ button {
 		opacity: 0.9;
 	}
 }
-
 @keyframes flame {
 	0% {
 		bottom: -20px;
