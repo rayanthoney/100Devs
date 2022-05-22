@@ -16,3 +16,7 @@ function positiveSum(arr) {
     }
     return total                     // return total
 }
+
+// function positiveSum(arr) {
+//     return arr.filter(num => num >= 0).reduce((prev, curr) => prev + curr, 0);
+//   }
