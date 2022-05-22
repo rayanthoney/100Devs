@@ -20,7 +20,8 @@
 | &#9745; | 3   | [Even or Odd](fundamentals/even-or-odd.js)               |
 | &#9745; | 4   | [Number to String](fundamentals/convert-number-to-string.js)|
 | &#9745; | 5   | [Square(n) Sum](fundamentals/square-n-sum.js)   |
-| &#9745; | 6   | [Convert a String to a Number!](fundamentals/conv-string-to-num.js)         |
+| &#9745; | 6   | [Convert a String to a Number](fundamentals/conv-string-to-num.js)         |
+| &#9745; | 6   | [Sum of positive](fundamentals/sum-of-positive.js)         |
 
 <!--
 ## Loops and Debugging
