@@ -22,6 +22,7 @@
 | &#9745; | 5   | [Square(n) Sum](fundamentals/square-n-sum.js)   |
 | &#9745; | 6   | [Convert a String to a Number](fundamentals/conv-string-to-num.js)         |
 | &#9745; | 6   | [Sum of positive](fundamentals/sum-of-positive.js)         |
+| &#9745; | 6   | [Convert boolean values to strings 'Yes' or 'No'.](fundamentals/boolean-to-string.js)         |
 
 <!--
 ## Loops and Debugging
