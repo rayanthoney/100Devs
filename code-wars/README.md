@@ -25,6 +25,7 @@
 | &#9745; | 8   | [Convert boolean values to strings 'Yes' or 'No'.](fundamentals/boolean-to-string.js)         |
 | &#9745; | 9   | [Remove String Spaces](fundamentals/remove-string-spaces.js)         |
 | &#9745; | 10   | [Remove First and Last Character](fundamentals/remove-first-last-char.js)         |
+| &#9745; | 11   | [Reversed Strings](fundamentals/reversed-strings.js)         |
 
 <!--
 ## Loops and Debugging
