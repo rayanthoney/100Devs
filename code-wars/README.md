@@ -13,19 +13,20 @@
 
 ## Fundamentals
 
-|         |     |                                                |
-| ------- | --- | ---------------------------------------------- |
-| &#9745; | 1   | [Greeting - sample](functions/1-greeting.js) |
-| &#9745; | 2   | [Hello World](fundamentals/hello-world.js)   |
-| &#9745; | 3   | [Even or Odd](fundamentals/even-or-odd.js)               |
-| &#9745; | 4   | [Number to String](fundamentals/convert-number-to-string.js)|
-| &#9745; | 5   | [Square(n) Sum](fundamentals/square-n-sum.js)   |
-| &#9745; | 6   | [Convert a String to a Number](fundamentals/conv-string-to-num.js)         |
-| &#9745; | 7  | [Sum of positive](fundamentals/sum-of-positive.js)         |
-| &#9745; | 8   | [Convert boolean values to strings 'Yes' or 'No'.](fundamentals/boolean-to-string.js)         |
-| &#9745; | 9   | [Remove String Spaces](fundamentals/remove-string-spaces.js)         |
-| &#9745; | 10   | [Remove First and Last Character](fundamentals/remove-first-last-char.js)         |
-| &#9745; | 11   | [Reversed Strings](fundamentals/reversed-strings.js)         |
+|         |     |                                                                                       |
+| ------- | --- | ------------------------------------------------------------------------------------- |
+| &#9745; | 1   | [Greeting - sample](functions/1-greeting.js)                                          |
+| &#9745; | 2   | [Hello World](fundamentals/hello-world.js)                                            |
+| &#9745; | 3   | [Even or Odd](fundamentals/even-or-odd.js)                                            |
+| &#9745; | 4   | [Number to String](fundamentals/convert-number-to-string.js)                          |
+| &#9745; | 5   | [Square(n) Sum](fundamentals/square-n-sum.js)                                         |
+| &#9745; | 6   | [Convert a String to a Number](fundamentals/conv-string-to-num.js)                    |
+| &#9745; | 7   | [Sum of positive](fundamentals/sum-of-positive.js)                                    |
+| &#9745; | 8   | [Convert boolean values to strings 'Yes' or 'No'.](fundamentals/boolean-to-string.js) |
+| &#9745; | 9   | [Remove String Spaces](fundamentals/remove-string-spaces.js)                          |
+| &#9745; | 10  | [Remove First and Last Character](fundamentals/remove-first-last-char.js)             |
+| &#9745; | 11  | [Reversed Strings](fundamentals/reversed-strings.js)                                  |
+| &#9745; | 12  | [Returning Strings](fundamentals/returning-strings.js)                                |
 
 <!--
 ## Loops and Debugging
@@ -75,5 +76,3 @@
 | &#9744; | 36 |[""](./objects/36-frequency-analysis.js) |
 | &#9744; | 37 |[""](./objects/37-dog-breeder.js) |
 | &#9744; | 38 |[""](./objects/38-attendance-check.js) | -->
-
-
