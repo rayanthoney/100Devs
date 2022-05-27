@@ -6,3 +6,10 @@
 function greet(name) {
 	//your code here
 }
+
+
+function greet(name){
+    return `Hello, ${name} how are you doing today?`;
+  }
+
+//   const greet = name => `Hello, ${name} how are you doing today?`;
