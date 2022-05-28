@@ -6,9 +6,9 @@
 // invert([]) == []
 // You can assume that all values are integers. Do not mutate the input array/list.
 
-function invert(array) {
-	return;
-}
+// function invert(array) {
+// 	return;
+// }
 
 function invert(array) {
 	return array.map(function (n) {
@@ -21,3 +21,7 @@ function invert(array) {
 }
 
 console.log(invert([1, 2, -3, 4, 5, 0]));
+
+// function invert(array) {
+// 	return array.map(n => n && -n)
+//  }
