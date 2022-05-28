@@ -27,6 +27,7 @@
 | &#9745; | 10  | [Remove First and Last Character](fundamentals/remove-first-last-char.js)             |
 | &#9745; | 11  | [Reversed Strings](fundamentals/reversed-strings.js)                                  |
 | &#9745; | 12  | [Returning Strings](fundamentals/returning-strings.js)                                |
+| &#9745; | 13  | [Invert values](fundamentals/Invert-values.js)                                        |
 
 <!--
 ## Loops and Debugging
