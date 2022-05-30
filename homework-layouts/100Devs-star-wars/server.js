@@ -65,8 +65,10 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
 						upsert: true,
 					}
 				)
-				.then((result) => {});
-			res.json("Success").catch((error) => console.error(error));
+				.then((result) => {
+					console.log(result);
+				})
+				.catch((error) => console.error(error));
 		});
 		app.delete("/quotes", (req, res) => {
 			quotesCollection
@@ -80,13 +82,8 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
 				.catch((error) => console.error(error));
 		});
 
-		// ========================
-		// Listen
-		// ========================
-		const isProduction = process.env.NODE_ENV === "production";
-		const port = isProduction ? 7500 : 3000;
-		app.listen(port, function () {
-			console.log(`listening on ${port}`);
+		app.listen(3000, function () {
+			console.log("listening on 3000");
 		});
 	})
-	.catch(console.error);
+	.catch((error) => console.error(error));
