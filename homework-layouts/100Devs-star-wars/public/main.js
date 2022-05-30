@@ -37,6 +37,5 @@ deleteButton.addEventListener("click", (_) => {
 			} else {
 				window.location.reload(true);
 			}
-		})
-		.catch(console.error);
+		});
 });

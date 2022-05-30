@@ -36,7 +36,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
 				.find()
 				.toArray()
 				.then((results) => {
-					console.log(results);
+					// console.log(results);
 					res.render("index.ejs", { quotes: results });
 				})
 				.catch((error) => console.error(error));
@@ -67,6 +67,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
 				)
 				.then((result) => {
 					console.log(result);
+					res.json("Success");
 				})
 				.catch((error) => console.error(error));
 		});
@@ -81,7 +82,6 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
 				})
 				.catch((error) => console.error(error));
 		});
-
 		app.listen(3000, function () {
 			console.log("listening on 3000");
 		});
