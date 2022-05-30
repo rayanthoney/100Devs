@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	    <link rel="manifest" href="/site.webmanifest">
+
+		<title>100Devs Star Wars CRUD APP</title>
+
+		<!-- Custom CSS Google Font Sheets -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+		<!-- external CSS link -->
+		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+		<link rel="stylesheet" href="css/piccalilli.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<h1>May Node and Express be with you.</h1>
+		<!-- <p class="nice">Hello, 100Devs ;)</p>
+		<h2>My name is Ray Anthoney!</h2> -->
+
+		<form action="/quotes" method="POST">
+			<input type="text" placeholder="name" name="name">
+			<input type="text" placeholder="quote" name="quote">
+			<button type="submit">Submit</button>
+		  </form>
+
+        <h2> Quotes </h2>
+
+        <ul class="quotes">
+            <!-- Loop through quotes -->
+  <% for(var i = 0; i < quotes.length; i++) {%>
+    <li class="quote">
+      <!-- Output name from the iterated quote object -->
+      <span><%= quotes[i].name %></span>:
+      <!-- Output quote from the iterated quote object -->
+      <span><%= quotes[i].quote %></span>
+    </li>
+  <% } %>
+</ul>
+<div>
+    <h2>Darth Vader invades!</h2>
+    <p>
+      Replace the first Yoda's quote with a quote written by Darth Vader
+    </p>
+    <button id="update-button">Replace Yoda's quote</button>
+</div>
+		<script type="text/javascript" src="/main.js"></script>
+	</body>
+</html>
+
+<div>
+    <h2>Remove Darth Vader!</h2>
+    <p>
+      Delete one Darth Vader's quote. Does nothing if there are no more Darth
+      Vader's quote
+    </p>
+    <button id="delete-button">Delete Darth Vader's quote</button>
+  </div>

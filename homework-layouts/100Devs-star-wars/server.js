@@ -19,15 +19,28 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
 		console.log("Connected to Database");
 		const db = client.db("star-wars-quotes");
 		const quotesCollection = db.collection("quotes");
-		// Make sure you place body-parser before your CRUD handlers!
+
+		// ========================
+		// Middlewares
+		// ========================
+		app.set("view engine", "ejs");
 		app.use(bodyParser.urlencoded({ extended: true }));
+		app.use(bodyParser.json());
+		app.use(express.static("public"));
+
+		// ========================
+		// Routes
+		// ========================
 		app.get("/", (req, res) => {
-			// do something here
-			res.sendFile(__dirname + "/index.html");
-			// Note: __dirname is the current directory you're in. Try logging it and see what you get!
-			// Mine was '/Users/zellwk/Projects/demo-repos/crud-express-mongo' for this app
+			quotesCollection
+				.find()
+				.toArray()
+				.then((results) => {
+					console.log(results);
+					res.render("index.ejs", { quotes: results });
+				})
+				.catch((error) => console.error(error));
 		});
-		// We normally abbreviate `request` to `req` and `response` to `res`.
 		app.post("/quotes", (req, res) => {
 			quotesCollection
 				.insertOne(req.body)
@@ -37,12 +50,43 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
 				})
 				.catch((error) => console.error(error));
 		});
-		app.listen(3000, function () {
-			console.log("listening on 3000");
+		app.put("/quotes", (req, res) => {
+			// console.log(req.body);
+			quotesCollection
+				.findOneAndUpdate(
+					{ name: "Yoda" },
+					{
+						$set: {
+							name: req.body.name,
+							quote: req.body.quote,
+						},
+					},
+					{
+						upsert: true,
+					}
+				)
+				.then((result) => {});
+			res.json("Success").catch((error) => console.error(error));
+		});
+		app.delete("/quotes", (req, res) => {
+			quotesCollection
+				.deleteOne({ name: req.body.name })
+				.then((result) => {
+					if (result.deletedCount === 0) {
+						return res.json("No quote to delete");
+					}
+					res.json("Deleted Darth Vader's quote");
+				})
+				.catch((error) => console.error(error));
+		});
+
+		// ========================
+		// Listen
+		// ========================
+		const isProduction = process.env.NODE_ENV === "production";
+		const port = isProduction ? 7500 : 3000;
+		app.listen(port, function () {
+			console.log(`listening on ${port}`);
 		});
 	})
-	.catch((error) => console.error(error));
-
-// mongodb+srv://ram911:<mu$tbethemu$ic>@cluster0.htktv52.mongodb.net/?retryWrites=true&w=majority
-
-// mongodb+srv://<username>:<password>@cluster0.htktv52.mongodb.net/?retryWrites=true&w=majority
+	.catch(console.error);
