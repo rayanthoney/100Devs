@@ -24,7 +24,7 @@ CRUD is a simple acronym for :
 </p>
 
 <p>
-    This is a simple application that lets you track a list of quotes from Star Wars Characters.
+    This is a simple application that lets you track a list of quotes from Star Wars Characters. NodeJS, Express and MongoDB are the tools used to create this application 
 </p>
 
 <!--
