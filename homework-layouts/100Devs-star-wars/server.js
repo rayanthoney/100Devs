@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const MongoClient = require("mongodb").MongoClient;
 const connectionString =
-	"mongodb+srv://ram911:mu$tbethemu$ic@cluster0.htktv52.mongodb.net/?retryWrites=true&w=majority";
+	"mongodb+srv://<username>:<password>@cluster0.htktv52.mongodb.net/?retryWrites=true&w=majority";
 
 // MongoClient.connect("connectionString", (err, client) => {
 // 	// ... do something here
