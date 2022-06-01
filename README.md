@@ -7,41 +7,60 @@
 
 <h3 align="center">100Devs-Cohort 2022</h3>
 
-
-
 ---
 
 ## 🧐 About <a name = "100Devs 2022 Cohort"></a>
-This repository was set up to allow me to track and hold all content used in the *New* 100Devs Cohort for 2022. The 100Devs Cohort is the 🧠child of **Leon Noel** who decided he would help folks affected by the pandemic and those under represented in tech to develop the skills needed to break into the tech industry. This is an online, free, 30 week bootcamp, meant to bring you from zero programming skills to employable. **[Twitch - LearnWithLeon](https://www.twitch.tv/learnwithleon) 👈🏾**
+
+This repository was set up to allow me to track and hold all content used in the _New_ 100Devs Cohort for 2022. The 100Devs Cohort is the 🧠child of **Leon Noel** who decided he would help folks affected by the pandemic and those under represented in tech to develop the skills needed to break into the tech industry. This is an online, free, 30 week bootcamp, meant to bring you from zero programming skills to employable.
+
+<br>
+<br>
+<br>
+
+<p align="center">
+  <a href="https://www.twitch.tv/learnwithleon" target="_blank">
+          <img height="20"  src="https://img.shields.io/badge/-@Learn%20With%20Leon-772ce8?style=plastic&labelColor=black&logo=twitch&logoColor=white&logoWidth=17" alt="Twitch">
+      </a>&nbsp;
+  <a href="https://twitter.com/leonnoel" target="_blank">
+          <img height="20"  src="https://img.shields.io/badge/-@Leon%20Noel-1b92db?style=plastic&labelColor=black&logo=twitter&logoColor=white&logoWidth=17" alt="Twitter">
+      </a>&nbsp;
+  <a href="https://www.youtube.com/channel/UCGiRSHBdWuCgjgmPPz_13xw" target="_blank">
+          <img height="20"  src="https://img.shields.io/badge/-@Leon%20Noel-ff0000?style=plastic&labelColor=black&logo=youtube&logoColor=white&logoWidth=17" alt="Twitter">
+      </a>&nbsp;
+</p>
 
 ---
 
-##  🛠  Languages and Tools
-<p>
-    <code>
-    <img width="37px" style="margin-left: 20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Icon">
-    </code>&nbsp;<code>
-    <img width="37px" style="margin-left: 20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"alt="CSS3 Icon">
-    </code>&nbsp;<code>
-    <img width="37px" style="margin-left: 20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"alt="JavaScript Icon">
-    </code>&nbsp;<code>
-    <img width="37px" style="margin-left: 20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"alt="React Icon">
-    </code>&nbsp;<code>
-    <img width="37px" style="margin-left: 20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS Icon">
-    </code>&nbsp;<code>
-    <img width="37px" style="margin-left: 20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Icon">
-    </code>
+## 🛠 Languages and Tools
+
+<br>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skills.thijs.gg/icons?i=html"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=css" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=js" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=react" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=nodejs" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=express" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=mongo" />&nbsp;&nbsp;&nbsp;&nbsp;
+  </a>
 </p>
 ---
 
-## ✍️ Authors <a name = "authors"></a>
-- [@RayAnthoney](https://github.com/rayanthhoney) - Initial work
+## ✍️ Author
+
+<br>
+<br>
+
+<a href="https://github.com/rayanthoney" target="_blank">
+          <img height="30"  src="https://img.shields.io/badge/-@Ray%20Anthoney-24292f?style=plastic&labelColor=purple&logo=github&logoColor=white&logoWidth=17" alt="Twitter">
+      </a>&nbsp;
 
 ---
 
-
-
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
 - Hat tip to anyone whose code was used
 - Inspiration
 - References
