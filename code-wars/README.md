@@ -1,4 +1,4 @@
-![Code Wars | Afro Samurai Style](img\afrosamurai.jpg)
+![Code Wars | Afro Samurai Style](img/afrosamurai.jpg)
 
 <p align="center">
     <a href="https://github.com/rayanthoney" target="_blank" >
