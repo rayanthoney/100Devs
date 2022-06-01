@@ -1,4 +1,4 @@
-<!-- ![Code Wars](CodeWars.png) -->
+![Code Wars | Afro Samurai Style](img\afrosamurai.jpg)
 
 <p align="center">
     <a href="https://github.com/rayanthoney" target="_blank" >
@@ -30,6 +30,7 @@
 | &#9745; | 13  | [Invert values](fundamentals/Invert-values.js)                                        |
 | &#9745; | 14  | [Basic Mathematical Operations](fundamentals/basic-mathematical-operations.js)        |
 | &#9745; | 15  | [Convert a Boolean to a String](fundamentals/convert-boolean-to-string.js)            |
+| &#9745; | 16  | [Removing Elements](fundamentals\removing-elements.js)                                |
 
 <!--
 ## Loops and Debugging
