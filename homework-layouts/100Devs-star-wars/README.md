@@ -2,6 +2,9 @@
 
 ## Building a Simple CRUD app with Node, Express, and MongoDB.
 
+<br>
+<br>
+
 CRUD is a simple acronym for :
 
 - Create (POST) - Make something
@@ -9,22 +12,40 @@ CRUD is a simple acronym for :
 - Update (PUT) - Change something
 - Delete (DELETE) - Remove something
 
+<br>
+<br>
+
 # Crud Demo
 
 **This is the source code for** ["Building a CRUD app with Node, Express, and MongoDB"](https://zellwk.com/blog/crud-express-mongodb).
 
+<br>
+
 ![Star-Wars-Quote](public/img/crud.png)
 
-## Languages used
+<br>
+
+## 🛠 Languages and Tools
+
+<br>
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skills.thijs.gg/icons?i=html,css,js,nodejs,express,mongodb" />
+    <img src="https://skills.thijs.gg/icons?i=html"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=css" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=js" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=react" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=nodejs" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=express" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://skills.thijs.gg/icons?i=mongo" />&nbsp;&nbsp;&nbsp;&nbsp;
   </a>
 </p>
 
+<br>
+<br>
+
 <p>
-    This is a simple application that lets you track a list of quotes from Star Wars Characters. NodeJS, Express and MongoDB are the tools used to create this application 
+    This is a simple application that lets you track a list of quotes from Star Wars Characters. NodeJS, Express and MongoDB are the tools used to create this application
 </p>
 
 <!--
