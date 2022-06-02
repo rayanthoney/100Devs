@@ -31,6 +31,7 @@
 | &#9745; | 14  | [Basic Mathematical Operations](fundamentals/basic-mathematical-operations.js)        |
 | &#9745; | 15  | [Convert a Boolean to a String](fundamentals/convert-boolean-to-string.js)            |
 | &#9745; | 16  | [Removing Elements](fundamentals\removing-elements.js)                                |
+| &#9745; | 17  | [String cleaning](fundamentals/string-cleaning.js)                                    |
 
 <!--
 ## Loops and Debugging
