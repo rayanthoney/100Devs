@@ -1,0 +1,15 @@
+{
+  "name": "100devs-coin-flip",
+  "version": "1.0.0",
+  "description": "Coin flip Project 100Devs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "RayAnthoney",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.5.2"
+  }
+}
