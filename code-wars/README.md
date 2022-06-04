@@ -33,6 +33,7 @@
 | &#9745; | 16  | [Removing Elements](fundamentals\removing-elements.js)                                   |
 | &#9745; | 17  | [String cleaning](fundamentals/string-cleaning.js)                                       |
 | &#9745; | 18  | [Find the smallest integer in the array](fundamentals/find-smallest-integer-in-array.js) |
+| &#9745; | 19  | [Grasshopper - Summation](fundamentals/grasshopper-summation.js)                         |
 
 <!--
 ## Loops and Debugging
