@@ -1,3 +1,4 @@
+// String cleaning - 8 Kyu
 // Square(n)Sum
 
 // Complete the square sum function so that it squares each number passed into it and then sums the results together.
@@ -8,10 +9,10 @@ function squareSum(numbers) {
 	let arrLength = numbers.length;
 	let sum = 0;
 	for (let i = 0; i < arrLength; i++) {
-        let squareNumber = Number(numbers[i]**2);
+		let squareNumber = Number(numbers[i] ** 2);
 		sum = sum + squareNumber;
 	}
-    return sum;
+	return sum;
 }
 
 // function squareSum(numbers){
