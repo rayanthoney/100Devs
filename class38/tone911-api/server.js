@@ -1,35 +1,39 @@
-// const { request, response } = require("express");
-const { request, response } = require("express");
+// TOP LEVEL FUNCTION FROM EXPRESS
 const express = require("express");
 const app = express();
 const PORT = 8000;
 
 const rappers = {
-	"Ice Cube": {
+	"ice cube": {
 		age: 29,
 		birthName: "Jimmy Crack Korn",
 		birthLocation: "Westside, Compton",
 	},
-	"Snoop Dog": {
+	"snoop dog": {
 		age: 35,
-		birthName: "Jimmy Crack Korn",
-		birthLocation: "Westside, Compton",
+		birthName: "Calvin Cordozar Broadus Jr",
+		birthLocation: "Long Beach, California",
 	},
 	unknown: {
-		age: 29,
+		age: 0,
 		birthName: "unkown",
 		birthLocation: "unkown",
 	},
 };
 
-// NETWORK REQUEST
+// NETWORK REQUEST TO SERVE A FILE (MAIN PAGE)
 app.get("/", (request, response) => {
 	response.sendFile(__dirname + "/index.html");
 });
 
 app.get("/api/:name", (request, response) => {
-	console.log(request.params.name);
-	response.json(rappers);
+	const rapperName = request.params.name.toLowerCase();
+	// console.log(rappers[rapperName].birthName);
+	if (rappers[rapperName]) {
+		response.json(rappers[rapperName]);
+	} else {
+		response.json(rappers["unknown"]);
+	}
 });
 
 app.listen(PORT, () => {
