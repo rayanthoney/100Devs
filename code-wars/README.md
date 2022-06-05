@@ -34,6 +34,7 @@
 | &#9745; | 17  | [String cleaning](fundamentals/string-cleaning.js)                                       |
 | &#9745; | 18  | [Find the smallest integer in the array](fundamentals/find-smallest-integer-in-array.js) |
 | &#9745; | 19  | [Grasshopper - Summation](fundamentals/grasshopper-summation.js)                         |
+| &#9745; | 20  | [MakeUpperCase](fundamentals/make-upper-case.js)                                         |
 
 <!--
 ## Loops and Debugging
