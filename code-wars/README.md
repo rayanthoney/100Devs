@@ -13,28 +13,36 @@
 
 ## Fundamentals
 
-|         |     |                                                                                          |
-| ------- | --- | ---------------------------------------------------------------------------------------- |
-| &#9745; | 1   | [Greeting - sample](functions/1-greeting.js)                                             |
-| &#9745; | 2   | [Hello World](fundamentals/hello-world.js)                                               |
-| &#9745; | 3   | [Even or Odd](fundamentals/even-or-odd.js)                                               |
-| &#9745; | 4   | [Number to String](fundamentals/convert-number-to-string.js)                             |
-| &#9745; | 5   | [Square(n) Sum](fundamentals/square-n-sum.js)                                            |
-| &#9745; | 6   | [Convert a String to a Number](fundamentals/conv-string-to-num.js)                       |
-| &#9745; | 7   | [Sum of positive](fundamentals/sum-of-positive.js)                                       |
-| &#9745; | 8   | [Convert boolean values to strings 'Yes' or 'No'.](fundamentals/boolean-to-string.js)    |
-| &#9745; | 9   | [Remove String Spaces](fundamentals/remove-string-spaces.js)                             |
-| &#9745; | 10  | [Remove First and Last Character](fundamentals/remove-first-last-char.js)                |
-| &#9745; | 11  | [Reversed Strings](fundamentals/reversed-strings.js)                                     |
-| &#9745; | 12  | [Returning Strings](fundamentals/returning-strings.js)                                   |
-| &#9745; | 13  | [Invert values](fundamentals/Invert-values.js)                                           |
-| &#9745; | 14  | [Basic Mathematical Operations](fundamentals/basic-mathematical-operations.js)           |
-| &#9745; | 15  | [Convert a Boolean to a String](fundamentals/convert-boolean-to-string.js)               |
-| &#9745; | 16  | [Removing Elements](fundamentals\removing-elements.js)                                   |
-| &#9745; | 17  | [String cleaning](fundamentals/string-cleaning.js)                                       |
-| &#9745; | 18  | [Find the smallest integer in the array](fundamentals/find-smallest-integer-in-array.js) |
-| &#9745; | 19  | [Grasshopper - Summation](fundamentals/grasshopper-summation.js)                         |
-| &#9745; | 20  | [MakeUpperCase](fundamentals/make-upper-case.js)                                         |
+|         |     |                                                                                               |
+| ------- | --- | --------------------------------------------------------------------------------------------- |
+| &#9745; | 1   | [Greeting - sample](functions/8Kyu/1-greeting.js)                                             |
+| &#9745; | 2   | [Hello World](fundamentals/8Kyu/hello-world.js)                                               |
+| &#9745; | 3   | [Even or Odd](fundamentals/8Kyu/even-or-odd.js)                                               |
+| &#9745; | 4   | [Number to String](fundamentals/8Kyu/convert-number-to-string.js)                             |
+| &#9745; | 5   | [Square(n) Sum](fundamentals/8Kyu/square-n-sum.js)                                            |
+| &#9745; | 6   | [Convert a String to a Number](fundamentals/8Kyu/conv-string-to-num.js)                       |
+| &#9745; | 7   | [Sum of positive](fundamentals/8Kyu/sum-of-positive.js)                                       |
+| &#9745; | 8   | [Convert boolean values to strings 'Yes' or 'No'.](fundamentals/8Kyu/boolean-to-string.js)    |
+| &#9745; | 9   | [Remove String Spaces](fundamentals/8Kyu/remove-string-spaces.js)                             |
+| &#9745; | 10  | [Remove First and Last Character](fundamentals/8Kyu/remove-first-last-char.js)                |
+| &#9745; | 11  | [Reversed Strings](fundamentals/8Kyu/reversed-strings.js)                                     |
+| &#9745; | 12  | [Returning Strings](fundamentals/8Kyu/returning-strings.js)                                   |
+| &#9745; | 13  | [Invert values](fundamentals/8Kyu/Invert-values.js)                                           |
+| &#9745; | 14  | [Basic Mathematical Operations](fundamentals/8Kyu/basic-mathematical-operations.js)           |
+| &#9745; | 15  | [Convert a Boolean to a String](fundamentals/8Kyu/convert-boolean-to-string.js)               |
+| &#9745; | 16  | [Removing Elements](fundamentals/8Kyu/removing-elements.js)                                   |
+| &#9745; | 17  | [String cleaning](fundamentals/8Kyu/string-cleaning.js)                                       |
+| &#9745; | 18  | [Find the smallest integer in the array](fundamentals/8Kyu/find-smallest-integer-in-array.js) |
+| &#9745; | 19  | [Grasshopper - Summation](fundamentals/8Kyu/grasshopper-summation.js)                         |
+| &#9745; | 1   | [MakeUpperCase](fundamentals/8Kyu/make-upper-case.js)                                         |
+
+> Code Wars 7kyu
+
+## Fundamentals
+
+|         |     |                                                |
+| ------- | --- | ---------------------------------------------- |
+| &#9745; | 1   | [Exes and Ohs](fundamentals/7Kyu/exes-ohhs.js) |
 
 <!--
 ## Loops and Debugging
