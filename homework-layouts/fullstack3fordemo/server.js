@@ -67,6 +67,21 @@ const generateId = () => {
 app.post("/api/persons", (req, res) => {
 	const body = req.body;
 
+	if (!body.name) {
+		// CUSTOM ERROR
+		return res.status(418).json({ error: "name is missing" });
+	}
+
+	if (!body.number) {
+		// CUSTOM ERROR
+		return res.status(418).json({ error: "number is missing" });
+	}
+
+	if (persons.some((entry) => entry.name === body.name)) {
+		// RETURN ERROR
+		return res.status(409).json({ error: "name must be unique" });
+	}
+
 	let entry = {
 		id: generateId(),
 		name: body.name,
@@ -78,5 +93,7 @@ app.post("/api/persons", (req, res) => {
 });
 
 app.listen(PORT, () => {
-	console.log(`The Server is running on on port ${PORT}! Betta go catch it!`);
+	console.log(
+		`The Server is running on on port ${PORT}! Buckle up we betta go catch it!`
+	);
 });
