@@ -34,7 +34,8 @@
 | &#9745; | 17  | [String cleaning](fundamentals/8Kyu/string-cleaning.js)                                       |
 | &#9745; | 18  | [Find the smallest integer in the array](fundamentals/8Kyu/find-smallest-integer-in-array.js) |
 | &#9745; | 19  | [Grasshopper - Summation](fundamentals/8Kyu/grasshopper-summation.js)                         |
-| &#9745; | 1   | [MakeUpperCase](fundamentals/8Kyu/make-upper-case.js)                                         |
+| &#9745; | 20  | [MakeUpperCase](fundamentals/8Kyu/make-upper-case.js)                                         |
+| &#9745; | 21  | [Counting sheep...](fundamentals/8Kyu/counting-sheep.js)                                      |
 
 > Code Wars 7kyu
 
