@@ -1,12 +1,16 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const { req } = require("express");
-const { res } = require("express");
+// THESE SEEM TO AUTO GENERATE????
+// const { req } = require("express");
+// const { res } = require("express");
+////////////////////////////////////
+const morgan = require("morgan");
 const PORT = 3001;
 
 app.use(cors());
 app.use(express.json());
+app.use(morgan("tiny"));
 
 let persons = [
 	{
@@ -69,7 +73,7 @@ app.post("/api/persons", (req, res) => {
 
 	if (!body.name) {
 		// CUSTOM ERROR
-		return res.status(418).json({ error: "name is missing" });
+		return res.status(400).json({ error: "name is missing" });
 	}
 
 	if (!body.number) {
