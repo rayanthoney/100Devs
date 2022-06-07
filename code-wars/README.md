@@ -36,6 +36,7 @@
 | &#9745; | 19  | [Grasshopper - Summation](fundamentals/8Kyu/grasshopper-summation.js)                         |
 | &#9745; | 20  | [MakeUpperCase](fundamentals/8Kyu/make-upper-case.js)                                         |
 | &#9745; | 21  | [Counting sheep...](fundamentals/8Kyu/counting-sheep.js)                                      |
+| &#9745; | 22  | [Quarter of the year](fundamentals/8Kyu/quarter-of-the-year.js)                               |
 
 > Code Wars 7kyu
 
