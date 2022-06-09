@@ -37,6 +37,7 @@
 | &#9745; | 20  | [MakeUpperCase](fundamentals/8Kyu/make-upper-case.js)                                         |
 | &#9745; | 21  | [Counting sheep...](fundamentals/8Kyu/counting-sheep.js)                                      |
 | &#9745; | 22  | [Quarter of the year](fundamentals/8Kyu/quarter-of-the-year.js)                               |
+| &#9745; | 23  | [L1: Set Alarm](fundamentals/8Kyu/set-alarm.js)                                               |
 
 > Code Wars 7kyu
 
