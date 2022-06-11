@@ -39,6 +39,7 @@
 | &#9745; | 22  | [Quarter of the year](fundamentals/8Kyu/quarter-of-the-year.js)                                 |
 | &#9745; | 23  | [L1: Set Alarm](fundamentals/8Kyu/set-alarm.js)                                                 |
 | &#9745; | 24  | [Sum without highest and lowest number](fundamentals/8Kyu/sum-without-highest-lowest-number.js) |
+| &#9745; | 25  | [Total amount of points](fundamentals/8Kyu/total-amount-points.js)                              |
 
 > Code Wars 7kyu
 
