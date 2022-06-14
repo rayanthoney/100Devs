@@ -41,6 +41,7 @@
 | &#9745; | 24  | [Sum without highest and lowest number](fundamentals/8Kyu/sum-without-highest-lowest-number.js) |
 | &#9745; | 25  | [Total amount of points](fundamentals/8Kyu/total-amount-points.js)                              |
 | &#9745; | 26  | [Switch it Up!](fundamentals/8Kyu/switch-it-up.js)                                              |
+| &#9745; | 27  | [Sum Mixed Array](fundamentals/8Kyu/sum-mixed-array.js)                                         |
 
 > Code Wars 7kyu
 
