@@ -2,11 +2,14 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
+
+/* Box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+/* Reset margins */
 * {
   margin: 0;
 }
