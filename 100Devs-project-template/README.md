@@ -2,8 +2,6 @@
 
 # 🛠️ My Awesome Project
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
-
 ![alt tag](https://picsum.photos/600/300)
 
 <div align="center" >
@@ -12,16 +10,19 @@
     <!-- link to local image -->
         <img src="IMG SOURCE GOES HERE" alt="" height="100%"/>
     </a>
+
+**Link to project:** http://recruiters-love-seeing-live-demos.com/
 <br>
 <br>
-    <p>
-        <a href="-REPOSITORY URL GOES HERE-" target="_blank">
-                <img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&zfor-the-badge&logo=github"/>
-        </a>
-        <a href="-URL DEMO GOES HERE-" target="_blank">
-            <img src="https://img.shields.io/badge/-website-green?style=plastic&zfor-the-badge&color=e8970c"/>
-        </a>
-    </p>
+<p>
+<a href="-REPOSITORY URL GOES HERE-" target="_blank">
+<img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&zfor-the-badge&logo=github"/>
+</a>
+<a href="-URL DEMO GOES HERE-" target="_blank">
+<img src="https://img.shields.io/badge/-Website-green?style=plastic&zfor-the-badge&color=e8970c"/>
+</a>
+</p>
+
 </div>
 
 Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
