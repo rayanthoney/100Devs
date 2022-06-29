@@ -14,6 +14,7 @@
 **Link to project:** http://recruiters-love-seeing-live-demos.com/
 <br>
 <br>
+
 <p>
 <a href="-REPOSITORY URL GOES HERE-" target="_blank">
 <img src="https://img.shields.io/badge/Repo-lightgrey?style=plastic&zfor-the-badge&logo=github"/>
@@ -29,9 +30,9 @@ Write a short sentence or two about this project and what it does. Be sure to in
 
 ## How It's Made:
 
-<!-- **Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** HTML, CSS, JavaScript, Framework of choice
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold. -->
+Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
 <br>
 
 <p align="center">
