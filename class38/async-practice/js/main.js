@@ -36,7 +36,7 @@ houseThree()
 //         callback()
 //     }, 3000)
 // }
-// function houseThree(){
+function houseThree(){
 //     console.log('Paper delivered to house 3')
 // }
 // houseOne()
