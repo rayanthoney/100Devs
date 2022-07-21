@@ -8,20 +8,19 @@
 // declare variables
 const express = require('express')
 
-const app = require()
+const app = express()
 const port = 8500;
 const mongoose = require('mongoose')
 require('dotenv').config()
-// ADD NODE1 VARIABLE
+// ADD MODEL VARIABLE
 
 // MIDDLEWARE (TELLS SERVER WHERE TO LOOK FOR STUFF)
 
-
-app.set('vierw engine', 'ejs')
+app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use('express.urlencoded'({extended: true}))
 
-mongoose.connect()
+mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true}, () => {console.log('Connected to db!')})
 
 
 app.listen(PORT, () => console.log(`Server is running on port! ${PORT} You Betta go and catch it!`))
