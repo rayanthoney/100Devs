@@ -9,7 +9,7 @@
 const express = require('express')
 
 const app = express()
-const port = 8500;
+const PORT = 8500;
 const mongoose = require('mongoose')
 require('dotenv').config()
 // ADD MODEL VARIABLE
@@ -18,7 +18,7 @@ require('dotenv').config()
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
-app.use('express.urlencoded'({extended: true}))
+app.use(express.urlencoded({extended: true}))
 
 mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true}, () => {console.log('Connected to db!')})
 
