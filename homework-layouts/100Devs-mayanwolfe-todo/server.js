@@ -8,7 +8,7 @@
 // declare variables
 const express = require('express');
 const app = express();
-const PORT = 8500;
+const PORT = 8000;
 const mongoose = require('mongoose');
 
 // ADD MODEL VARIABLE
@@ -30,13 +30,12 @@ mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true }, () => {con
 app.get('/', async (req, res) => {
     try {
         TodoTask.find({}, (err, tasks) => {
-            res.render('index.ejs', {todoTasks: tasks})
-        } )
+        res.render('index.ejs', { todoTasks: tasks });
+    })
     } catch (err) {
         if (err) return res.status(500).send(err)
     }
-})
-
+});
 
 // START SERVER
 app.listen(PORT, () => console.log(`Server is running on port! ${PORT} You Betta go and catch it!`))
