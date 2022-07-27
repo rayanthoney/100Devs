@@ -1,5 +1,12 @@
+//npm install express mongoose ejs dotenv
+//npm install --save-dev nodemon
+
+//"start": "nodemon server.js"
+
+
 // DECLARE VARIABLES
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const PORT = 8500;
 const mongoose = require("mongoose");
@@ -10,14 +17,19 @@ require("dotenv").config();
 // const TodoTask = require('./models/todotask')
 
 // ADD MIDDLEWARE (TELLS SERVER WHERE TO LOOK FOR STUFF!)
+
 // SET THE VIEW ENGINE TO EJS
 app.set(`view engine', 'ejs`);
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
+app.use(cors())
 
-mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () => {
-  console.log("We are connected to the db!");
-});
+// CONNECT TO MONGO
+mongoose.connect(
+  process.env.DB_CONNECTION, 
+  { useNewUrlParser: true }, 
+  () => { console.log("We are connected to the db!"); }
+);
 
 // GET METHOD
 app.get("/", async (req, res) => {
@@ -26,7 +38,7 @@ app.get("/", async (req, res) => {
       res.render("index.ejs", { todoTask: tasks });
     });
   } catch (err) {
-    if (err)return res.status(500).send(err)
+    if (err) return res.status(500).send(err)
   }
 });
 
