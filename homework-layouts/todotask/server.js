@@ -8,7 +8,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const PORT = 8500;
+const PORT = 8000;
 const mongoose = require("mongoose");
 const todotask = require("./models/todotask");
 require("dotenv").config();
