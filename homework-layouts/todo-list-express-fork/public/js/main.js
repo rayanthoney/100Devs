@@ -21,52 +21,52 @@ async function deleteItem(){ /* ASYNCHRONOUS FUNCTION DECLARED  */
             method: 'delete', /* DELETE AY METHOD  */
             headers: {'Content-Type': 'application/json'}, /* DECLARING THE USE OF JSON AS THE CONTENT TYPE USED */
             body: JSON.stringify({ /* STRINGIFY THE RETURN MESSAGE CONTENT */
-              'itemFromJS': itemText /*  CONTENT OF THE BODY TO THE INNER TEXT  */
-            }) /*  */
-          }) /*  */
-        const data = await response.json() /*  */
-        console.log(data) /*  */
-        location.reload() /*  */
+              'itemFromJS': itemText /*  CONTENT OF THE BODY TO THE INNER TEXT OF THE LIST ITEM */
+            }) /* CLOSING THE BODY */
+          }) /* CLOSING THE OBJECT */
+        const data = await response.json() /* WAITING ON JSON FROM THE RESPONSE TO BE CONVERTED */
+        console.log(data) /* LOG THE RESULT THE CONSOLE */
+        location.reload() /* RELOADS THE PAGE TO UPDATE WHAT IS DISPLAYED  */
 
-    }catch(err){ /*  */
-        console.log(err) /*  */
-    } /*  */
-} /*  */
+    }catch(err){ /* IF AN ERROR OCCURS, PASS THE ERROR INTO THE CATCH BLOCK */
+        console.log(err) /* LOGS THE ERROR TO THE CONSOLE */
+    } /* CLOSE THE CATCH BLOCK */
+} /* END THE FUNCTION */
 
-async function markComplete(){ /*  */
-    const itemText = this.parentNode.childNodes[1].innerText /*  */
-    try{ /*  */
-        const response = await fetch('markComplete', { /*  */
-            method: 'put', /*  */
-            headers: {'Content-Type': 'application/json'}, /*  */
-            body: JSON.stringify({ /*  */
-                'itemFromJS': itemText /*  */
-            }) /*  */
-          }) /*  */
-        const data = await response.json() /*  */
-        console.log(data) /*  */
-        location.reload() /*  */
+async function markComplete(){ /* ASYNCHRONOUS FUNCTION DECLARED */
+    const itemText = this.parentNode.childNodes[1].innerText /* LIST ITEM THAT GRABS THE INNER TEXT OF THE LIST SPAN */
+    try{ /* TRY BLOCK START */
+        const response = await fetch('markComplete', { /* FETCH VARIABLE TO RETRIEVE DATA AND GIVES A RESPONSE OF markComplete */
+            method: 'put', /* SETTING THE CRUD METHOD TO "update" FOR THE ROUTE */
+            headers: {'Content-Type': 'application/json'}, /* SPECIFYING THE TYPE OF CONTENT EXPECTED, JSON */
+            body: JSON.stringify({ /* STRINGIFY THE RETURN MESSAGE CONTENT */
+                'itemFromJS': itemText /* CONTENT OF THE BODY TO THE INNER TEXT OF THE LIST ITEM */
+            }) /* CLOSING THE BODY  */
+          }) /* CLOSING THE OBJECT */
+        const data = await response.json() /* WAITING ON JSON FROM THE RESPONSE TO BE CONVERTED */
+        console.log(data) /* LOG THE RESULT THE CONSOLE */
+        location.reload() /* RELOADS THE PAGE TO UPDATE WHAT IS DISPLAYED */
 
-    }catch(err){ /*  */
-        console.log(err) /*  */
-    } /*  */
-} /*  */
+    }catch(err){ /* IF AN ERROR OCCURS, PASS THE ERROR INTO THE CATCH BLOCK  */
+        console.log(err) /* LOGS THE ERROR TO THE CONSOLE */
+    } /* CLOSE THE CATCH BLOCK */
+} /* END THE FUNCTION */
 
-async function markUnComplete(){ /*  */
-    const itemText = this.parentNode.childNodes[1].innerText /*  */
-    try{ /*  */
-        const response = await fetch('markUnComplete', { /*  */
-            method: 'put', /*  */
-            headers: {'Content-Type': 'application/json'}, /*  */
-            body: JSON.stringify({ /*  */
-                'itemFromJS': itemText /*  */
-            }) /*  */
-          }) /*  */
-        const data = await response.json() /*  */
-        console.log(data) /*  */
-        location.reload() /*  */
+async function markUnComplete(){ /* ASYNCHRONOUS FUNCTION DECLARED */
+    const itemText = this.parentNode.childNodes[1].innerText /* LIST ITEM THAT GRABS THE INNER TEXT OF THE LIST SPAN */
+    try{ /* TRY BLOCK START  */
+        const response = await fetch('markUnComplete', { /* FETCH VARIABLE TO RETRIEVE DATA AND GIVES A RESPONSE OF markComplete */
+            method: 'put', /* SETTING THE CRUD METHOD TO "update" FOR THE ROUTE */
+            headers: {'Content-Type': 'application/json'}, /* SPECIFYING THE TYPE OF CONTENT EXPECTED, JSON */
+            body: JSON.stringify({ /* STRINGIFY THE RETURN MESSAGE CONTENT */
+                'itemFromJS': itemText /* CONTENT OF THE BODY TO THE INNER TEXT OF THE LIST ITEM */
+            }) /* CLOSING THE BODY */
+          }) /* CLOSING THE OBJECT */
+        const data = await response.json() /* WAITING ON JSON FROM THE RESPONSE TO BE CONVERTED */
+        console.log(data) /* LOG THE RESULT THE CONSOLE */
+        location.reload() /* RELOADS THE PAGE TO UPDATE WHAT IS DISPLAYED */
 
-    }catch(err){ /*  */
-        console.log(err) /*  */
-    } /*  */
-} /*  */    
+    }catch(err){ /* IF AN ERROR OCCURS, PASS THE ERROR INTO THE CATCH BLOCK */
+        console.log(err) /* LOGS THE ERROR TO THE CONSOLE */
+    } /* CLOSE THE CATCH BLOCK */
+} /* END THE FUNCTION */    

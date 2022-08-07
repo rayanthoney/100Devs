@@ -37,8 +37,8 @@
 */
 
 // DECLARE VARIBLES
-const express = require('express')
-const app = express()
+const express = require('express') // DECLARATION OF THE USE OF EXPRESS  
+const app = express() // SETTING AND ASSIGNING EXPRESS AS A VARIABLE
 const MongoClient = require('mongodb').MongoClient
 const PORT = 2121
 require('dotenv').config()
