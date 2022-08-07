@@ -39,20 +39,20 @@
 // DECLARE VARIBLES
 const express = require('express') // DECLARATION OF THE USE OF EXPRESS  
 const app = express() // SETTING AND ASSIGNING EXPRESS AS A VARIABLE
-const MongoClient = require('mongodb').MongoClient
-const PORT = 2121
-require('dotenv').config()
+const MongoClient = require('mongodb').MongoClient // DECLARATION OF THE USE OF MONGODB 
+const PORT = 2121 // ASSIGNING THE PORT TO USE LOCALLY
+require('dotenv').config() // ASSIGNING A A FILE (.env) WHERE PRIVATE VARIABLES CAN BE ASSIGNED 
 
 
 // CONNECT TO MONGODB
-let db,
-    dbConnectionStr = process.env.DB_STRING,
-    dbName = 'todo'
+let db, // DECLARING A VARIABLE (db) SO A VALUE CAN BE ASSIGNED TO IT
+    dbConnectionStr = process.env.DB_STRING, // DECLARING A VARIABLE AND ASSIGNING A DATABASE CONNECTION STRING
+    dbName = 'todo' // DECLARING A VARIABLE AND ASSIGNING A NAME OF THE DATABASE BEING USED
 
-MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
-    .then(client => {
-        console.log(`Connected to ${dbName} Database`)
-        db = client.db(dbName)
+MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true }) // CREATING A CONNECTION TO MOGODB, AND PASSING IN OUR CONNECTIOIN STRING AND IT'S PROPERTY
+    .then(client => { // WAITS FOR THE CONNECTION. PROCEDDING IF SUCCESFUL, AND POSTING ALL CLIENT INFO
+        console.log(`Connected to ${dbName} Database`) // LOG TO CONSOLE A TEMPLATE LITERAL USING THE VARIABLE "dbName" 
+        db = client.db(dbName) // 
     })
     
 // MIDDLEWARE SET THE TEMPLATE ENGINE (USING EJS)
