@@ -52,22 +52,23 @@ let db, // DECLARING A VARIABLE (db) SO A VALUE CAN BE ASSIGNED TO IT
 MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true }) // CREATING A CONNECTION TO MOGODB, AND PASSING IN OUR CONNECTIOIN STRING AND IT'S PROPERTY
     .then(client => { // WAITS FOR THE CONNECTION. PROCEDDING IF SUCCESFUL, AND POSTING ALL CLIENT INFO
         console.log(`Connected to ${dbName} Database`) // LOG TO CONSOLE A TEMPLATE LITERAL USING THE VARIABLE "dbName" 
-        db = client.db(dbName) // 
-    })
+        db = client.db(dbName) // ASSIGNING A VALUE TO PREVIOUSLYDECLARED db VARIABLE THAT CONTAINS A db CLIENT FACTORY METHOD
+    }) // CLOSING THEN 
     
 // MIDDLEWARE SET THE TEMPLATE ENGINE (USING EJS)
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs') // SETTING ejs AS THE DEFAULT VIEW ENGINE 
+
 // STORE STATIC FILES FOLDER
-app.use(express.static('public'))
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
+app.use(express.static('public')) // LOCATION FOR STATIC ASSETS FOLDER
+app.use(express.urlencoded({ extended: true })) // TELLS EXPRESS TO DECODE AND ENCODE URLs WHERE THE HEADER MATCHES THE CONTENT.
+app.use(express.json()) // PARSES INCOMING CONTENT FROM INCOMING REQUESTS
 
 
 // GET METHOD
-app.get('/',async (request, response)=>{
-    const todoItems = await db.collection('todos').find().toArray()
-    const itemsLeft = await db.collection('todos').countDocuments({completed: false})
-    response.render('index.ejs', { items: todoItems, left: itemsLeft })
+app.get('/',async (request, response)=>{ // STARTS A get METHOD WHEN THE ROUTE IS PASSED IN, SETS UP REQUEST, AND RESPONSE PARAMETERS
+    const todoItems = await db.collection('todos').find().toArray() // SETS A VARIABLE AND AWAITS  ALL ITEMS FROM THE todos COLLECTION
+    const itemsLeft = await db.collection('todos').countDocuments({completed: false}) // SETS A VARIABLE AND AWAITS A COUNT OF UNCOMPLETED ITEMS TO LATER DISPLAY IN EJS
+    response.render('index.ejs', { items: todoItems, left: itemsLeft }) // RENDERS EJS FILES AND PASSING THRU THE db ITEMS AND THE COUNT REMAINING INSIDE OF AN OBJECT
     // db.collection('todos').find().toArray()
     // .then(data => {
     //     db.collection('todos').countDocuments({completed: false})
@@ -76,11 +77,11 @@ app.get('/',async (request, response)=>{
     //     })
     // })
     // .catch(error => console.error(error))
-})
+}) // CLOSES THE GET METHOD
 
 // POST METHOD
-app.post('/addTodo', (request, response) => {
-    db.collection('todos').insertOne({thing: request.body.todoItem, completed: false})
+app.post('/addTodo', (request, response) => { // STARTS A POST METHOD WHEN THE ADD ROUTE IS PASSED 
+    db.collection('todos').insertOne({thing: request.body.todoItem, completed: false}) // INSERTS AN ITEM INTO todos COLLECTION
     .then(result => {
         console.log('Todo Added')
         response.redirect('/')
