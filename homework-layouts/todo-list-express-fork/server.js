@@ -81,61 +81,62 @@ app.get('/',async (request, response)=>{ // STARTS A get METHOD WHEN THE ROUTE I
 
 // POST METHOD
 app.post('/addTodo', (request, response) => { // STARTS A POST METHOD WHEN THE ADD ROUTE IS PASSED 
-    db.collection('todos').insertOne({thing: request.body.todoItem, completed: false}) // INSERTS AN ITEM INTO todos COLLECTION
-    .then(result => {
-        console.log('Todo Added')
-        response.redirect('/')
-    })
-    .catch(error => console.error(error))
-})
+    db.collection('todos').insertOne({thing: request.body.todoItem, completed: false}) // INSERTS AN ITEM INTO todos COLLECTION WITH COMPLETED VALUE OF FALSE BY DEFAULT
+    .then(result => { // IF SUCCESSFUL DO SOMETHING 
+        console.log('Todo Added') // CONSOLE LOG ACTION 
+        response.redirect('/') // GETS RID OF THE ADD addTodo ROUTE 
+    }) // CLOSING THE  THEN
+    .catch(error => console.error(error)) // CATCHING ERRORS
+}) // SENDING THE POST
 
 // PUT METHOD
-app.put('/markComplete', (request, response) => {
-    db.collection('todos').updateOne({thing: request.body.itemFromJS},{
-        $set: {
-            completed: true
+app.put('/markComplete', (request, response) => { // STARTS A PUT METHOD WHEN THE MARKCOMPLETE ROUTE IS PASSED 
+    db.collection('todos').updateOne({thing: request.body.itemFromJS},{ // LOOKS IN THE DATABASE FOR ONE ITEM MATCHING THE NAME OF THE ITEM PASSED IN FROM THE MAIN.JS THAT WAS CLICKED ON
+        $set: { // 
+            completed: true // SETS COMPLETED STATUS TO TRUE 
           }
     },{
-        sort: {_id: -1},
-        upsert: false
+        sort: {_id: -1}, // MOVES ITEM TO THE BOTTOM OF THE LIST
+        upsert: false // PREVENTS INSERTION IF ITEM DOES NOT ALREADY EXIST
     })
-    .then(result => {
-        console.log('Marked Complete')
-        response.json('Marked Complete')
-    })
-    .catch(error => console.error(error))
+    .then(result => { // STARTS A THEN IF UPDATE WAS SUCCESSFUL
+        console.log('Marked Complete') // CONSOLE LOGGING SUCCESS
 
-})
+        response.json('Marked Complete') // SENDING A RESPONSE BACK TO SENDER
+    }) // CLOSING THE TRHEN STATEMENT
+    .catch(error => console.error(error)) // CATCH ERRORS
 
-app.put('/markUnComplete', (request, response) => {
-    db.collection('todos').updateOne({thing: request.body.itemFromJS},{
-        $set: {
-            completed: false
-          }
+}) // CLOSING THE PUT METHOD
+
+app.put('/markUnComplete', (request, response) => { // STARTS A PUT METHOD WHEN THE MARKCOMPLETE ROUTE IS PASSED 
+    db.collection('todos').updateOne({thing: request.body.itemFromJS},{ // LOOKS IN THE DATABASE FOR ONE ITEM MATCHING THE NAME OF THE ITEM PASSED IN FROM THE MAIN.JS THAT WAS CLICKED ON
+        $set: { // SETS COMPLETED STATUS TO FALSE
+            completed: false // SETS COMPLETED STATUS TO FLASE
+          } 
     },{
-        sort: {_id: -1},
-        upsert: false
+        sort: {_id: -1}, // MOVES ITEM TO THE BOTTOM OF THE LIST
+        upsert: false // PREVENTS INSERTION IF ITEM DOES NOT ALREADY EXIST
     })
-    .then(result => {
-        console.log('Marked Complete')
-        response.json('Marked Complete')
+    .then(result => { // STARTS A THEN IF UPDATE WAS SUCCESSFUL
+        console.log('Marked Complete') // CONSOLE LOGGING SUCCESS
+        response.json('Marked Complete') // SENDING A RESPONSE BACK TO SENDER
     })
-    .catch(error => console.error(error))
+    .catch(error => console.error(error)) // CATCH ERRORS
 
-})
+}) // CLOSING THE PUT METHOD
 
 // DELETE METHOD
-app.delete('/deleteItem', (request, response) => {
-    db.collection('todos').deleteOne({thing: request.body.itemFromJS})
-    .then(result => {
-        console.log('Todo Deleted')
-        response.json('Todo Deleted')
+app.delete('/deleteItem', (request, response) => { // STARTS A DELETE METHOD WHEN THE DELETE ROUTE IS PASSED 
+    db.collection('todos').deleteOne({thing: request.body.itemFromJS}) // LOOKLS INSIDE THE todos COLLECTION FOR THE ONE ITEM THAT HAS A MATCHING NAME FROM OUR JS FILE
+    .then(result => { // STARTS A THEN IF UPDATE WAS SUCCESSFUL
+        console.log('Todo Deleted') // CONSOLE LOGGING SUCCESS
+        response.json('Todo Deleted') // SENDING A RESPONSE BACK TO SENDER
     })
-    .catch(error => console.error(error))
+    .catch(error => console.error(error))  // CATCH ERRORS
 
-})
+}) // CLOSING THE DELETE METHOD
 
 // START SERVER LISTENING ON PORT 2121
-app.listen(process.env.PORT || PORT, ()=>{
-    console.log(`Server running on port ${PORT} You Betta go and catch it!`)
-})
+app.listen(process.env.PORT || PORT, ()=>{ // SETTING UP WHICH PORT WE WILL BE LISTENING ON - EITHER THE PORT DROM THE .env FILE OR THE PORT VARIABLE SET ABOVE
+    console.log(`Server running on port ${PORT} You Betta go and catch it!`) // CONSOLE LOG THE RUNNING PORT 
+}) // CLOSING THE LISTEN METHOD
