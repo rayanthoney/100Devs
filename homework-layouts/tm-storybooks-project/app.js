@@ -7,7 +7,7 @@ dotenv.config(  {   path: "./config/config.env"  })
 
 
 // CONNECTING TO DATABASE
-connectDB()
+// connectDB()
 
 // INITIALIZE EXPRESS APP
 const app = express()
