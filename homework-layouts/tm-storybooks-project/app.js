@@ -1,9 +1,3 @@
-
-
-// -npm i -D 
-// nodemon // WATCHES SERVER AND RESTARTS IT AT CHANGE OR SAVE
-// cross-env // START AND DEV SCRIPT 
-
 const express = require('express')
 const dotenv = require('dotenv')
 const connectDB = require('./config/db')
