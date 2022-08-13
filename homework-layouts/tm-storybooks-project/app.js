@@ -3,13 +3,14 @@ const express = require('express')
 const dotenv = require('dotenv')
 const morgan = require('morgan')
 const exphbs = require('express-handlebars')
+const passport = require('passport')
 const connectDB = require('./config/db')
-
-
 
 // LOAD CONFIG 
 dotenv.config({ path: "./config/config.env" })
 
+// PASSPORT CONFIG
+require('./config/passport')(passport)
 
 // CONNECTING TO DATABASE
 connectDB()
@@ -30,6 +31,10 @@ app.engine('.hbs', exphbs.engine({
 )
 app.set('view engine', '.hbs')
 // app.set('views', './views');
+
+// PASSPORT MIDDLEWARE
+app.use(passport.initialize())
+app.use(passport.session())
 
 // STATIC FOLDERS
 app.use(express.static(path.join(__dirname, 'public')))
