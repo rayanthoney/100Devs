@@ -4,6 +4,7 @@ const dotenv = require('dotenv')
 const morgan = require('morgan')
 const exphbs = require('express-handlebars')
 const passport = require('passport')
+const session = require('express-session')
 const connectDB = require('./config/db')
 
 // LOAD CONFIG 
@@ -31,6 +32,13 @@ app.engine('.hbs', exphbs.engine({
 )
 app.set('view engine', '.hbs')
 // app.set('views', './views');
+
+// PASSPORT SESSION
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: false,
+  }))
 
 // PASSPORT MIDDLEWARE
 app.use(passport.initialize())
