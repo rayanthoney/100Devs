@@ -1,3 +1,4 @@
+const path = require('path')
 const express = require('express')
 const dotenv = require('dotenv')
 const morgan = require('morgan')
@@ -30,10 +31,11 @@ app.engine('.hbs', exphbs.engine({
 app.set('view engine', '.hbs')
 // app.set('views', './views');
 
+// STATIC FOLDERS
+app.use(express.static(path.join(__dirname, 'public')))
+
 // ROUTES
 app.use('/', require('./routes/index'))
-
-
 
 const PORT = process.env.PORT || 8000
 
