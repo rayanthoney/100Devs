@@ -12,4 +12,14 @@ router.get('/google/callback', passport.authenticate('google', {failureRedirect:
     res.redirect('/dashboard')
 })
 
+// @desc    LOGOUT USER
+// @route  /auth/logout
+// !Chnage: PASSPORT 0.6 REQUIRES LOGOUT TO BE ASYNC
+router.get('/logout', (req,res,next) => {
+    req.logout(function(err) {
+        if (err) {return next(err)}
+        res.redirect('/')
+    })
+})
+
 module.exports = router 
