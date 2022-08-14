@@ -5,7 +5,7 @@ module.exports = {
         } else {
             res.redirect('/')
         }
-    }
+    },
     ensureGuest: function (req,res,next) {
         if (req.isAuthenticated()) {
             req.redirect('/dashboard')
