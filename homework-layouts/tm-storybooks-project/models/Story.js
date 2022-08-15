@@ -16,7 +16,7 @@ const StorySchema = new mongoose.Schema({
         enum: ['public', 'private'],
     },
     user: {
-        type: mongoose.schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
     },
     createdAt: {
@@ -25,4 +25,4 @@ const StorySchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('Story', StorySchema)
