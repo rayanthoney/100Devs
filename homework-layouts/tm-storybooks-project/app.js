@@ -29,8 +29,15 @@ if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
 }
 
+// HANDLEBARS HELPER
+const { formatDate } = require('./helpers/hbs')
+
 // HANDLEBARS
+// !ADDED THE WORD '.engine' AFTER 'exphbs' to prevent error
 app.engine('.hbs', exphbs.engine({
+    helpers: {
+        formatDate,
+    },
     defaultLayout: 'main', 
     extname: '.hbs'
     })
