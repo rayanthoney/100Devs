@@ -43,7 +43,7 @@
 | &#9745; | 26  | [Switch it Up!](fundamentals/8Kyu/switch-it-up.js)                                              |
 | &#9745; | 27  | [Sum Mixed Array](fundamentals/8Kyu/sum-mixed-array.js)                                         |
 | &#9745; | 00  | [The Feast of Many Beasts](fundamentals/8Kyu/feast-of-many-beasts.js)                           |
-| &#9745; | 00  | ["")                                                                                            |
+| &#9745; | 00  | [Define a card suit](fundamentals/8Kyu/define-card-suit.js)                                     |
 | &#9745; | 00  | ["")                                                                                            |
 | &#9745; | 00  | ["")                                                                                            |
 
