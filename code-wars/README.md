@@ -46,7 +46,7 @@
 | &#9745; | 29  | [Define a card suit](fundamentals/8Kyu/define-card-suit.js)                                     |
 | &#9745; | 30  | [Multiplication table for number](fundamentals/8Kyu/multiplication-table-number.js)             |
 | &#9745; | 31 | [String repeat](fundamentals/8Kyu/string-repeat.js)                                              |
-| &#9745; | 00  | ["")                                                                                            |
+| &#9745; | 32  | [Abbreviate a Two Word Name](fundamentals/8Kyu/abbreviate-two-word-name.js)                     |
 | &#9745; | 00  | ["")                                                                                            |
 | &#9745; | 00  | ["")                                                                                            |
 
