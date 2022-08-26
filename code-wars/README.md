@@ -45,6 +45,9 @@
 | &#9745; | 28  | [The Feast of Many Beasts](fundamentals/8Kyu/feast-of-many-beasts.js)                           |
 | &#9745; | 29  | [Define a card suit](fundamentals/8Kyu/define-card-suit.js)                                     |
 | &#9745; | 30  | [Multiplication table for number](fundamentals/8Kyu/multiplication-table-number.js)             |
+| &#9745; | 31 | [String repeat](fundamentals/8Kyu/string-repeat.js)                                              |
+| &#9745; | 00  | ["")                                                                                            |
+| &#9745; | 00  | ["")                                                                                            |
 | &#9745; | 00  | ["")                                                                                            |
 
 > Code Wars 7kyu
