@@ -7,7 +7,7 @@
     </a>
 </p>
 
-# Learning Javascript
+# Learning Javascript through the art of War
 
 > Code Wars 8kyu
 
