@@ -9,7 +9,7 @@
 
 # Learning Javascript through the art of War
 
-> Code Wars 8kyu
+### Code Wars 8kyu
 
 ## Fundamentals
 
@@ -50,7 +50,7 @@
 | &#9745; | 00  | ["")                                                                                            |
 | &#9745; | 00  | ["")                                                                                            |
 
-> Code Wars 7kyu
+### Code Wars 7kyu
 
 ## Fundamentals
 
