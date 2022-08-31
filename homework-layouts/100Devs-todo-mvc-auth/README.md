@@ -11,7 +11,9 @@ A Simple ToDo App is built using the MVC Architecture, we have also implemented 
 <!-- ![alt tag](https://picsum.photos/600/300 "Random Images From Ipsum") -->
 
 <!-- Alignment options!!!!! -->
-<img align="center" width="600" height="300" src="https://picsum.photos/600/300">
+<p align="center">
+<img width="600" height="300" src="https://picsum.photos/600/300">
+</p>
 
 <div align="center" >
 <!-- link to project -->
