@@ -7,8 +7,11 @@ A Simple ToDo App is built using the MVC Architecture, we have also implemented 
 > Be sure to add that lovely star 😀 and fork it for your own copy
 
 ---
+<!-- No alignment options -->
+<!-- ![alt tag](https://picsum.photos/600/300 "Random Images From Ipsum") -->
 
-![alt tag](https://picsum.photos/600/300)
+<!-- Alignment options!!!!! -->
+<img align="center" width="600" height="300" src="https://picsum.photos/600/300">
 
 <div align="center" >
 <!-- link to project -->
@@ -29,6 +32,7 @@ A Simple ToDo App is built using the MVC Architecture, we have also implemented 
 <img src="https://img.shields.io/badge/-Website-green?style=plastic&zfor-the-badge&color=e8970c"/>
 </a>
 </p>
+</div>
 <br>
 <br>
 
@@ -80,9 +84,31 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
   - PORT: 8080 (can be any port example: 3000) 
   - DB_STRING: `your database URI` 
  ---
- <br>
 <br>
+<br>
+
+# Optimizations
+
+_(optional)_
+
+You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+
+# Lessons Learned:
+
+No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _fuck yeah I did it!_ moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+
+# Examples:
+
+Take a look at these couple examples that I have in my own portfolio:
+
+**Palettable:** https://github.com/alecortega/palettable
+
+**Twitter Battle:** https://github.com/alecortega/twitter-battle
+
+**Patch Panel:** https://github.com/alecortega/patch-panel
  
+ ---
+
  Have fun testing and improving it! 😎
 
 
