@@ -1,6 +1,6 @@
 <!-- Banner Section -->
 
-# 🛠️ My Awesome Project
+# 🛠️ My Awesome
 
 ![alt tag](https://picsum.photos/600/300)
 
@@ -37,7 +37,14 @@ Here's where you can go to town on how you actually built this thing. Write as m
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,mongodb,expressjs,react,nodejs,laravel,github,markdown,mysql,webpack,wordpress" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,mongodb,express,react,php,laravel,vite,sass,pug,netlify,mysql,bootstrap" />
+  </a>
+</p>
+<br>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,vscode,md,powershell,linux,linkedin,twitter,instagram,discord," />
   </a>
 </p>
 
