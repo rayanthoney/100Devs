@@ -176,3 +176,34 @@ console.log(str.charCodeAt(0)); // 72
 console.log(str.charCodeAt(8)); // 114
 console.log(str.charCodeAt(12)); // 55357
 ```
+
+## What is the filter() method?
+
+```js
+let results = arr.filter(function(item, index, array) {
+  // if true item is pushed to results and the iteration continues
+  // returns empty array if nothing found
+});
+
+For Instance:
+
+let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];
+
+// returns array of the first two users
+let someUsers = users.filter(item => item.id < 3);
+
+alert(someUsers.length); // 2
+```
+## map
+## find
+## forEach
+## Some
+## every
+## reduce
+## includes
+
+

@@ -7,9 +7,19 @@ const MongoStore = require('connect-mongo')(session)
 const flash = require('express-flash')
 const logger = require('morgan')
 const connectDB = require('./config/database')
-// const mainRoutes = require('./routes/main')
-// const todoRoutes = require('./routes/todos')
 
+// Serve Favicon
+const favicon = require('serve-favicon')
+const path = require('path')
+ 
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+
+// Require routes
+const indexRouter = require('./routes/index')
+const loginRouter = require('./routes/login')
+const menuRouter = require('./routes/menu')
+
+// Database String
 require('dotenv').config({path: './config/.env'})
 
 // Passport config
@@ -43,8 +53,10 @@ app.use(
 app.use(flash())
   
 // Add Routes Here
-// app.use('/', mainRoutes)
-// app.use('/todos', todoRoutes)
+app.use('/', indexRouter )
+app.use('/menu', menuRouter)
+app.use('/login', loginRouter)
+
  
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on ${PORT}, you better catch it!`)
