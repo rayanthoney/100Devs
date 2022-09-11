@@ -1,5 +1,5 @@
-function rowSumOddNumbers(n) {
-	console.log(Math.pow(n,3))
+function oddOrEven(array) {
+  console.log(array.reduce((sum, current) => sum + current, 0) % 2 ? 'odd' : 'even')
 }
-rowSumOddNumberes(42)
-  
+
+oddOrEven([-1023, 1, -2]) 

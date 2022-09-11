@@ -21,7 +21,7 @@
 | &#9745; | 4   | [Number to String](fundamentals/8Kyu/convert-number-to-string.js)                               |
 | &#9745; | 5   | [Square(n) Sum](fundamentals/8Kyu/square-n-sum.js)                                              |
 | &#9745; | 6   | [Convert a String to a Number](fundamentals/8Kyu/conv-string-to-num.js)                         |
-| &#9745; | 7   | [Sum of positive](fundamentals/8Kyu/sum-of-positive.js)                                         |
+| &#9745; | 7   | [Sum of positive](fundamentals/arrays/8kyu/sum-of-positive.js)                                         |
 | &#9745; | 8   | [Convert boolean values to strings 'Yes' or 'No'.](fundamentals/8Kyu/boolean-to-string.js)      |
 | &#9745; | 9   | [Remove String Spaces](fundamentals/8Kyu/remove-string-spaces.js)                               |
 | &#9745; | 10  | [Remove First and Last Character](fundamentals/8Kyu/remove-first-last-char.js)                  |
@@ -45,20 +45,30 @@
 | &#9745; | 28  | [The Feast of Many Beasts](fundamentals/8Kyu/feast-of-many-beasts.js)                           |
 | &#9745; | 29  | [Define a card suit](fundamentals/8Kyu/define-card-suit.js)                                     |
 | &#9745; | 30  | [Multiplication table for number](fundamentals/8Kyu/multiplication-table-number.js)             |
-| &#9745; | 31 | [String repeat](fundamentals/8Kyu/string-repeat.js)                                              |
+| &#9745; | 31  | [String repeat](fundamentals/8Kyu/string-repeat.js)                                             |
 | &#9745; | 32  | [Abbreviate a Two Word Name](fundamentals/8Kyu/abbreviate-two-word-name.js)                     |
 | &#9745; | 00  | ["")                                                                                            |
 | &#9745; | 00  | ["")                                                                                            |
 
+
+
+## Arrays
+### Code Wars 7kyu
+|         |     |                                                                                                |
+| ------- | --- | ---------------------------------------------------------------------------------------------- |
+| &#9745; | 1   | [Sum of two lowest positive integers](fundamentals/arrays/7Kyu/sum-two-lowest-positive-int.js) |
+| &#9745; | 2   | [Sum of odd numbers](fundamentals/arrays/7Kyu/sum-odd-numbers.md)                              |
+| &#9745; | 3   | [Ones and Zeros](fundamentals/arrays/7Kyu/ones-zeros.md)                                       |
+| &#9745; | 4   | [Odd or Even?](fundamentals/arrays/7Kyu/odd-or-even.md)                                       |
+
+## Strings
 ### Code Wars 7kyu
 
-## Fundamentals
+|         |     |                                                        |
+| ------- | --- | ------------------------------------------------------ |
+| &#9745; | 1   | [Exes and Ohs](fundamentals/strings/7kyu/exes-ohhs.js) |
 
-|         |     |                                                                                                |
-| ------- | --- | ----------------------------------------------                                                 |
-| &#9745; | 1   | [Exes and Ohs](fundamentals/strings/7kyu/exes-ohhs.js)                                         |
-| &#9745; | 2   | [Sum of two lowest positive integers](fundamentals/arrays/7Kyu/sum-two-lowest-positive-int.js) |
-| &#9745; | 3   | [Sum of odd numbers](fundamentals/arrays/7Kyu/sum-odd-numbers.md)                              |
+## Loops
 
 <!--
 ## Loops and Debugging
