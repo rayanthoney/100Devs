@@ -9,7 +9,7 @@
 
 # Learning Javascript through the art of War
 
-## Fundamentals
+# Fundamentals
 - ### Code Wars 8kyu
 
 |         |     |                                                                                                 |
@@ -18,10 +18,8 @@
 | &#9745; | 2   | [Hello World](fundamentals/8Kyu/hello-world.js)                                                 |
 | &#9745; | 3   | [Even or Odd](fundamentals/8Kyu/even-or-odd.js)                                                 |
 | &#9745; | 5   | [Square(n) Sum](fundamentals/8Kyu/square-n-sum.js)                                              |
-| &#9745; | 13  | [Invert values](fundamentals/8Kyu/Invert-values.js)                                             |
-| &#9745; | 16  | [Removing Elements](fundamentals/8Kyu/removing-elements.js)                                     |
+
 | &#9745; | 19  | [Grasshopper - Summation](fundamentals/8Kyu/grasshopper-summation.js)                           |
-| &#9745; | 20  | [MakeUpperCase](fundamentals/8Kyu/make-upper-case.js)                                           |
 | &#9745; | 22  | [Quarter of the year](fundamentals/8Kyu/quarter-of-the-year.js)                                 |
 | &#9745; | 23  | [L1: Set Alarm](fundamentals/8Kyu/set-alarm.js)                                                 |
 
@@ -30,12 +28,14 @@
 <!-- | &#9745; | 00  | ["")                                                                                            |
 | &#9745; | 00  | ["")                                                                                            | -->
 
-- ## Arrays
+## Arrays
 
 - ### Code Wars 8kyu
 |         |     |                                                                                                        |
 | ------- | --- | ------------------------------------------------------------------------------------------------       |
 | &#9745; | 7   | [Sum of positive](fundamentals/arrays/8kyu/sum-of-positive.md)                                         |
+| &#9745; | 13  | [Invert values](fundamentals/arrays/8kyu/Invert-values.md)                                             |
+| &#9745; | 16  | [Removing Elements](fundamentals/arrays/8kyu/removing-elements.md)                                     |
 | &#9745; | 18  | [Find the smallest integer in the array](fundamentals/arrays/8kyu/find-smallest-integer-in-array.md)   |
 | &#9745; | 21  | [Counting sheep...](fundamentals/arrays/8kyu/counting-sheep.md)                                 |
 | &#9745; | 24  | [Sum without highest and lowest number](fundamentals/arrays/8kyu/sum-without-highest-lowest-number.md) |
@@ -66,6 +66,7 @@
 | &#9745; | 14  | [Basic Mathematical Operations](fundamentals/strings/8kyu/basic-mathematical-operations.md)             |
 | &#9745; | 15  | [Convert a Boolean to a String](fundamentals/strings/8kyu/boolean-to-string.md)                               |
 | &#9745; | 17  | [String cleaning](fundamentals/strings/8kyu/string-cleaning.md)                                         |
+| &#9745; | 20  | [MakeUpperCase](fundamentals/strings/8kyu/make-upper-case.md)                                           |
 | &#9745; | 26  | [Switch it Up!](fundamentals/strings/8kyu/switch-it-up.md)                                                    |
 | &#9745; | 28  | [The Feast of Many Beasts](fundamentals/8Kyu/feast-of-many-beasts.md)                                         |
 | &#9745; | 29  | [Define a card suit](fundamentals/8Kyu/define-card-suit.md)                                                   |
