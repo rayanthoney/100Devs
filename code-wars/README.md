@@ -54,9 +54,11 @@
 
 ## Fundamentals
 
-|         |     |                                                |
-| ------- | --- | ---------------------------------------------- |
-| &#9745; | 1   | [Exes and Ohs](fundamentals/7Kyu/exes-ohhs.js) |
+|         |     |                                                                                                |
+| ------- | --- | ----------------------------------------------                                                 |
+| &#9745; | 1   | [Exes and Ohs](fundamentals/strings/7kyu/exes-ohhs.js)                                         |
+| &#9745; | 2   | [Sum of two lowest positive integers](fundamentals/arrays/7Kyu/sum-two-lowest-positive-int.js) |
+| &#9745; | 3   | [Sum of odd numbers](fundamentals/arrays/7Kyu/sum-odd-numbers.md)                              |
 
 <!--
 ## Loops and Debugging
