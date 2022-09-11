@@ -1,13 +1,45 @@
-// Switch it Up! - 8 Kyu
+# Switch it Up! - 8 Kyu
 
-// When provided with a number between 0-9, return it in words.
+When provided with a number between 0-9, return it in words.
 
-// Input :: 1
+Input :: 1
 
-// Output :: "One".
+Output :: "One".
 
-// If your language supports it, try using a switch statement.
+```md
+P R E P Method =>
 
+|     |     |            |
+| --- | --- | ---------- |
+|     | P   | Parameters |
+|     | R   | Results    |
+|     | E   | Examples   |
+|     | P   | Psuedocode |
+```
+
+## Parameters:
+
+
+
+## Result:
+
+
+
+## Examples:
+
+```js
+
+```
+
+## Psuedocode:
+
+---
+
+## CodeWar
+
+If your language supports it, try using a switch statement.
+
+```js
 function switchItUp(number) {
   switch (Number(number)) {
     case 1:
@@ -46,3 +78,4 @@ function switchItUp(number) {
 console.log(switchItUp(7));
 
 //Created a switch statement that checked for every case and returned the values in a string form.
+```
