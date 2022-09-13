@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const Schema = mongoose.Schema;
 
 let menuSchema = new mongoose.Schema({
     name: {type:String, require: true},
@@ -7,17 +8,13 @@ let menuSchema = new mongoose.Schema({
     entryDate: {type:Date, default:Date.now.apply}
 })
 
-let userSchema = new mongoose.Schema({
+let usersSchema = new mongoose.Schema({
     email: {type:String, require: true},
     pwd: {type:String, require: true},
     entryDate: {type:Date, default:Date.now.apply}
-})
 
 let menu = mongoose.model('menu', menuSchema, 'menu')
 let users = mongoose.model('users', usersSchema, 'users')
-let mySchemas = {
-    'menu' : menu,
-    'users' : users   
-}
+let mySchemas = {'menu':menu,'users':users}
 
 module.exports = mySchemas

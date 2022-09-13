@@ -7,12 +7,11 @@ const loginController = require ('../controllers/login')
 
 // Add Controllers
 router.get('/', loginController.getLogin)
-router.get('/new-acct', loginController.getSignup)
+router.get('/new-acct', loginController.getSignUp)
 router.post('/logout', loginController.getLogout)
 router.post('/', loginController.postLogin)
 router.post('/new', loginController.postSignup)
 
 
+module.exports = router;
 
-
-module.exports = router

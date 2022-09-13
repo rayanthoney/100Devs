@@ -8,7 +8,6 @@ const menuController = require ('../controllers/menu')
 // Add Controllers
 router.get('/', menuController.getIndex)
 router.get('/:id', menuController.editMenu)
-router.get('/:id', menuController.editMenu)
 router.get('/delete/:id', menuController.deleteMenu)
 router.post('/delete/:id', menuController.deleteMenu)
 router.post('/save', menuController.saveMenu)
