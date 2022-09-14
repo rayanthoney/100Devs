@@ -167,6 +167,33 @@ img.icon-img, img.url-img {
   text-align: center;
 }
 
+
+/* ************************ */
+/* ** Password Show Hide ** */
+/* ************************ */
+#login-form input[type="password"],
+#login-form input[type="text"] {
+    width: 100%;
+    /* padding: 12px 36px 12px 12px; */
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+}
+
+.fa-eye-slash {
+    position: absolute;
+    top: 37%;
+    right: 8%;
+    cursor: pointer;
+    color: lightgrey;
+}
+/* ************************ */
+/* End Password Show Hide    /
+/* ************************ */
+
+
 .login-form {
   display: flex;
   margin: 0 auto;
@@ -177,6 +204,11 @@ img.icon-img, img.url-img {
 .login-form .user-input, .login-form .pass-input, #new-menu div {
   padding: 8px;
 }
+
+
+
+
+
 
 .login-form .user-input input, .login-form .pass-input input, #new-menu input, .menu-edit div input {
   width: 350px;
@@ -230,3 +262,4 @@ h2.page-title, h1.page-title {
       text-align: center;
   }
 }
+

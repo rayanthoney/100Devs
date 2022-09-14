@@ -4,7 +4,13 @@
 <div class="login-form">
     <form action="/login" method="POST">
         <div class="user-input"><input type="email" name="emailInput" placeholder="email"></div>
-        <div class="pass-input"><input type="password" name="pwdInput" placeholder="password"></div>
+
+        <div class="pass-input">
+            <input type="password" name="pwdInput" placeholder="password">
+            
+        </div>
+
+
         <div align="center"><button type="submit" class="btn btn-primary">Login</button></div>
     </form>
 </div>
@@ -14,5 +20,7 @@
 <% } %>
 
 <p align="center"><a href="/login/new-acct">No login? Create a new account.</a></p>
+
+<!-- <script type="text/html" src="js/password.js"></script> -->
 
 <%- include('partials/footer.ejs') %>
