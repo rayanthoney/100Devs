@@ -12,4 +12,4 @@ router.post('/q', indexController.getSearch)
 
 
 
-module.exports = router
+module.exports = router;

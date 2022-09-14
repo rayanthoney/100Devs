@@ -16,4 +16,4 @@ router.post('/new', menuController.newMenu)
 
 
 
-module.exports = router
+module.exports = router;

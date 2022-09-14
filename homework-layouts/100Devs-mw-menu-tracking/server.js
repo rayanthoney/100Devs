@@ -42,7 +42,7 @@ app.use(
       secret: 'keyboard cat',
       resave: false,
       saveUninitialized: false,
-      store: new MongoStore({ mongoUrl: process.env.DB_STRING }),
+      store: MongoStore.create({mongoUrl: process.env.DB_STRING}),
     })
   )
   
@@ -58,6 +58,6 @@ app.use('/menu', menuRouter)
 app.use('/login', loginRouter)
 
  
-app.listen(process.env.PORT, () => {
-    console.log(`Server is running on ${PORT}, you better catch it!`)
-})   
+app.listen(process.env.PORT, ()=>{
+  console.log('Server is running, you better catch it!')
+})  
