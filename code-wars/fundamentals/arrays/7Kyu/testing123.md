@@ -38,14 +38,14 @@ an array of strings containing the initial values with the line number and the a
   });
 ```
 ## Psuedocode: 
-iterate over each array value and prepend the line numbere (starting with one), and add a colon and a space between the line number abnd the value.
+iterate over each array value and prepend the line number (starting with one), and add a colon and a space between the line number abnd the value.
 
 ---
 
 
 ## CodeWar
 
-```js
+  ```js
 var number=function(array){
   console.log(array.map((alpha, index) => `${index + 1}: ${alpha} `))
 }

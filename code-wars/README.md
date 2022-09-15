@@ -50,7 +50,8 @@
   | &#9745; | 3   | [Ones and Zeros](fundamentals/arrays/7Kyu/ones-zeros.md)                                       |
   | &#9745; | 4   | [Odd or Even?](fundamentals/arrays/7Kyu/odd-or-even.md)                                        |
   | &#9745; | 5   | [Testing 1,2,3 (7kyu)](fundamentals/arrays/7Kyu/testing123.md)                                 |
-***
+
+---
 
 ## Strings
 - ### Code Wars 8kyu
