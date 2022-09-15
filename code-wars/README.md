@@ -18,7 +18,6 @@
 | &#9745; | 2   | [Hello World](fundamentals/8Kyu/hello-world.js)                                                 |
 | &#9745; | 3   | [Even or Odd](fundamentals/8Kyu/even-or-odd.js)                                                 |
 | &#9745; | 5   | [Square(n) Sum](fundamentals/8Kyu/square-n-sum.js)                                              |
-
 | &#9745; | 19  | [Grasshopper - Summation](fundamentals/8Kyu/grasshopper-summation.js)                           |
 | &#9745; | 22  | [Quarter of the year](fundamentals/8Kyu/quarter-of-the-year.js)                                 |
 | &#9745; | 23  | [L1: Set Alarm](fundamentals/8Kyu/set-alarm.js)                                                 |
@@ -51,7 +50,7 @@
   | &#9745; | 4   | [Odd or Even?](fundamentals/arrays/7Kyu/odd-or-even.md)                                        |
   | &#9745; | 5   | [Testing 1,2,3 (7kyu)](fundamentals/arrays/7Kyu/testing123.md)                                 |
 
----
+___
 
 ## Strings
 - ### Code Wars 8kyu
