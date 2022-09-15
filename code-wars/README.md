@@ -10,7 +10,7 @@
 # Learning Javascript through the art of War
 
 # Fundamentals
-- ### Code Wars 8kyu
+### Code Wars 8kyu
 
 |         |     |                                                                                                 |
 | ------- | --- | ----------------------------------------------------------------------------------------------- |
@@ -29,7 +29,7 @@
 
 ## Arrays
 
-- ### Code Wars 8kyu
+### Arrays 8kyu
 |         |     |                                                                                                        |
 | ------- | --- | ------------------------------------------------------------------------------------------------       |
 | &#9745; | 7   | [Sum of positive](fundamentals/arrays/8kyu/sum-of-positive.md)                                         |
@@ -41,7 +41,8 @@
 | &#9745; | 25  | [Total amount of points](fundamentals/arrays/8kyu/total-amount-points.md)                              |
 | &#9745; | 27  | [Sum Mixed Array](fundamentals/arrays/8kyu/sum-mixed-array.md)                                         |
 
-- ### Code Wars 7kyu
+
+### Arrays 7kyu
   |         |     |                                                                                                |
   | ------- | --- | ---------------------------------------------------------------------------------------------- |
   | &#9745; | 1   | [Sum of two lowest positive integers](fundamentals/arrays/7Kyu/sum-two-lowest-positive-int.md) |
@@ -53,7 +54,7 @@
 ___
 
 ## Strings
-- ### Code Wars 8kyu
+### Strings 8kyu
 |         |     |                                                                                                               |
 | ------- | --- | -------------------------------------------------------------------------------------------                   |
 | &#9745; | 4   | [Convert a Number to a String!](fundamentals/strings/8kyu/convert-number-to-string.md)                        |
@@ -74,7 +75,7 @@ ___
 | &#9745; | 31  | [String repeat](fundamentals/arrays/8kyu/string-repeat.md)                                                    |
 | &#9745; | 32  | [Abbreviate a Two Word Name](fundamentals/strings/8kyu/basic-mathematical-operations.md)                      |
 
-- ### Code Wars 7kyu
+### Strings 7kyu
 
 |         |     |                                                        |
 | ------- | --- | ------------------------------------------------------ |
