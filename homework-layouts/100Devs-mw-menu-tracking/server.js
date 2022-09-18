@@ -30,7 +30,7 @@ connectDB()
 app.set('view engine', 'ejs')
 // static files folder ie-css, images, js
 app.use(express.static('public'))
-// parse url using json
+// BODY PARSER parse url using json
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 // morgan provides detailed logs using the dev config
@@ -58,6 +58,9 @@ app.use('/menu', menuRouter)
 app.use('/login', loginRouter)
 
  
-app.listen(process.env.PORT, ()=>{
-  console.log('Server is running, you better catch it!')
-})  
+// app.listen(process.env.PORT, ()=>{
+//   console.log('Server is running, you better catch it!')
+// })  
+
+const PORT = process.env.PORT || 5000
+app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}! Betta go catch it!`))
