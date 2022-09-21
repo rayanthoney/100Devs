@@ -1,10 +1,18 @@
-let users = [
-    {id: 1, name: "John"},
-    {id: 2, name: "Pete"},
-    {id: 3, name: "Mary"}
-  ];
-  
-  // returns array of the first two users
-  let someUsers = users.filter(item => item.id < 3);
-  
-  alert(someUsers.length); // 2
+// console.log(
+//   "A".repeat(2),
+//   "UU".repeat(3)
+// );
+// const LINE_COUNT = 3;
+// for (let i = 1; i <= LINE_COUNT; i++) {
+//   console.log("🐻".repeat(i));
+// }
+
+
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+// const result = words.filter(word => word.length > 6);
+
+// console.log(result);
+// // expected output: Array ["exuberant", "destruction", "present"]
+
+

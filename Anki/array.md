@@ -1,80 +1,127 @@
 # Interview (Arrays)
 
-## What is the **arr.filter(fn)** method?
+## What is the **Array.prototype.filter()** method?
 
->filter returns an array of all matching elements, similiar to the find method that looks for a single (first) element that makes the function return true.
+> The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
 
 ```js
-let results = arr.filter(function(item, index, array) {
-  // if true item is pushed to results and the iteration continues
-  // returns empty array if nothing found
-});
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
-For Instance:
+const result = words.filter(word => word.length > 6);
 
-let users = [
-  {id: 1, name: "John"},
-  {id: 2, name: "Pete"},
-  {id: 3, name: "Mary"}
-];
-
-// returns array of the first two users
-let someUsers = users.filter(item => item.id < 3);
-
-alert(someUsers.length); // 2
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
 ```
 
-## What is the **arr.map** method?
+## What is the **Array.prototype.map()** method?
 
->The arr.map method is one of the most useful and often used.
+> The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+```js
+const array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+```
+## What is the **Array.prototype.find()** method?
+
+> The find() method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
+
+```js
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find(element => element > 10);
+
+console.log(found);
+// expected output: 12
+
+```
+
+
+## What is the **Array.prototype.forEach()** method?
+
+> The forEach() method executes a provided function once for each array element.
+
+```js
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
+```
+
+## What is the **Array.prototype.some()** method?
+
+> The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+
+```js
+const array = [1, 2, 3, 4, 5];
+
+// checks whether an element is even
+const even = (element) => element % 2 === 0;
+
+console.log(array.some(even));
+// expected output: true
+```
+
+## What is the **Array.prototype.every()** method?
+
+> The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+
+```js
+const isBelowThreshold = (currentValue) => currentValue < 40;
+
+const array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+// expected output: true
+```
+
+
+
+## What is the **Array.prototype.reduce()** method?
+
+> The reduce() method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
 >
->It calls the function for each element of the array and returns the array of results.
-
-
-- For instance, here we transform each element into its length:
-```js
-let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
-alert(lengths); // 5,7,6
-```
- 
-## What is the **arr.find(fn)** method?
-
+> The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise the array element at index 0 is used as the initial value and iteration starts from the next element (index 1 instead of index 0).
 >
-- For example, we have an array of users, each with the fields id and name. Let’s find the one with id == 1:
-```js
-let users = [
-  {id: 1, name: "John"},
-  {id: 2, name: "Pete"},
-  {id: 3, name: "Mary"}
-];
-
-let user = users.find(item => item.id == 1);
-
-alert(user.name); // John
-```
-- The **arr.findIndex** method has the same syntax, but returns the index where the element was found instead of the element itself. The value of -1 is returned if nothing is found.
+> Perhaps the easiest-to-understand case for reduce() is to return the sum of all the elements in an array:
 
 ```js
-let users = [
-  {id: 1, name: "John"},
-  {id: 2, name: "Pete"},
-  {id: 3, name: "Mary"},
-  {id: 4, name: "John"}
-];
+const array1 = [1, 2, 3, 4];
 
-// Find the index of the first John
-alert(users.findIndex(user => user.name == 'John')); // 0
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  initialValue
+);
 
-// Find the index of the last John
-alert(users.findLastIndex(user => user.name == 'John')); // 3
+console.log(sumWithInitial);
+// expected output: 10
 ```
+## What is the **Array.prototype.includes()** method?
 
-## forEach
+> The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
 
-## Some
+```js
+const array1 = [1, 2, 3];
 
-## every
+console.log(array1.includes(2));
+// expected output: true
 
-## reduce
+const pets = ['cat', 'dog', 'bat'];
 
-## includes
+console.log(pets.includes('cat'));
+// expected output: true
+
+console.log(pets.includes('at'));
+// expected output: false
+
+```
