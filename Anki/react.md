@@ -13,4 +13,19 @@
 - Performance & testing
 - Very popular in the industry.
 
-## 
+## Working with "State"
+
+> Components can have "state" which is an object that determnines how a component renders and behaves
+
+> "App" or "Global" state refers to state that is a vailable to the entire UI, not just a single component.
+
+> Prior to React 16.8, we had to use the class based components to use state. Now we can use functional components with hooks.
+
+## Recent Hooks 
+
+> React Hooks are functions that let us hook into the React state and lifecycle features from function components
+
+- useState - Returns a stateful value and a function to update it.
+- useEffect - Performs side effects in function components
+- useContext, useReducer, useRef - Beyond the dcope of this course.
+> You can also create your own custom hooks
