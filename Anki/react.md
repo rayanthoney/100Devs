@@ -29,3 +29,18 @@
 - useEffect - Performs side effects in function components
 - useContext, useReducer, useRef - Beyond the dcope of this course.
 > You can also create your own custom hooks
+
+## **"rafce"** is a shortcut that does what?
+
+> creates a arrow function for a React Header component
+```jsx
+import React from 'react'
+
+const Header = () => {
+  return (
+    <div>Header</div>
+  )
+}
+
+export default Header
+```
