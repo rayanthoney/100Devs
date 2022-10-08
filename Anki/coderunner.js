@@ -1,18 +1,8 @@
-// console.log(
-//   "A".repeat(2),
-//   "UU".repeat(3)
-// );
-// const LINE_COUNT = 3;
-// for (let i = 1; i <= LINE_COUNT; i++) {
-//   console.log("🐻".repeat(i));
-// }
-
-
-// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-
-// const result = words.filter(word => word.length > 6);
-
-// console.log(result);
-// // expected output: Array ["exuberant", "destruction", "present"]
-
+let text1 = "Sample Text"
+console.log(1, text1.charAt(0))
+console.log(2, text1.charAt(text1.length-1))
+console.log(3, text1.charAt("0"))
+console.log(4, text1.charAt("test"))
+let test1 = ''
+console.log(5, test1.charAt(""))
 

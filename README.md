@@ -64,3 +64,29 @@ This repository was set up to allow me to track and hold all content used in the
 - Hat tip to anyone whose code was used
 - Inspiration
 - References
+---
+
+- [ ] [class-weekend-boring]()
+- [ ] [angry-parent-simulator]()
+- [ ] [background-picker]()
+- [ ] [bachelor-code]()
+- [ ] [temperature-converter]()
+- [ ] [stop-snacking]()
+- [ ] [objects-dog-photos]()
+- [ ] [objects-listen-to-your-heart (Stopwatch)]()
+- [ ] [objects-nasa (NASA APOD)]()
+- [ ] [objects-shots (CocktailDB)]()
+- [ ] [api-template (pokeapi)]()
+- [ ] [local-storage-botScore-button]()
+- [ ] [card-game]()
+- [ ] []()
+- [ ] [client-side-rap-api]()
+- [ ] [calculator]()
+- [ ] [rap-names-express]()
+- [ ] [todo-list-express]()
+- [ ] [crud-demo]()
+- [ ] [todo-mvc]()
+- [ ] [todo-mvc-auth-local]()
+- [ ] [binary-upload-boom]()
+---
+
