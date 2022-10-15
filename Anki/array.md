@@ -1,4 +1,4 @@
-# Arrays
+# Arrays 🧠
 
 ## What is the **Array.prototype.filter()** method?
 

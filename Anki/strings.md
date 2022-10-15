@@ -1,4 +1,4 @@
-# Strings
+# Strings 📏
 
 ## What is the **String.length**  property?
 
