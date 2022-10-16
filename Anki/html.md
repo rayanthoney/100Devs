@@ -1,4 +1,4 @@
-# HTML
+# HTML 😎
 
 ## What does **!DOCTYPE** _\<!DOCTYPE html\>_ stand for?
 
