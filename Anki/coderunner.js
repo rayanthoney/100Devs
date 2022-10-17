@@ -1,9 +1,5 @@
-function reverseString(text){
-    let result = "";
+const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
+const regex = /[A-Z]/g;
+const found = paragraph.match(regex);
 
-    for(let char of text){
-        result = char + result
-    }
-
-    return result;
-}
+console.log(found);
