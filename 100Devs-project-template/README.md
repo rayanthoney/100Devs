@@ -2,13 +2,13 @@
 
 # 🛠️ My Awesome
 
-![alt tag](https://picsum.photos/600/300)
+<!-- ![alt tag](https://picsum.photos/600/300) -->
 
 <div align="center" >
 <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
     <!-- link to local image -->
-        <img src="IMG SOURCE GOES HERE" alt="" height="100%"/>
+        <img src="https://picsum.photos/600/300" alt="" height="100%"/>
     </a>
 
 **Link to project:** http://recruiters-love-seeing-live-demos.com/
