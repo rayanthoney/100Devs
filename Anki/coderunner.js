@@ -1,5 +1,6 @@
-const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
-const regex = /[A-Z]/g;
-const found = paragraph.match(regex);
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
-console.log(found);
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
