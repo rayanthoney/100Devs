@@ -1,6 +1,7 @@
-const array1 = [5, 12, 8, 130, 44];
+const array = [1, 2, 3, 4, 5];
 
-const found = array1.find(element => element > 10);
+// checks whether an element is even
+const even = (element) => element % 2 === 0;
 
-console.log(found);
-// expected output: 12
+console.log(array.some(even));
+// expected output: true
