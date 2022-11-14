@@ -1,3 +1,4 @@
+const { request, response } = require('express');
 const TicketList = require('../models/ticketlist')
 
 module.exports = {
@@ -29,3 +30,4 @@ module.exports = {
         }
     }
 }
+createTicket: async (request, response)
