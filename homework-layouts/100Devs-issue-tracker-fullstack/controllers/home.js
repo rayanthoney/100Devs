@@ -20,8 +20,8 @@ module.exports = {
                 status: req.body.status
             });
         try {
-            await todoTask.save();
-            console.log(todoTask)
+            await newTicket.save();
+            console.log(newTicket)
             res.redirect("/");
         } catch (err) {
             if (err) return res.status(500).send(err);
