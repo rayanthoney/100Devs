@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const todoTaskSchema = new mongoose.Schema({
+const ticketListSchema  = new mongoose.Schema({
 subject: {
     type: String,
     required: true

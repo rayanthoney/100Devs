@@ -1,4 +1,4 @@
-const { request, response } = require('express');
+// const { request, response } = require('express');
 const TicketList = require('../models/ticketlist')
 
 module.exports = {
@@ -6,7 +6,7 @@ module.exports = {
         try {
             const tickets = await
             TicketList.find()
-            res.render("index.ejs", { ticketList: tasks });
+            res.render("index.ejs", { ticketList: tickets });
         } catch (err) {
             if (err) return res.status(500).send(err);
         }
@@ -30,4 +30,3 @@ module.exports = {
         }
     }
 }
-createTicket: async (request, response)
