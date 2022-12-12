@@ -35,7 +35,12 @@ Here's where you can go to town on how you actually built this thing. Write as m
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,mongodb,express,bootstrap" />
+    <img src="https://skillicons.dev/icons?i=html,css,js" />
+  </a>
+  <br>
+  <br>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,mongodb,express,bootstrap" />
   </a>
 </p>
 <br>
