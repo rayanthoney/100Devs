@@ -53,7 +53,7 @@
                             <p><span class="badge <%=tickets.status== 'Closed' ? 'badge rounded-pill bg-success' : 'badge rounded-pill bg-info text-dark'%>"><%=tickets.status%></span></p>
                             <h3><%=tickets.subject%></h3>
                             <p><%=tickets.description%></p>
-                            <p><i class="bi bi-stoplights"></i><%=tickets.severity%><i class="bi bi-person"></i><%=tickets.assignedTo%></p>
+                            <p><i class="bi bi-bug"></i><%=tickets.severity%><i class="bi bi-person"></i><%=tickets.assignedTo%></p>
                             <div class="d-grid gap-2 d-md-block">
                                 <a href="/edit/<%=tickets._id%>" class="btn btn-warning">Close</a>
                                 <a href="/edit/remove/<%=tickets._id%>" class="btn btn-danger">Delete</a>
