@@ -27,7 +27,7 @@ console.log(greeting.trim());
 
 ```
 
-## What is the String.prototype.includes() property?
+## What is the **String.prototype.includes()** property?
 
 > The includes() method performs a case-sensitive search to determine whether one string may be found within another string, returning true or false as appropriate.
 
@@ -41,7 +41,7 @@ console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in 
 
 ```
 
-## What is String.prototype.toUpperCase() property?
+## What is **String.prototype.toUpperCase()** property?
 
 > The toUpperCase() method returns the calling string value converted to uppercase (the value will be converted to a string if it isn't one).
 
@@ -58,7 +58,7 @@ console.log(sentence.toUpperCase());
  console.log(str.toUpperCase()); // 'WE ARE SOME SMALL LETTERS THAT WANT TO BE BIG'
 ```
 
-## What is String.prototype.toLowerCase() property?
+## What is **String.prototype.toLowerCase()** property?
 
  > The toLowerCase() method returns the calling string value converted to lower case.
 
@@ -75,7 +75,7 @@ console.log(sentence.toLowerCase());
  console.log(str.toUpperCase()); // "this has big letters, they want to all be small."
 ```
 
-## What is String.prototype.replace() property?
+## What is **String.prototype.replace()** property?
 
 > The replace() method returns a new string with one, some, or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function called for each match. If pattern is a string, only the first occurrence will be replaced. The original string is left unchanged.
 
