@@ -26,6 +26,6 @@ const Declares a block-scoped, read-only named constant.
 - In the _Server_ - Global
 > The **_globalThis_** global property allows one to access the global object regardless of the current environment.
 
-## **Hoisting**
+## Describe **Hoisting**
 
 > JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
