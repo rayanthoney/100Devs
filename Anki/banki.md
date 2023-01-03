@@ -180,17 +180,108 @@
 
 ## HTML
 
-What does a doctype do?
-How do you serve a page with content in multiple languages?
-What kind of things must you be wary of when design or developing for multilingual sites?
-What are data- attributes good for?
-Consider HTML5 as an open web platform. What are the building blocks of HTML5?
-Describe the difference between a cookie, sessionStorage and localStorage.
-Describe the difference between <script>, <script async> and <script defer>.
-Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?
-What is progressive rendering?
-Why you would use a srcset attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.
-Have you used different HTML templating languages before?
+## What does a **doctype** do?
+
+>
+
+```html
+
+```
+
+## How do you serve a page with content in multiple languages?
+
+>
+
+```html
+
+```
+
+## What kind of things must you be wary of when design or developing for multilingual sites?
+
+>
+
+```html
+
+```
+
+## What are data- attributes good for?
+
+>
+
+```html
+
+```
+
+## Consider HTML5 as an open web platform. What are the building blocks of HTML5?
+
+>
+
+```html
+
+```
+
+## Describe the difference between a cookie, sessionStorage and localStorage.
+
+>
+
+```html
+
+```
+
+## Describe the difference between
+
+```html
+<script>, <script async> and <script defer>.
+```
+
+>
+## Why is it generally a good idea to position CSS <link>'s between <head></head> and JS <script>s just before </body>?
+
+>
+
+```html
+
+```
+
+## Do you know any exceptions?
+
+>
+
+```html
+
+```
+
+## What is progressive rendering?
+
+>
+
+```html
+
+```
+
+## Why you would use a srcset attribute in an image tag?
+
+>
+
+```html
+
+```
+
+## Explain the process the browser uses when evaluating the content of this attribute.
+
+>
+
+```html
+
+```
+
+## Have you used different HTML templating languages before?
+
+>
+
+```html
+
+```
 
 ## CSS
 
