@@ -1,6 +1,6 @@
 // todo - declare Variables::
 const express = require('express');
-var cors = require('cors')
+var cors = require('cors');
 const app = express();
 const PORT = 8000
 const mongoose =require('mongoose');
