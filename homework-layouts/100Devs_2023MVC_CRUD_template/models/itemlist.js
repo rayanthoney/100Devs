@@ -4,7 +4,7 @@ const itemListSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    numItem: {
+    numInput: {
         type: Number,
         required: true,
     },
