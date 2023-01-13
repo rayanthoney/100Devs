@@ -4,21 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Welcome to the Home Page</h1>
-    <form action="/new" method="POST">
-        <label for="textInput">Input Text</label>
-        <input type="text" name="textInput" placeholder="Enter Text">
-        <label for="numInput">Input Number</label>
-        <input type="number" name="numInput" value="0" placeholder="Enter Number">
-        <button type="submit">Add Item</button>
-    </form>
+
+    <main>
+        <section class="showcase">
+            <form action="/new" method="POST">
+                <label for="textInput">Input Text</label>
+                <input type="text" name="textInput" placeholder="Enter Text">
+                <label for="numInput">Input Number</label>
+                <input type="number" name="numInput" value="0" placeholder="Enter Number">
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+    
+        <section class="image">
+          <div class="image-container">
+            <h2 class="msg"></h2>
+            <img src="" alt="" id="image" />
+          </div>
+        </section>
+    </main>
 
     <ul>
-        <!-- Will add ejs later -->
+        <% itemList.forEach(item => { %>
+            <li>
+                <div><%= item.textInput %></div>
+                <div><%= item.numInput %></div>
+                <a href="">Edit</a>
+                <a href="">Remove</a>
+            </li>
+        <% }) %>
     </ul>
 </body>
 </html>
