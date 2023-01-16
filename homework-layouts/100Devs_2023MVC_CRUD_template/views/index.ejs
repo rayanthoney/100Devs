@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spinner.css">
+    <title>100Devs MVC CRUD Template</title>
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
+    <header>
+        <div class="navbar">
+          <div class="logo">
+            <h2>100Devs MVC CRUD Template</h2>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a href="https://github.com/rayanthoney/100Devs-Bootcamp/tree/master/homework-layouts/100Devs_2023MVC_CRUD_template" target="_blank">Github Repo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
 
     <main>
         <section class="showcase">
@@ -21,23 +35,22 @@
             </form>
         </section>
     
-        <section class="image">
-          <div class="image-container">
-            <h2 class="msg"></h2>
-            <img src="" alt="" id="image" />
+        <section class="results">
+          <div class="results-container">
+            <ul>
+              <% itemList.forEach(item => { %>
+                  <li>
+                      <div><%= item.textInput %></div>
+                      <div><%= item.numInput %></div>
+                      <a href="">Edit</a>
+                      <a href="">Remove</a>
+                  </li>
+              <% }) %>
+          </ul>
           </div>
         </section>
     </main>
 
-    <ul>
-        <% itemList.forEach(item => { %>
-            <li>
-                <div><%= item.textInput %></div>
-                <div><%= item.numInput %></div>
-                <a href="">Edit</a>
-                <a href="">Remove</a>
-            </li>
-        <% }) %>
-    </ul>
+    <div class="spinner"></div>
 </body>
 </html>
