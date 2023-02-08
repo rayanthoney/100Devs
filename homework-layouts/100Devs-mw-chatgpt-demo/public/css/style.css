@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: 'Nunito' Arial, sans-serif;
+}
+
+/* header {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+.site-header {
+  border-bottom: 1px solid #333;
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header img:first-of-type {
+  margin-right: 1em;
+  width: 100px;
+  height: 100px;
+  
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  /* width: 30%; */
+  display: flex;
+  margin: 2em;
+  text-align: center;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 5px 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 2em;
+  padding: 2em;
+  border: 1px solid gray;
+}
+
+label,
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  padding: 0.5em 1em;
+  background-color: magenta;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+}

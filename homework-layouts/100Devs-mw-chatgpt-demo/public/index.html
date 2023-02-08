@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Professional Dog Grooming Services</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Professional Dog Grooming Services</h1>
+        <div class="services">
+            <div class="service">
+                <h3>Bathing</h3>
+                <p>We offer a full range of bathing services for your pup, from basic baths to medicated baths and flea
+                    treatments.</p>
+            </div>
+            <div class="service">
+                <h3>Nail Trimming</h3>
+                <p>We provide professional nail trimming services to keep your pup's nails healthy and looking great.
+                </p>
+            </div>
+            <div class="service">
+                <h3>Haircuts</h3>
+                <p>Our experienced groomers can give your pup the perfect haircut, from a simple trim to a full breed
+                    standard cut.</p>
+            </div>
+        </div>
+        <form action="/requestService" method="POST"> <input type="text" name="name" placeholder="Name"><br /> <input
+                type="email" name="email" placeholder="Email"><br /> <input type="tel" name="phoneNumber"
+                placeholder="Phone Number"><br /> Date Picker<input type='date' name='date' /><br /> Time Picker<input
+                type='time' name='time' /><br /> Notes<textarea name='notes' rows='4' cols='50'> </textarea><br />
+            <input type='submit' value='Submit'>
+        </form>
+    </div>
+</body>
+
+</html
