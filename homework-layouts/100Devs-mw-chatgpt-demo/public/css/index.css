@@ -1,0 +1,33 @@
+body {
+}
+
+main {
+  background-image: url(/img/main.png);
+  background-size:cover ;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+.btn {
+  padding: 1em 2em;
+  background-color: #6184a8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1em;
+}
