@@ -1,0 +1,2 @@
+### prompt 1 
+> generate the HTML and CSS for a professional dog grooming website that offers multiple services. Each service should have a description. There should be a form on the page that allows users to request the available service. The form should contain fields for the user's name, phone number, email, a date picker, and a time picker. and a long text field for notes. The form should be set up to submit the data to a JS server.

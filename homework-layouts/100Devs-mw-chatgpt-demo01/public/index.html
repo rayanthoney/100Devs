@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Dog Grooming Services</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Professional Dog Grooming Services</h1>
+      </header>
+  
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#form">Request a Service</a></li>
+          <li><a href="/admin">Admin</a></li>
+        </ul>
+      </nav>
+  
+      <main>
+        <section id="services">
+          <h2>Our Services</h2>
+          <ul>
+            <li>
+              <h3>Bath and Brush</h3>
+              <p>Our bath and brush service includes a soothing bath, blow dry, and brush out to leave your dog feeling refreshed and clean.</p>
+            </li>
+            <li>
+              <h3>Haircut and Style</h3>
+              <p>Our haircut and style service includes a full haircut, blow dry, and styling to keep your dog looking their best.</p>
+            </li>
+            <li>
+              <h3>Nail Trimming</h3>
+              <p>Our nail trimming service includes a careful and precise trim of your dog's nails to keep them healthy and pain-free.</p>
+            </li>
+          </ul>
+        </section>
+  
+        <section id="form">
+          <h2>Request a Service</h2>
+          <form action="/servicerequest" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" min="08:00" max="17:00" required>
+            <br>
+            <label for="service">Service:</label>
+            <select id="service" name="service" required>
+              <option value="">Select Service</option>
+              <option value="dog wash">Dog Wash</option>
+              <option value="nail-trimming">Nail Trimming</option>
+              <option value="ear-cleaning">Ear Cleaning</option>
+              <option value="teeth-brushing">Teeth Brushing</option>
+              <option value="full-groom">Full Groom</option>
+            </select>
+            <br>
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </section>
+      </main>
+  
+      <footer>
+        <p>&copy; 2023 Wash N Groom Professional Dog Grooming Services</p>
+      </footer>
+</body>
+</html>
+
+
+
+

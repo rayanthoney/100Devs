@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+  </head>
+  <body>
+    <h1>Service Request Admin Page</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone Number</th>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Service</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% serviceRequests.forEach(function(serviceRequest) { %>
+          <tr>
+            <td><%= serviceRequest.name %></td>
+            <td><%= serviceRequest.phoneNumber %></td>
+            <td><%= serviceRequest.email %></td>
+            <td><%= serviceRequest.date %></td>
+            <td><%= serviceRequest.time %></td>
+            <td><%= serviceRequest.service %></td>
+            <td><%= serviceRequest.notes %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>
