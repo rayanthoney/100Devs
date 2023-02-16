@@ -5,6 +5,8 @@
   --secondary-color: #333333;
   --text-color: #ffffff;
   --border-color: #cccccc;
+  --red: #ff0000;
+  --blue: #0000ff;
 }
 
 body {
