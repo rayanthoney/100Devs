@@ -1,0 +1,213 @@
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<h2 id="" what-is-the-stringlength-property"">What is the .length property?</h2> " "<ul>
+    <li>
+        <p>Explanation:</p>
+        <blockquote>
+            <p>The length read-only property of a string contains the length of the string in UTF-16 code units.</p>
+        </blockquote>
+    </li>
+    <li>
+        <p>Example:</p>
+    </li>
+</ul>
+<div><img src="" length.png""><br></div>
+<pre><code class=""language-js""> </code></pre> "
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is the <i>String.prototype.trim()</i>&nbsp;property?</div>
+</div>" "<ul>
+    <li>Explanation:</li>
+</ul>
+<div>The <code>String.prototype.trim()</code> method is a built-in JavaScript method that removes white space from both
+    ends of a string. It returns a new string with any white space characters (e.g. space, tab, newline) removed from
+    the beginning and end of the original string.<br></div>
+<ul>
+    <li>Example:</li>
+</ul>
+<div><img src="" String.prototype.trim().png""><br></div>"
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is the String.prototype.includes() property?</div>
+</div>" "<ul>
+    <li><span style="" font-size: 16.6667px;"">Explanation:</span></li>
+</ul>
+<div>The <code>String.prototype.includes()</code> method is a built-in JavaScript method that determines whether one
+    string can be found within another string. It returns <code>true</code> if the string contains the specified
+    substring, and <code>false</code> otherwise.<span style="" font-size: 16.6667px;""><br></span></div>
+<ul>
+    <li><span style="" font-size: 16.6667px;"">Example:</span></li>
+</ul>
+<div><img src="" String.prototype.includes().png""><span style="" font-size: 16.6667px;""><br></span></div>
+<div><span style="" font-size: 16.6667px;""><br></span></div>"
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is String.prototype.toUpperCase() property?</div>
+</div>" "<ul>
+    <li>Explanation:</li>
+</ul>
+<div>The <code>String.prototype.toUpperCase()</code> method is a built-in JavaScript method that returns a new string
+    with all the alphabetic characters in the original string converted to uppercase.<br></div>
+<ul>
+    <li>Example:</li>
+</ul>
+<div><img src="" String.prototype.toUpperCase().png""><br></div>"
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is String.prototype.toLowerCase() property?</div>
+</div>" "<ul>
+    <li>Explanation:</li>
+</ul>
+<div>The <code>String.prototype.toLowerCase()</code> method is a built-in JavaScript method that returns a new string
+    with all the alphabetic characters in the original string converted to lowercase.<br></div>
+<ul>
+    <li>Example:</li>
+</ul>
+<div><img src="" String.prototype.toLowerCase().png""><br></div>
+<div><br></div>"
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is String.prototype.replace() property?</div>
+</div>" "<ul>
+    <li>Explanation:</li>
+</ul>
+<div>The <code>String.prototype.replace()</code> method is a built-in JavaScript method that returns a new string with
+    some or all matches of a pattern replaced by a replacement string.<br></div>
+<ul>
+    <li>Example:</li>
+</ul>
+<div><img src="" String.prototype.replace().png""><br></div>
+<div>
+    <ul>
+        <li>Another Example:</li>
+    </ul>
+    <div><img src="" String.prototype.replace() (1).png""><br></div>
+</div>"
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is String.prototype.slice() property?</div>
+</div>" "<ul>
+    <li>Explanation:</li>
+</ul>
+<div>The <code>String.prototype.slice()</code> method is a built-in JavaScript method that returns a new string that is
+    a portion of the original string. The portion of the string to be returned is specified by passing two arguments to
+    the <code>slice()</code> method: the starting index (inclusive) and the ending index (exclusive).<br></div>
+<ul>
+    <li>Example:</li>
+</ul>
+<div><img src="" String.prototype.slice().png""><br></div>
+<div>
+    <div>If you omit the second argument to <code>slice()</code>, the method will return a slice of the string starting
+        from the specified index to the end of the string.&nbsp;</div>
+    <div><br></div>
+    <div>
+        <ul>
+            <li>Here's an example:</li>
+        </ul>
+        <div><img src="" Variable_ (1).png""><br></div>
+    </div>
+</div>
+<div><br></div>
+<div><br></div>
+<div><br></div>"
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is String.prototype.split() property?</div>
+</div>" "<ul>
+    <li>Explanation:</li>
+</ul>
+<div>The <code>String.prototype.split()</code> method is a built-in JavaScript method that allows you to split a string
+    into an array of substrings. The method takes one or two arguments: a separator and an optional limit.</div>
+<div>
+    <ul>
+        <li>Example:</li>
+    </ul>
+    <div><img src="" String.prototype.split() (1).png""><br></div>
+</div>
+<div>If you don't provide a separator argument, the method will split the string into an array of individual characters:
+</div>
+<div><br></div>
+<div><img src="" String.prototype.split() (2).png""><br></div>
+<div>If you provide a second argument to <code>split()</code>, it limits the number of splits that can be made:<br>
+</div>
+<div><br></div>
+<div><img src="" String.prototype.split() (3).png""><br></div>"
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is String.prototype.repeat() property?</div>
+</div>" "<ul>
+    <li>Explanation:</li>
+</ul>
+<div>The <code>String.prototype.repeat()</code> method is a built-in JavaScript method that allows you to create a new
+    string by repeating the original string a specified number of times. The method takes a single argument, which is an
+    integer specifying the number of times the original string should be repeated.<br></div>
+<ul>
+    <li>Example:</li>
+</ul>
+<div><img src="" repeat.png""><br></div>
+<div>Note that the <code>repeat()</code> method returns an empty string if the argument is zero or negative:<br></div>
+<div><br></div>
+<div><img src="" repeat2.png""><br></div>
+<div><br></div>
+<div><br></div>"
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is String.prototype.match() property?</div>
+</div>" "<ul>
+    <li>Explanation:</li>
+</ul>
+<div>The <code>String.prototype.match()</code> method is a built-in JavaScript method that allows you to search a string
+    for a pattern and return an array containing the matched results. The method takes a single argument, which is the
+    pattern to search for. The pattern can be either a regular expression or a string.<br></div>
+<ul>
+    <li>Example:</li>
+</ul>
+<div><img src="" match.png""><br></div>
+<div>Here's an example of how to use the <code>match()</code> method with a string:<br></div>
+<div><br></div>
+<div><img src="" match3.png""><br></div>"
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is String.prototype.charAt() property?</div>
+</div>" "<ul>
+    <li>Explanation:</li>
+</ul>
+<div>The <code>String.prototype.charAt()</code> method is a built-in JavaScript method that allows you to access the
+    character at a specified index in a string. The method takes a single argument, which is the index of the character
+    to access. The index should be an integer between 0 and the length of the string minus 1.<br></div>
+<ul>
+    <li>Example:</li>
+</ul>
+<div><img src="" charAt.png""><br></div>
+<div>Note that if the index is out of range (i.e., less than 0 or greater than or equal to the length of the string),
+    the method returns an empty string:<br></div>
+<div><br></div>
+<div><img src="" charAt (1).png""><br></div>"
+"
+<link rel="" stylesheet"" href="" _vscodeAnkiPlugin.css"" />
+<div>
+    <div>What is String.prototype.charCodeAt() property?</div>
+</div>" "<ul>
+    <li>Explanation:</li>
+</ul>
+<div>The <code>String.prototype.charCodeAt()</code> method is a built-in JavaScript method that returns an integer
+    representing the Unicode value of the character at a specified index in a string. The method takes a single
+    argument, which is the index of the character to access.<br></div>
+<ul>
+    <li>Example:</li>
+</ul>
+<div><img src="" charCodeAt.png""><br></div>
+<div>Note that if the index is out of range (i.e., less than 0 or greater than or equal to the length of the string),
+    the method returns <code>NaN</code>:<br></div>
+<div><br></div>
+<div><img src="" charCodeAt2.png""><br></div>"
