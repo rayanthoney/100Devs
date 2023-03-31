@@ -1,10 +1,8 @@
-# BANKI: All the questions to prep for interviews
-
-## Behavioral
+# BANKI: 💰🙈
 
 ### Questions
 
-- [ ] Give me an example of a project or initiative that you started on your own. What prompted you to get started?
+Give me an example of a project or initiative that you started on your own. What prompted you to get started?
   - **Cause:**
   - **Action:**
   - **Result:**
