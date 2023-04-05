@@ -1,7 +1,8 @@
-const array = [1, 2, 3, 4, 5];
+const str = "hello";
+const char1 = str.charCodeAt(0);
+const char2 = str.charCodeAt(1);
+const char5 = str.charCodeAt(4);
 
-// checks whether an element is even
-const even = (element) => element % 2 === 0;
-
-console.log(array.some(even));
-// expected output: true
+console.log(char1);
+console.log(char2);
+console.log(char5);
