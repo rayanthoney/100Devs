@@ -1,8 +1,12 @@
-const str = "hello";
-const char1 = str.charCodeAt(0);
-const char2 = str.charCodeAt(1);
-const char5 = str.charCodeAt(4);
+const array1 = [1, 2, 3];
 
-console.log(char1);
-console.log(char2);
-console.log(char5);
+    console.log(array1.includes(2));
+    // expected output: true
+
+    const pets = ["🐱", "🐶", "👨🏾‍🦱"];
+
+    console.log(pets.includes("🐱"));
+    // expected output: true
+
+    console.log(pets.includes("at"));
+    // expected output: false

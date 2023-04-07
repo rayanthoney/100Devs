@@ -54,12 +54,17 @@ You don't have to include this section but interviewers _love_ that you can not 
 
 ## Lessons Learned:
 
-- [ ] [HTML](html.md)
-- [ ] [css](css.md)
+- [ ] [Banki]()
+  - [ ] [Behavior](Banki/banki_behavior.md)
+  - [ ] [CS_Theory](Banki/banki_cs_theory.md)
+  - [ ] [CSS](Banki/banki_css.md)
+  - [ ] [HTML](Banki/banki_html.md)
+  - [ ] [JavaScript](Banki/banki_javascript.md)
+  - [ ] [Node](Banki/banki_node.md)
 - [ ] [JavaScript]()
-  - [ ] [Strings](array.md)
-  - [ ] [Array's](strings.md)
-  - [ ] [Scrimba deep dive JavaScript](scrimba.md)
+  - [ ] [Arrays](JavaScript/arrays.md)
+  - [ ] [Strings](JavaScript/strings.md)
+  - [ ] [Variables](JavaScript/variables.md)
 
 No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _fuck yeah I did it!_ moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
 
