@@ -1,12 +1,4 @@
-const array1 = [1, 2, 3];
+const pi = 3.14;
+console.log(pi);
 
-    console.log(array1.includes(2));
-    // expected output: true
-
-    const pets = ["🐱", "🐶", "👨🏾‍🦱"];
-
-    console.log(pets.includes("🐱"));
-    // expected output: true
-
-    console.log(pets.includes("at"));
-    // expected output: false
+// pi = 3.14159;
