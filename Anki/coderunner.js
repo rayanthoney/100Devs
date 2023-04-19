@@ -1,4 +1,6 @@
-const pi = 3.14;
-console.log(pi);
+const numbers = [1, 2, 3, 4, 5];
+    const evenNumbers = numbers.filter(function(number) {
+        return number % 2 === 0;
+    });
 
-// pi = 3.14159;
+    console.log(evenNumbers);
