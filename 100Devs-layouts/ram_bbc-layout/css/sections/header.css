@@ -1,0 +1,47 @@
+/* Reset default browser styles */
+header {
+  background-color: var(--black-200);
+  color: #fff;
+}
+
+.header__navbar {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 10px;
+
+  position: relative;
+  max-width: 1280px;
+  margin: auto; 
+}
+
+.header__logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+
+.header__menu li {
+  margin-left: 10px;
+  text-transform: capitalize;
+
+  
+  border-left: 1px #666 solid;
+  cursor: pointer;
+}
+
+.header__menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.header__menu a:hover {
+  background-color: #555;
+}

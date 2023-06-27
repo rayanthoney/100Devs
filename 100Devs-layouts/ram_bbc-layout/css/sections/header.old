@@ -1,0 +1,69 @@
+header {
+    background-color: black;
+}
+
+.header__nav {
+  display: flex;
+  overflow: hidden;
+  
+  position: relative;
+  max-width: 1280px;
+  margin: auto;  
+}
+
+.header__logo {
+    position: relative;
+    top: 20px;
+}
+
+
+/* targets the span and changes it's color */
+/* .header__logo span {
+    color: var(--color-manderin);
+} */
+
+.header__menu,
+.header__menu-mobile {
+  padding: 0;
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 64px;
+
+  list-style: none;
+}
+
+.header__menu li {
+  /* font-weight: 500; */
+  font-family: var(--bbc-font);
+  color: var(--color-white);
+  font-size: 14px;
+  text-transform: capitalize;
+  line-height: 20px;
+  cursor: pointer;
+}
+.header__menu li a {
+    padding: 12px 15px;
+    border-left: 1px #666 solid;
+}
+
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+
+  position: relative;
+  color: white;
+}
+
+.header__menu input {
+  background-color: wheat;
+}
+
+.header__menu-mobile {
+  display: none;
+  gap: 20px;
+
+  position: relative;
+}
