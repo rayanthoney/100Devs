@@ -1,0 +1,48 @@
+.wrapper {
+    background-image: url('/assets/Cuisine.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+  
+  
+  /* Background images for each section */
+  .wrapper #home {
+   
+    /* background-repeat: no-repeat;
+    background-position: top -50px right;
+    background-size: cover; */
+  
+    
+  }
+  
+  .wrapper #about {
+    background-image: url('/assets/cuisine-about.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;  
+  }
+  
+  #menu {
+    background-image: url('menu-bg.jpg');
+    
+  }
+  
+  #order {
+    background-image: url('order-bg.jpg');
+    
+  }
+  
+  #blog {
+    background-image: url('blog-bg.jpg');
+    
+  }
+  
+  #location {
+    background-image: url('location-bg.jpg');
+    
+  }
+  
+  
+  
+  
