@@ -1,4 +1,4 @@
-const pi = 3.14;
-console.log(pi);
-
-pi = 3.14159;
+let price;
+console.log(price);
+price = 350;
+console.log(price);

@@ -36,9 +36,6 @@
   flex-basis: 50%; /* Add this line */
 }
 
-.hero__newsleft-article {
-}
-
 .hero__newsleft-article img {
   width: 100%;
 }
@@ -58,7 +55,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .hero__newsright-article {
@@ -66,7 +63,8 @@
 }
 
 .hero__newsright-article img {
-  width: 99%;
+  width: 100%;
+  padding: 0 5px 5px;
 }
 
 /* Additional styles */

@@ -1,0 +1,1 @@
+I am creating an images media section within the 1280px hero section. One image using left 60% and 4 images stacked by 2 right 40%. 

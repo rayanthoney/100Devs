@@ -3,23 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800;900&display=swap');
 
 /* other css file imports */
-/* @import url("sections/wrapper.css"); */
+@import url("sections/wrapper.css");
 @import url("sections/header.css");
 @import url("sections/hero.css");
-@import url("sections/news.css");
-/* @import url("sections/about.css"); */
+@import url("sections/about.css");
 /* @import url("sections/menu.css"); */
-/* @import url("sections/order.css"); */
-/* @import url("sections/hours.css"); */
-/* @import url("sections/testimonial.css"); */
-/* @import url("sections/footer.css"); */
+@import url("sections/order.css");
+@import url("sections/hours.css");
+@import url("sections/testimonial.css");
+@import url("sections/footer.css");
 
 /* CSS variables for reusablity across all files (including above imported) */
 :root {
   --playfair-display: "Playfair Display", serif;
   --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
   --bodoni-moda: 'Bodoni Moda', serif;
-  --bbc-font: Arial, Helvetica, 'free sans', sans-serif
 
   --primary-color: #86007b;
   --secondary-color: #121212;
