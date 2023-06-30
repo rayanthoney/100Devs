@@ -1,0 +1,43 @@
+.testimonial {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-content {
+    position: relative;
+    
+
+    margin-top: 150px;
+    
+}
+
+.testimonial-content-info h4 {
+    color: var(--color-manderin);
+}
+
+.testimonial-content-info h1 {
+    padding: 20px;
+    font-family: var(--bodoni-moda);
+    font-weight: 800;
+    font-size: 70px;
+}
+
+.testimonial-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-menu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.testimonial-menu li {
+  margin: 0 10px;
+}
+

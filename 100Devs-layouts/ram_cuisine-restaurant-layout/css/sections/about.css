@@ -1,0 +1,31 @@
+.discover {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.discover-content {
+    position: relative;
+    
+
+    margin-top: 150px;
+    
+}
+
+.discover-content-info h4 {
+    color: var(--color-manderin);
+}
+
+.discover-content-info h1 {
+    padding: 20px;
+    font-family: var(--bodoni-moda);
+    font-weight: 800;
+    font-size: 70px;
+}
+
+.discover-content-info p {
+
+}
