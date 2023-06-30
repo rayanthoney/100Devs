@@ -37,7 +37,7 @@ Here's where you can go to town on how you actually built this thing. Write as m
 <br>
 
 ```terminal
- > npm create vite@latest ./ ./
+ > npm create vite@latest ./
 ```
 
 ## Install 
