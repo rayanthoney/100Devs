@@ -11,7 +11,7 @@
 /* @import url("sections/order.css"); */
 /* @import url("sections/hours.css"); */
 /* @import url("sections/testimonial.css"); */
-/* @import url("sections/footer.css"); */
+@import url("sections/footer.css");
 
 /* CSS variables for reusablity across all files (including above imported) */
 :root {

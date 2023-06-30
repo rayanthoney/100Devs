@@ -1,11 +1,14 @@
-# 🛠️ Cuisine Restuarant Layout 
+# 🛠️ Cuisine Restuarant Layout
 
 <div align="center" >
 <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
     <!-- link to local image -->
-        <img src="assets/restaurant.png" alt="" height="100%"/>
+        <img src="assets/restaurant.png" alt="Restaurant Layout" height="70%"/>
     </a>
+
+<br>
+<br>
 
 **Link to project:** http://recruiters-love-seeing-live-demos.com/
 <br>
@@ -47,13 +50,11 @@
 <br>
 <br>
 
+## Install
+
 ```terminal
  > npm create vite@latest ./
 ```
-
-## Install
-
-> Install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files.
 
 ```terminal
  >
