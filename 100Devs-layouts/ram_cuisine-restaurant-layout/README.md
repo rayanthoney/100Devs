@@ -55,16 +55,11 @@
 ```terminal
  > npm create vite@latest ./
 ```
-
-```terminal
- >
- >
-```
-
 ## Installing Your Packages
 
 ```terminal
   > npm install
+  > npm run dev
 ```
 
 ## Optimizations

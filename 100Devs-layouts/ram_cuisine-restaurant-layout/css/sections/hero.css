@@ -43,6 +43,8 @@ button {
     color: #fff;
     background-color: var(--color-manderin);
     border-radius: 10%;
+
+    cursor: pointer;
 }
 
 .hero-content__social {
@@ -59,6 +61,8 @@ button {
 
     background-color: var(--color-manderin);
     border-radius: 100%;
+
+    cursor: pointer;
 }
 
 .hero-content__social li img {

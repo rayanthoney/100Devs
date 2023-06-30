@@ -1,42 +1,16 @@
 .hours {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .hours-content {
-    position: relative;
-    
-
-    margin-top: 150px;
-    
+    text-align: center;
 }
 
-.hours-content-info h4 {
+.hours-content h2 {
     color: var(--color-manderin);
 }
 
-.hours-content-info h1 {
-    padding: 20px;
-    font-family: var(--bodoni-moda);
-    font-weight: 800;
+.hours-content h1 {
     font-size: 70px;
-}
-
-.hours-menu {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.hours-menu ul {
-  list-style-type: none;
-  display: flex;
-}
-
-.hours-menu li {
-  margin: 0 10px;
+    margin-top: 20px;
 }

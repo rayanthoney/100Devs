@@ -2,18 +2,16 @@
   background-image: url('/assets/Cuisine.png');
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: contain; 
 }
 
 
 /* Background images for each section */
 .wrapper #home {
- 
-  /* background-repeat: no-repeat;
-  background-position: top -50px right;
-  background-size: cover; */
-
-  
+  /* background-image: url('/assets/Cuisine.png'); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* background-size: cover;  */
 }
 
 .wrapper #about {

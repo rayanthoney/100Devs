@@ -1,31 +1,29 @@
 .discover {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  height: 100vh;
 }
 
 .discover-content {
-    position: relative;
-    
-
-    margin-top: 150px;
-    
+  text-align: left;
 }
 
-.discover-content-info h4 {
-    color: var(--color-manderin);
+.discover-content-info {
+  max-width: 600px;
+}
+
+.discover-content-info h2 {
+  color: var(--color-manderin);
 }
 
 .discover-content-info h1 {
-    padding: 20px;
-    font-family: var(--bodoni-moda);
-    font-weight: 800;
-    font-size: 70px;
+  font-size: 70px;
+  margin-top: 20px;
 }
 
 .discover-content-info p {
+  margin-top: 20px;
+  line-height: 1.5;
+}
 
+.discover-content-info button {
+    margin-top: 30px;
 }
