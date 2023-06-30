@@ -1,10 +1,10 @@
-# BBC Layout 
+# Hair Salon Layout 
 
 <div align="center" >
 <!-- link to project -->
     <a href='-URL TO DEMO GOES HERE-'>
     <!-- link to local image -->
-        <img src="assets/bbc-image.png" alt="" height="100%"/>
+        <img src="assets/hair-salon.png" alt="" height="100%"/>
     </a>
 
 **Link to project:** http://recruiters-love-seeing-live-demos.com/
