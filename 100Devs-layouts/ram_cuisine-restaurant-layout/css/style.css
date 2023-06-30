@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800;900&display=swap');
 
 /* other css file imports */
-/* @import url("sections/wrapper.css"); */
+@import url("sections/wrapper.css");
 @import url("sections/header.css");
-/* @import url("sections/hero.css"); */
+@import url("sections/hero.css");
 /* @import url("sections/about.css"); */
 /* @import url("sections/menu.css"); */
 /* @import url("sections/order.css"); */

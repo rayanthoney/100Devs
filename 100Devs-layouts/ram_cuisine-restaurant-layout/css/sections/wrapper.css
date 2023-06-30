@@ -2,7 +2,7 @@
     background-image: url('/assets/Cuisine.png');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: contain;
+    background-size:cover;
   }
   
   
