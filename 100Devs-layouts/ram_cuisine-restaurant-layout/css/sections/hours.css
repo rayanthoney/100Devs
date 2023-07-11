@@ -1,16 +1,32 @@
 .hours {
-    height: 100vh;
+  height: 100vh;
+}
+
+.phone-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background-color: var(--color-manderin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-logo i {
+  color: white;
+  font-size: 24px;
 }
 
 .hours-content {
-    text-align: center;
+  text-align: center;
 }
 
 .hours-content h2 {
-    color: var(--color-manderin);
+  color: var(--color-manderin);
 }
 
 .hours-content h1 {
-    font-size: 70px;
-    margin-top: 20px;
+  font-size: 70px;
+  margin-top: 20px;
 }
