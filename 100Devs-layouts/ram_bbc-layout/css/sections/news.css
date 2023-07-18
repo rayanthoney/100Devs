@@ -2,6 +2,9 @@
   max-width: 1280px;
   padding: 40px;
   margin: auto;
+
+  display: flex;
+  gap: 20px;
 }
 
 .news__title {
@@ -20,6 +23,33 @@
 }
 
 .news__content {
+  flex: 1;
+  margin-bottom: 40px; 
+  width: 400px;
+}
+
+.sports{
+  max-width: 1280px;
+  padding: 40px;
+  margin: auto;
+}
+
+.sports__title {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.sports__articles  {
+  display: flex;
+  flex-direction: column;
+}
+
+.sports__image img {
+  width: 400px;
+  height: auto;
+}
+
+.sports__content {
   flex: 1;
   margin-bottom: 40px; 
   width: 400px;
