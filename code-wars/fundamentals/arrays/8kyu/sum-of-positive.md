@@ -24,13 +24,13 @@ P R E P Method   =>
 
 
 ## Parameters: 
-
+> text here
 ## Result: 
-
+> text here
 ## Examples: 
-
+> text here
 ## Psuedocode: 
-
+> text here
 ---
 
 

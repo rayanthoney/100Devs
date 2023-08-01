@@ -1,0 +1,54 @@
+.footer {
+    padding: 20px 40px;
+}
+
+.footer__logo {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: --playfair-display;
+}
+
+/* targets the span and changes it's color */
+.footer__logo span {
+    color: var(--color-manderin);
+}
+
+.footer__nav {
+    
+}
+
+.footer__nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.footer__nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.footer__social {
+
+}
+
+.footer__social li {
+    display: inline-block;
+}
+
+.footer__social img {    
+    width: 42%;
+    height: 42%;
+
+    background-color: var(--secondary-color);
+    border-radius: 100%;
+}
+
+.footer__copyright {text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.footer__copyright span {
+    
+}
