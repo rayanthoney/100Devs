@@ -12,17 +12,37 @@ const [categories, setCategories] = useState([])
 
             // Fetch the catogories from the API
 
-            const categoryURL = ``
-
-            const categoryResponse = await fetch(categoryURL)
-            const categoryData = await categoryResponse.json()
-
-            // Fetch the clues for each category
-
+            const categoryURL = `https://jservice.io/api/categories?count=6&offset=${offset}`
             
-        }
-    })
-    return (
+                const categoryResponse = await fetch(categoryURL)
+                const categoryData = await categoryResponse.json()
+            
+            // Fetch the clues for each category
+            const categoriesWithClues = await Promise.all(categoryData.map(async(category) => {
+                const clueURL = `https://jservice.io/api/clues?category=${category.id}`
+            
+                const clueResponse = await fetch(clueURL)
+                const clueData = await clueResponse.json()
+            
+            // Attach the clues to the category
+            return {
+                ...category,
+                clues: clueData,
+            }
+            }))
+            // Put categories and clues inside of the state variable.
+            setCategories(categoriesWithClues)
 
+        }
+
+        fetchData()
+    },[])
+
+    return (
+        <div className="jeapordy-board">
+            {categories.map((category) => {
+                <Category key={category.id} category={category} />
+            })}
+        </div>
     )
 }
