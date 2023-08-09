@@ -12,14 +12,14 @@ const [categories, setCategories] = useState([])
 
             // Fetch the catogories from the API
 
-            const categoryURL = `https://jservice.io/api/categories?count=6&offset=${offset}`
+            const categoryURL = `https://localhost:6000/api/categories?count=6&offset=${offset}`
             
                 const categoryResponse = await fetch(categoryURL)
                 const categoryData = await categoryResponse.json()
             
             // Fetch the clues for each category
             const categoriesWithClues = await Promise.all(categoryData.map(async(category) => {
-                const clueURL = `https://jservice.io/api/clues?category=${category.id}`
+                const clueURL = `https://localhost:6000/api/clues?category=${category.id}`
             
                 const clueResponse = await fetch(clueURL)
                 const clueData = await clueResponse.json()
