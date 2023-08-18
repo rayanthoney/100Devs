@@ -1,8 +1,12 @@
-import React from "react";
-import Board from "./Board";
+import React from 'react';
+import Board from './Board';
 
 function App() {
-  return <Board />;
+  return (
+    <div className="App">
+      <Board />
+    </div>
+  );
 }
 
 export default App;
